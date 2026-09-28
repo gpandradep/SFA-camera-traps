@@ -1,0 +1,176 @@
+---
+title: "Cherokee Ridge — 2025"
+subtitle: "Field Station – Bait Project"
+toc: true
+toc-depth: 3
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(here)
+library(knitr)
+
+survey_selected <- "CR_2025"
+source(here("R", "load_data.R"))
+
+survey_info <- survey |> slice(1)
+
+ground_camera <- camera_summary |>
+  filter(component == "Ground") |>
+  slice(1)
+
+ground_effort_full <- effort_summary |>
+  filter(component == "Ground") |>
+  slice(1)
+
+ground_effort_30 <- effort_30d_summary |>
+  filter(component == "Ground") |>
+  slice(1)
+
+canopy_camera <- camera_summary |>
+  filter(component == "Canopy") |>
+  slice(1)
+
+canopy_effort <- effort_summary |>
+  filter(component == "Canopy") |>
+  slice(1)
+
+treatment_summary <- ct_table |>
+  filter(component == "Ground") |>
+  mutate(
+    Treatment = case_when(
+      str_detect(Station, regex("^Control", ignore_case = TRUE)) ~ "Control",
+      str_detect(Station, regex("^Fish", ignore_case = TRUE)) ~ "Fish bait",
+      str_detect(Station, regex("^Perfume", ignore_case = TRUE)) ~ "Perfume",
+      TRUE ~ "Other"
+    )
+  ) |>
+  group_by(Treatment) |>
+  summarise(
+    Stations = n_distinct(Station),
+    Cameras = n_distinct(Camera),
+    .groups = "drop"
+  )
+
+sampling_period_summary <- bind_rows(
+  ground_effort_30 |>
+    transmute(
+      `Sampling period` = "30-day bait experiment",
+      Stations = n_stations,
+      `Minimum active trap-nights` = min_active_days,
+      `Mean active trap-nights` = mean_active_days,
+      `Maximum active trap-nights` = max_active_days,
+      `Total active trap-nights` = total_trap_nights
+    ),
+  ground_effort_full |>
+    transmute(
+      `Sampling period` = "Full survey",
+      Stations = n_stations,
+      `Minimum active trap-nights` = min_active_days,
+      `Mean active trap-nights` = mean_active_days,
+      `Maximum active trap-nights` = max_active_days,
+      `Total active trap-nights` = total_trap_nights
+    )
+)
+
+fmt_date <- function(x) {
+  format(as.Date(x), "%B %d, %Y")
+}
+
+fmt_num <- function(x, digits = 0) {
+  format(
+    round(x, digits),
+    big.mark = ",",
+    trim = TRUE,
+    nsmall = digits
+  )
+}
+```
+
+[See the general Field Station – Bait Project methods](index.qmd).
+
+## Survey overview
+
+Cherokee Ridge was surveyed in `r survey_info$year` using `r survey_info$camera_model` cameras. The ground survey included **`r ground_camera$n_stations` camera-trap stations** and **`r ground_camera$n_cameras` cameras**, deployed from **`r fmt_date(ground_camera$first_deployment)`** through **`r fmt_date(ground_camera$last_retrieval)`**.
+
+Treatments were:
+
+- **Perfume:** `r survey_info$perfume_treatment`
+- **Fish-based bait:** `r survey_info$fish_treatment`
+- **Control:** `r survey_info$control_treatment`
+
+## Survey-specific design
+
+Cherokee Ridge differed from the general Field Station design in two important ways:
+
+1.  Ground stations used **paired cameras** rather than a single camera per station.
+2.  A separate **canopy-camera component** was deployed outside the ground bait experiment.
+
+The ground sampling represented in the current camera-operation data is summarized below.
+
+```{r}
+#| label: tbl-treatment-design
+#| tbl-cap: "Ground camera-trap stations and cameras by treatment."
+
+treatment_summary |>
+  arrange(Treatment) |>
+  kable(
+    align = c("l", "c", "c")
+  )
+```
+
+## Sampling effort
+
+Sampling effort is reported for the standardized **30-day bait experiment** and for the **full survey period**.
+
+```{r}
+#| label: tbl-sampling-periods
+#| tbl-cap: "Sampling effort for the 30-day bait experiment and the full survey."
+
+sampling_period_summary |>
+  mutate(
+    across(
+      c(
+        `Minimum active trap-nights`,
+        `Mean active trap-nights`,
+        `Maximum active trap-nights`,
+        `Total active trap-nights`
+      ),
+      ~ round(.x, 1)
+    )
+  ) |>
+  kable(
+    align = c("l", "c", "c", "c", "c", "c")
+  )
+```
+
+For the 30-day bait experiment, stations accumulated an average of **`r fmt_num(ground_effort_30$mean_active_days, 1)` active trap-nights**, with a total effort of **`r fmt_num(ground_effort_30$total_trap_nights, 1)` station trap-nights**.
+
+Across the full survey, stations accumulated an average of **`r fmt_num(ground_effort_full$mean_active_days, 1)` active trap-nights**, with a total effort of **`r fmt_num(ground_effort_full$total_trap_nights, 1)` station trap-nights**.
+
+::: callout-note
+Because Cherokee Ridge used paired ground cameras, the number of physical cameras is larger than the number of sampling stations. A station is considered active when at least one camera in the pair is operating.
+:::
+
+## Canopy component
+
+The separate canopy component consisted of **`r canopy_camera$n_stations` stations** and **`r canopy_camera$n_cameras` cameras**, totaling **`r fmt_num(canopy_effort$total_trap_nights, 1)` active trap-nights**.
+
+These cameras were not part of the ground bait-treatment experiment and should be treated separately unless a specific research question requires otherwise.
+
+## Study site
+
+Cherokee Ridge is a privately owned property in East Texas.
+
+::: callout-warning
+### Site description to complete
+
+Add the property location, approximate area, dominant vegetation, forest-management history, prescribed-fire regime, and other habitat characteristics relevant to interpretation of the camera-trap data.
+:::

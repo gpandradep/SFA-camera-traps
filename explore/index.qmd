@@ -1,0 +1,1450 @@
+---
+title: "Explore camera-trap data"
+page-layout: full
+toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: prepare-explore-data
+#| include: false
+
+library(tidyverse)
+library(here)
+library(jsonlite)
+
+# ------------------------------------------------------------
+# Load each survey in an isolated environment so that the same
+# load_data.R / build_explore_data.R pipeline can be reused.
+# ------------------------------------------------------------
+
+load_explore_survey <- function(survey_id) {
+
+  env <- new.env(parent = globalenv())
+  env$survey_selected <- survey_id
+
+  sys.source(
+    here("R", "load_data.R"),
+    envir = env
+  )
+
+  sys.source(
+    here("R", "build_explore_data.R"),
+    envir = env
+  )
+
+  list(
+    station_summary = env$explore_station_summary,
+    station_species = env$explore_station_species,
+    records = env$explore_records
+  )
+}
+
+survey_ids <- c(
+  "W8_2024",
+  "CR_2025"
+)
+
+explore_list <- setNames(
+  lapply(survey_ids, load_explore_survey),
+  survey_ids
+)
+
+station_summary_all <- bind_rows(
+  lapply(
+    explore_list,
+    `[[`,
+    "station_summary"
+  )
+)
+
+station_species_all <- bind_rows(
+  lapply(
+    explore_list,
+    `[[`,
+    "station_species"
+  )
+)
+
+records_all <- bind_rows(
+  lapply(
+    explore_list,
+    `[[`,
+    "records"
+  )
+)
+
+# Survey labels
+survey_metadata <- read_csv(
+  here("data", "metadata", "surveys.csv"),
+  show_col_types = FALSE
+) |>
+  filter(survey_id %in% survey_ids) |>
+  transmute(
+    survey_id,
+    survey_label = paste0(
+      site_name,
+      " — ",
+      year
+    )
+  )
+
+# Species metadata
+species_metadata <- read_csv(
+  here(
+    "data",
+    "metadata",
+    "species_metadata.csv"
+  ),
+  show_col_types = FALSE
+)
+
+# ------------------------------------------------------------
+# Survey-period contextual summaries for the cards
+# ------------------------------------------------------------
+
+richness_context <- records_all |>
+  left_join(
+    species_metadata,
+    by = "Species"
+  ) |>
+  filter(include_in_richness %in% TRUE) |>
+  distinct(
+    survey_id,
+    period,
+    Species_display
+  ) |>
+  count(
+    survey_id,
+    period,
+    name = "observed_species"
+  )
+
+context_summary <- station_summary_all |>
+  group_by(
+    survey_id,
+    period
+  ) |>
+  summarise(
+    n_stations = n_distinct(Station),
+    n_mapped_stations = sum(
+      coordinate_available,
+      na.rm = TRUE
+    ),
+    total_trap_nights = sum(
+      trap_nights,
+      na.rm = TRUE
+    ),
+    total_independent_events = sum(
+      independent_events,
+      na.rm = TRUE
+    ),
+    .groups = "drop"
+  ) |>
+  left_join(
+    richness_context,
+    by = c(
+      "survey_id",
+      "period"
+    )
+  ) |>
+  mutate(
+    observed_species = replace_na(
+      observed_species,
+      0L
+    )
+  )
+
+
+# ------------------------------------------------------------
+# Build one long table for all map metrics
+# ------------------------------------------------------------
+
+station_base <- station_summary_all |>
+  select(
+    survey_id,
+    period,
+    Station,
+    treatment,
+    longitude,
+    latitude,
+    coordinate_available,
+    trap_nights,
+    independent_events,
+    events_per_100_trap_nights,
+    observed_species_richness
+  )
+
+map_effort <- station_base |>
+  transmute(
+    survey_id,
+    period,
+    Station,
+    treatment,
+    longitude,
+    latitude,
+    coordinate_available,
+    species = "All species",
+    metric = "effort",
+    metric_label = "Active trap-nights",
+    value = trap_nights,
+    trap_nights,
+    independent_events,
+    station_richness = observed_species_richness
+  )
+
+map_events_all <- station_base |>
+  transmute(
+    survey_id,
+    period,
+    Station,
+    treatment,
+    longitude,
+    latitude,
+    coordinate_available,
+    species = "All species",
+    metric = "events",
+    metric_label = "Independent events",
+    value = as.numeric(independent_events),
+    trap_nights,
+    independent_events,
+    station_richness = observed_species_richness
+  )
+
+map_rate_all <- station_base |>
+  transmute(
+    survey_id,
+    period,
+    Station,
+    treatment,
+    longitude,
+    latitude,
+    coordinate_available,
+    species = "All species",
+    metric = "rate",
+    metric_label = "Events / 100 trap-nights",
+    value = events_per_100_trap_nights,
+    trap_nights,
+    independent_events,
+    station_richness = observed_species_richness
+  )
+
+map_richness <- station_base |>
+  transmute(
+    survey_id,
+    period,
+    Station,
+    treatment,
+    longitude,
+    latitude,
+    coordinate_available,
+    species = "All species",
+    metric = "richness",
+    metric_label = "Observed species richness",
+    value = as.numeric(observed_species_richness),
+    trap_nights,
+    independent_events,
+    station_richness = observed_species_richness
+  )
+
+species_rows <- station_species_all |>
+  mutate(
+    species = coalesce(
+      Species_display,
+      Species
+    )
+  ) |>
+  left_join(
+    station_summary_all |>
+      select(
+        survey_id,
+        period,
+        Station,
+        station_richness =
+          observed_species_richness
+      ),
+    by = c(
+      "survey_id",
+      "period",
+      "Station"
+    )
+  )
+
+map_events_species <- species_rows |>
+  transmute(
+    survey_id,
+    period,
+    Station,
+    treatment,
+    longitude,
+    latitude,
+    coordinate_available,
+    species,
+    metric = "events",
+    metric_label = "Independent events",
+    value = as.numeric(independent_events),
+    trap_nights,
+    independent_events,
+    station_richness
+  )
+
+map_rate_species <- species_rows |>
+  transmute(
+    survey_id,
+    period,
+    Station,
+    treatment,
+    longitude,
+    latitude,
+    coordinate_available,
+    species,
+    metric = "rate",
+    metric_label = "Events / 100 trap-nights",
+    value = events_per_100_trap_nights,
+    trap_nights,
+    independent_events,
+    station_richness
+  )
+
+map_data <- bind_rows(
+  map_effort,
+  map_events_all,
+  map_rate_all,
+  map_richness,
+  map_events_species,
+  map_rate_species
+) |>
+  left_join(
+    survey_metadata,
+    by = "survey_id"
+  ) |>
+  arrange(
+    survey_id,
+    period,
+    metric,
+    species,
+    Station
+  )
+
+# ------------------------------------------------------------
+# Species list by survey
+# ------------------------------------------------------------
+
+species_options <- station_species_all |>
+  mutate(
+    species = coalesce(
+      Species_display,
+      Species
+    )
+  ) |>
+  distinct(
+    survey_id,
+    species
+  ) |>
+  filter(
+    !is.na(species),
+    species != ""
+  ) |>
+  arrange(
+    survey_id,
+    species
+  )
+
+# ------------------------------------------------------------
+# Convert objects to JSON for the browser
+# ------------------------------------------------------------
+
+map_json <- toJSON(
+  map_data,
+  dataframe = "rows",
+  na = "null",
+  auto_unbox = TRUE
+)
+
+context_json <- toJSON(
+  context_summary |>
+    left_join(
+      survey_metadata,
+      by = "survey_id"
+    ),
+  dataframe = "rows",
+  na = "null",
+  auto_unbox = TRUE
+)
+
+species_json <- toJSON(
+  species_options,
+  dataframe = "rows",
+  na = "null",
+  auto_unbox = TRUE
+)
+
+survey_json <- toJSON(
+  survey_metadata,
+  dataframe = "rows",
+  na = "null",
+  auto_unbox = TRUE
+)
+
+# Prevent accidental closing of script tag
+map_json <- gsub(
+  "</",
+  "<\\/",
+  map_json,
+  fixed = TRUE
+)
+
+context_json <- gsub(
+  "</",
+  "<\\/",
+  context_json,
+  fixed = TRUE
+)
+
+species_json <- gsub(
+  "</",
+  "<\\/",
+  species_json,
+  fixed = TRUE
+)
+
+survey_json <- gsub(
+  "</",
+  "<\\/",
+  survey_json,
+  fixed = TRUE
+)
+```
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+<style>
+.explore-intro {
+  max-width: 850px;
+  margin-bottom: 1.8rem;
+}
+
+.explore-controls {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.2rem 1.3rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.explore-control {
+  min-width: 0;
+}
+
+.explore-control label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--forest);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.explore-control select {
+  width: 100%;
+  min-height: 42px;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.explore-control select:disabled {
+  background: #f2f3ef;
+  color: #8a928d;
+}
+
+.explore-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.explore-stat {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+}
+
+.explore-stat-value {
+  color: var(--forest);
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.explore-stat-label {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.explore-map-wrap {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 0.7rem;
+  overflow: hidden;
+}
+
+#explore-map {
+  width: 100%;
+  height: 560px;
+  border-radius: 12px;
+}
+
+.explore-map-note {
+  min-height: 1.3rem;
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.explore-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.2rem;
+  align-items: center;
+  margin: 0.9rem 0 1.5rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.explore-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.explore-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.explore-table-wrap {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+}
+
+.explore-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.explore-table th,
+.explore-table td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.explore-table th {
+  color: var(--forest);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.explore-table td {
+  font-size: 0.88rem;
+}
+
+.explore-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+@media (max-width: 950px) {
+  .explore-controls,
+  .explore-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .explore-controls,
+  .explore-cards {
+    grid-template-columns: 1fr;
+  }
+
+  #explore-map {
+    height: 460px;
+  }
+}
+</style>
+
+<div class="explore-intro">
+Explore sampling effort and wildlife records within each Field Station survey.
+Surveys are displayed separately because sampling design and field conditions
+differ among properties and years.
+</div>
+
+```{=html}
+<div class="explore-controls">
+
+  <div class="explore-control">
+    <label for="explore-survey">Survey</label>
+    <select id="explore-survey"></select>
+  </div>
+
+  <div class="explore-control">
+    <label for="explore-period">Sampling period</label>
+    <select id="explore-period">
+      <option value="30-day bait experiment">
+        30-day bait experiment
+      </option>
+      <option value="Full survey">
+        Full survey
+      </option>
+    </select>
+  </div>
+
+  <div class="explore-control">
+    <label for="explore-metric">Metric</label>
+    <select id="explore-metric">
+      <option value="events">Independent events</option>
+      <option value="rate">Events / 100 trap-nights</option>
+      <option value="richness">Observed species richness</option>
+      <option value="effort">Sampling effort</option>
+    </select>
+  </div>
+
+  <div class="explore-control">
+    <label for="explore-species">Species</label>
+    <select id="explore-species"></select>
+  </div>
+
+</div>
+
+<div class="explore-cards">
+
+  <div class="explore-stat">
+    <div class="explore-stat-value" id="stat-stations">—</div>
+    <div class="explore-stat-label">Stations</div>
+  </div>
+
+  <div class="explore-stat">
+    <div class="explore-stat-value" id="stat-effort">—</div>
+    <div class="explore-stat-label">Active trap-nights</div>
+  </div>
+
+  <div class="explore-stat">
+    <div class="explore-stat-value" id="stat-events">—</div>
+    <div class="explore-stat-label">Independent events</div>
+  </div>
+
+  <div class="explore-stat">
+    <div class="explore-stat-value" id="stat-richness">—</div>
+    <div class="explore-stat-label">Observed species</div>
+  </div>
+
+</div>
+
+<div class="explore-map-wrap">
+  <div id="explore-map"></div>
+  <div id="explore-map-note" class="explore-map-note"></div>
+</div>
+
+<div class="explore-legend">
+  <strong>Treatment:</strong>
+
+ <span class="explore-legend-item">
+  <span
+    class="explore-dot"
+    style="background:#2f6fb0;">
+  </span>
+  Control
+</span>
+
+  <span class="explore-legend-item">
+    <span class="explore-dot" style="background:#c25c08;"></span>
+    Fish bait
+  </span>
+
+  <span class="explore-legend-item">
+    <span class="explore-dot" style="background:#5d3291;"></span>
+    Perfume
+  </span>
+
+  <span>Marker size represents the selected metric.</span>
+</div>
+```
+
+## Station summary
+
+```{=html}
+<div class="explore-table-wrap">
+  <table class="explore-table">
+    <thead>
+      <tr>
+        <th>Station</th>
+        <th>Treatment</th>
+        <th>Trap-nights</th>
+        <th id="metric-table-heading">Independent events</th>
+      </tr>
+    </thead>
+    <tbody id="explore-table-body"></tbody>
+  </table>
+</div>
+```
+
+::: {.callout-note}
+### Interpreting the explorer
+
+The **30-day bait experiment** uses the first 30 days after deployment
+at each station and is the appropriate period for questions focused on
+attractant treatments. The **full survey** uses all available sampling
+effort and records.
+
+`Events / 100 trap-nights` standardizes independent records by sampling
+effort. Observed species richness includes only categories identified as
+wildlife species in the project species metadata.
+:::
+
+```{r}
+#| label: inject-explore-data
+#| results: asis
+#| echo: false
+
+cat(
+  "<script>\n",
+  "const exploreMapData = ", map_json, ";\n",
+  "const exploreContext = ", context_json, ";\n",
+  "const exploreSpecies = ", species_json, ";\n",
+  "const exploreSurveys = ", survey_json, ";\n",
+  "</script>\n",
+  sep = ""
+)
+```
+
+```{=html}
+<script>
+(function () {
+
+  const surveySelect =
+    document.getElementById("explore-survey");
+
+  const periodSelect =
+    document.getElementById("explore-period");
+
+  const metricSelect =
+    document.getElementById("explore-metric");
+
+  const speciesSelect =
+    document.getElementById("explore-species");
+
+  const mapNote =
+    document.getElementById("explore-map-note");
+
+  const tableBody =
+    document.getElementById("explore-table-body");
+
+  const metricTableHeading =
+    document.getElementById("metric-table-heading");
+
+  const stationStat =
+    document.getElementById("stat-stations");
+
+  const effortStat =
+    document.getElementById("stat-effort");
+
+  const eventStat =
+    document.getElementById("stat-events");
+
+  const richnessStat =
+    document.getElementById("stat-richness");
+
+
+  // ----------------------------------------------------------
+  // Populate survey selector
+  // ----------------------------------------------------------
+
+  exploreSurveys.forEach(function (d) {
+
+    const option =
+      document.createElement("option");
+
+    option.value = d.survey_id;
+    option.textContent = d.survey_label;
+
+    surveySelect.appendChild(option);
+
+  });
+
+
+  // ----------------------------------------------------------
+  // Leaflet map
+  // ----------------------------------------------------------
+
+  const map = L.map(
+    "explore-map",
+    {
+      zoomControl: true
+    }
+  );
+
+  const satellite = L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/" +
+    "World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    {
+      attribution:
+        "Tiles © Esri"
+    }
+  );
+
+  const streets = L.tileLayer(
+    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+      attribution:
+        "© OpenStreetMap contributors"
+    }
+  );
+
+  satellite.addTo(map);
+
+  L.control.layers(
+    {
+      "Satellite": satellite,
+      "Street map": streets
+    },
+    null,
+    {
+      collapsed: true
+    }
+  ).addTo(map);
+
+  let markerLayer =
+    L.layerGroup().addTo(map);
+
+
+  // ----------------------------------------------------------
+  // Helpers
+  // ----------------------------------------------------------
+
+  const treatmentColors = {
+    "Control": "#2f6fb0",
+    "Fish bait": "#c25c08",
+    "Perfume": "#5d3291",
+    "Other": "#6b7280"
+  };
+
+  function formatNumber(value, digits) {
+
+    if (
+      value === null ||
+      value === undefined ||
+      Number.isNaN(Number(value))
+    ) {
+      return "—";
+    }
+
+    return Number(value).toLocaleString(
+      undefined,
+      {
+        minimumFractionDigits: digits,
+        maximumFractionDigits: digits
+      }
+    );
+
+  }
+
+  function metricDigits(metric) {
+
+    if (
+      metric === "rate" ||
+      metric === "effort"
+    ) {
+      return 1;
+    }
+
+    return 0;
+
+  }
+
+  function metricLabel(metric) {
+
+    const labels = {
+      effort: "Active trap-nights",
+      events: "Independent events",
+      rate: "Events / 100 trap-nights",
+      richness: "Observed species richness"
+    };
+
+    return labels[metric];
+
+  }
+
+  function metricUsesSpecies(metric) {
+
+    return (
+      metric === "events" ||
+      metric === "rate"
+    );
+
+  }
+
+
+  // ----------------------------------------------------------
+  // Species selector
+  // ----------------------------------------------------------
+
+  function updateSpeciesOptions() {
+
+    const survey =
+      surveySelect.value;
+
+    const metric =
+      metricSelect.value;
+
+    const previous =
+      speciesSelect.value;
+
+    speciesSelect.innerHTML = "";
+
+    const allOption =
+      document.createElement("option");
+
+    allOption.value = "All species";
+    allOption.textContent = "All species";
+
+    speciesSelect.appendChild(allOption);
+
+    if (metricUsesSpecies(metric)) {
+
+      const names = exploreSpecies
+        .filter(function (d) {
+          return d.survey_id === survey;
+        })
+        .map(function (d) {
+          return d.species;
+        });
+
+      [...new Set(names)]
+        .sort(function (a, b) {
+          return a.localeCompare(b);
+        })
+        .forEach(function (name) {
+
+          const option =
+            document.createElement("option");
+
+          option.value = name;
+          option.textContent = name;
+
+          speciesSelect.appendChild(option);
+
+        });
+
+      speciesSelect.disabled = false;
+
+      const available =
+        [...speciesSelect.options]
+          .some(function (o) {
+            return o.value === previous;
+          });
+
+      speciesSelect.value =
+        available
+          ? previous
+          : "All species";
+
+    } else {
+
+      speciesSelect.value =
+        "All species";
+
+      speciesSelect.disabled = true;
+
+    }
+
+  }
+
+
+  // ----------------------------------------------------------
+  // Filter current map data
+  // ----------------------------------------------------------
+
+  function currentRows() {
+
+    const survey =
+      surveySelect.value;
+
+    const period =
+      periodSelect.value;
+
+    const metric =
+      metricSelect.value;
+
+    const species =
+      metricUsesSpecies(metric)
+        ? speciesSelect.value
+        : "All species";
+
+    return exploreMapData.filter(
+      function (d) {
+
+        return (
+          d.survey_id === survey &&
+          d.period === period &&
+          d.metric === metric &&
+          d.species === species
+        );
+
+      }
+    );
+
+  }
+
+
+  // ----------------------------------------------------------
+  // Context cards
+  // ----------------------------------------------------------
+
+  function updateCards(rows) {
+
+    const survey =
+      surveySelect.value;
+
+    const period =
+      periodSelect.value;
+
+    const species =
+      speciesSelect.value;
+
+    const metric =
+      metricSelect.value;
+
+    const context =
+      exploreContext.find(
+        function (d) {
+          return (
+            d.survey_id === survey &&
+            d.period === period
+          );
+        }
+      );
+
+    if (!context) {
+      return;
+    }
+
+    stationStat.textContent =
+      context.n_mapped_stations ===
+      context.n_stations
+        ? formatNumber(
+            context.n_stations,
+            0
+          )
+        : (
+            formatNumber(
+              context.n_mapped_stations,
+              0
+            ) +
+            " / " +
+            formatNumber(
+              context.n_stations,
+              0
+            )
+          );
+
+    effortStat.textContent =
+      formatNumber(
+        context.total_trap_nights,
+        1
+      );
+
+    if (
+      metricUsesSpecies(metric) &&
+      species !== "All species"
+    ) {
+
+      const selectedEvents =
+        rows.reduce(
+          function (total, d) {
+            return total +
+              Number(
+                d.independent_events || 0
+              );
+          },
+          0
+        );
+
+      eventStat.textContent =
+        formatNumber(
+          selectedEvents,
+          0
+        );
+
+    } else {
+
+      eventStat.textContent =
+        formatNumber(
+          context.total_independent_events,
+          0
+        );
+
+    }
+
+    richnessStat.textContent =
+      formatNumber(
+        context.observed_species,
+        0
+      );
+
+  }
+
+
+  // ----------------------------------------------------------
+  // Marker size
+  // ----------------------------------------------------------
+
+  function markerRadius(
+    value,
+    maxValue
+  ) {
+
+    const x =
+      Number(value);
+
+    if (
+      !Number.isFinite(x) ||
+      x <= 0
+    ) {
+      return 5;
+    }
+
+    if (
+      !Number.isFinite(maxValue) ||
+      maxValue <= 0
+    ) {
+      return 7;
+    }
+
+    return (
+      6 +
+      14 *
+      Math.sqrt(x / maxValue)
+    );
+
+  }
+
+
+  // ----------------------------------------------------------
+  // Update map
+  // ----------------------------------------------------------
+
+  function updateMap(rows) {
+
+    markerLayer.clearLayers();
+
+    const mappedRows =
+      rows.filter(
+        function (d) {
+
+          return (
+            d.coordinate_available === true &&
+            d.latitude !== null &&
+            d.longitude !== null
+          );
+
+        }
+      );
+
+    const maxValue =
+      Math.max(
+        0,
+        ...mappedRows
+          .map(function (d) {
+            return Number(d.value);
+          })
+          .filter(Number.isFinite)
+      );
+
+    const bounds = [];
+
+    mappedRows.forEach(
+      function (d) {
+
+        const color =
+          treatmentColors[d.treatment] ||
+          treatmentColors.Other;
+
+        const radius =
+          markerRadius(
+            d.value,
+            maxValue
+          );
+
+        const digits =
+          metricDigits(d.metric);
+
+        let popup =
+          "<strong>" +
+          d.Station +
+          "</strong><br>" +
+          d.treatment +
+          "<br><br>";
+
+        if (
+          metricUsesSpecies(d.metric) &&
+          d.species !== "All species"
+        ) {
+
+          popup +=
+            "<strong>Species:</strong> " +
+            d.species +
+            "<br>";
+
+        }
+
+        popup +=
+          "<strong>" +
+          d.metric_label +
+          ":</strong> " +
+          formatNumber(
+            d.value,
+            digits
+          ) +
+          "<br>" +
+          "<strong>Trap-nights:</strong> " +
+          formatNumber(
+            d.trap_nights,
+            1
+          );
+
+        const marker =
+          L.circleMarker(
+            [
+              Number(d.latitude),
+              Number(d.longitude)
+            ],
+            {
+              radius: radius,
+              color: color,
+              weight: 2,
+              fillColor: color,
+              fillOpacity:
+                Number(d.value) > 0
+                  ? 0.72
+                  : 0.12
+            }
+          )
+          .bindPopup(popup)
+          .bindTooltip(
+            d.Station +
+            ": " +
+            formatNumber(
+              d.value,
+              digits
+            )
+          );
+
+        marker.addTo(markerLayer);
+
+        bounds.push(
+          [
+            Number(d.latitude),
+            Number(d.longitude)
+          ]
+        );
+
+      }
+    );
+
+    if (bounds.length > 0) {
+
+      map.fitBounds(
+        bounds,
+        {
+          padding: [35, 35],
+          maxZoom: 15
+        }
+      );
+
+    }
+
+    const missing =
+      rows.length -
+      mappedRows.length;
+
+    if (missing > 0) {
+
+      mapNote.textContent =
+        missing +
+        (
+          missing === 1
+            ? " station is "
+            : " stations are "
+        ) +
+        "included in the summaries but cannot currently be shown on the map because coordinates are unavailable.";
+
+    } else {
+
+      mapNote.textContent = "";
+
+    }
+
+  }
+
+
+  // ----------------------------------------------------------
+  // Station table
+  // ----------------------------------------------------------
+
+  function updateTable(rows) {
+
+    tableBody.innerHTML = "";
+
+    const metric =
+      metricSelect.value;
+
+    metricTableHeading.textContent =
+      metricLabel(metric);
+
+    const sorted =
+      [...rows].sort(
+        function (a, b) {
+          return a.Station.localeCompare(
+            b.Station,
+            undefined,
+            {
+              numeric: true
+            }
+          );
+        }
+      );
+
+    sorted.forEach(
+      function (d) {
+
+        const tr =
+          document.createElement("tr");
+
+        const values = [
+          d.Station,
+          d.treatment,
+          formatNumber(
+            d.trap_nights,
+            1
+          ),
+          formatNumber(
+            d.value,
+            metricDigits(metric)
+          )
+        ];
+
+        values.forEach(
+          function (value) {
+
+            const td =
+              document.createElement("td");
+
+            td.textContent = value;
+
+            tr.appendChild(td);
+
+          }
+        );
+
+        tableBody.appendChild(tr);
+
+      }
+    );
+
+  }
+
+
+  // ----------------------------------------------------------
+  // Master refresh
+  // ----------------------------------------------------------
+
+  function refresh() {
+
+    const rows =
+      currentRows();
+
+    updateCards(rows);
+    updateMap(rows);
+    updateTable(rows);
+
+  }
+
+
+  surveySelect.addEventListener(
+    "change",
+    function () {
+      updateSpeciesOptions();
+      refresh();
+    }
+  );
+
+  periodSelect.addEventListener(
+    "change",
+    refresh
+  );
+
+  metricSelect.addEventListener(
+    "change",
+    function () {
+      updateSpeciesOptions();
+      refresh();
+    }
+  );
+
+  speciesSelect.addEventListener(
+    "change",
+    refresh
+  );
+
+
+  // ----------------------------------------------------------
+  // Initial state
+  // ----------------------------------------------------------
+
+  if (
+    [...surveySelect.options]
+      .some(function (o) {
+        return o.value === "W8_2024";
+      })
+  ) {
+    surveySelect.value =
+      "W8_2024";
+  }
+
+  periodSelect.value =
+    "30-day bait experiment";
+
+  metricSelect.value =
+    "events";
+
+  updateSpeciesOptions();
+  refresh();
+
+})();
+</script>
+```

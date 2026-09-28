@@ -1,0 +1,375 @@
+"Station","Species","n_events"
+"Control 0","Armadillo",0
+"Control 0","Bird",0
+"Control 0","Black vulture",0
+"Control 0","Bobcat",0
+"Control 0","Bug",0
+"Control 0","Coyote",0
+"Control 0","Domestic cat",0
+"Control 0","Domestic dog",0
+"Control 0","Eastern Cottontail",0
+"Control 0","Eastern gray squirrel",0
+"Control 0","Flying squirrel",0
+"Control 0","Fox squirrel",0
+"Control 0","Hog",0
+"Control 0","Human",0
+"Control 0","Racoon",0
+"Control 0","River otter",0
+"Control 0","Rodent",0
+"Control 0","Striped Skunk",0
+"Control 0","Turkey vulture",0
+"Control 0","Virginia opossum",0
+"Control 0","White-tailed deer",1
+"Control 0","Wild turkey",0
+"Control 1","Armadillo",6
+"Control 1","Bird",0
+"Control 1","Black vulture",0
+"Control 1","Bobcat",0
+"Control 1","Bug",30
+"Control 1","Coyote",1
+"Control 1","Domestic cat",0
+"Control 1","Domestic dog",0
+"Control 1","Eastern Cottontail",5
+"Control 1","Eastern gray squirrel",0
+"Control 1","Flying squirrel",0
+"Control 1","Fox squirrel",0
+"Control 1","Hog",7
+"Control 1","Human",1
+"Control 1","Racoon",12
+"Control 1","River otter",0
+"Control 1","Rodent",0
+"Control 1","Striped Skunk",0
+"Control 1","Turkey vulture",0
+"Control 1","Virginia opossum",2
+"Control 1","White-tailed deer",29
+"Control 1","Wild turkey",0
+"Control 2","Armadillo",182
+"Control 2","Bird",0
+"Control 2","Black vulture",0
+"Control 2","Bobcat",2
+"Control 2","Bug",19
+"Control 2","Coyote",13
+"Control 2","Domestic cat",0
+"Control 2","Domestic dog",3
+"Control 2","Eastern Cottontail",3
+"Control 2","Eastern gray squirrel",40
+"Control 2","Flying squirrel",0
+"Control 2","Fox squirrel",0
+"Control 2","Hog",210
+"Control 2","Human",12
+"Control 2","Racoon",99
+"Control 2","River otter",0
+"Control 2","Rodent",0
+"Control 2","Striped Skunk",0
+"Control 2","Turkey vulture",0
+"Control 2","Virginia opossum",73
+"Control 2","White-tailed deer",365
+"Control 2","Wild turkey",8
+"Control 3","Armadillo",28
+"Control 3","Bird",5
+"Control 3","Black vulture",0
+"Control 3","Bobcat",4
+"Control 3","Bug",10
+"Control 3","Coyote",4
+"Control 3","Domestic cat",0
+"Control 3","Domestic dog",0
+"Control 3","Eastern Cottontail",24
+"Control 3","Eastern gray squirrel",6
+"Control 3","Flying squirrel",0
+"Control 3","Fox squirrel",2
+"Control 3","Hog",14
+"Control 3","Human",2
+"Control 3","Racoon",16
+"Control 3","River otter",0
+"Control 3","Rodent",0
+"Control 3","Striped Skunk",3
+"Control 3","Turkey vulture",0
+"Control 3","Virginia opossum",10
+"Control 3","White-tailed deer",86
+"Control 3","Wild turkey",0
+"Control 4","Armadillo",9
+"Control 4","Bird",23
+"Control 4","Black vulture",0
+"Control 4","Bobcat",0
+"Control 4","Bug",30
+"Control 4","Coyote",14
+"Control 4","Domestic cat",0
+"Control 4","Domestic dog",0
+"Control 4","Eastern Cottontail",2
+"Control 4","Eastern gray squirrel",0
+"Control 4","Flying squirrel",0
+"Control 4","Fox squirrel",5
+"Control 4","Hog",23
+"Control 4","Human",12
+"Control 4","Racoon",10
+"Control 4","River otter",0
+"Control 4","Rodent",0
+"Control 4","Striped Skunk",15
+"Control 4","Turkey vulture",1
+"Control 4","Virginia opossum",6
+"Control 4","White-tailed deer",57
+"Control 4","Wild turkey",25
+"Fish 0","Armadillo",130
+"Fish 0","Bird",7
+"Fish 0","Black vulture",3
+"Fish 0","Bobcat",0
+"Fish 0","Bug",3
+"Fish 0","Coyote",18
+"Fish 0","Domestic cat",2
+"Fish 0","Domestic dog",0
+"Fish 0","Eastern Cottontail",1
+"Fish 0","Eastern gray squirrel",37
+"Fish 0","Flying squirrel",0
+"Fish 0","Fox squirrel",23
+"Fish 0","Hog",99
+"Fish 0","Human",1
+"Fish 0","Racoon",192
+"Fish 0","River otter",2
+"Fish 0","Rodent",0
+"Fish 0","Striped Skunk",0
+"Fish 0","Turkey vulture",0
+"Fish 0","Virginia opossum",78
+"Fish 0","White-tailed deer",155
+"Fish 0","Wild turkey",8
+"Fish 1","Armadillo",7
+"Fish 1","Bird",24
+"Fish 1","Black vulture",0
+"Fish 1","Bobcat",4
+"Fish 1","Bug",0
+"Fish 1","Coyote",0
+"Fish 1","Domestic cat",0
+"Fish 1","Domestic dog",0
+"Fish 1","Eastern Cottontail",11
+"Fish 1","Eastern gray squirrel",2
+"Fish 1","Flying squirrel",0
+"Fish 1","Fox squirrel",0
+"Fish 1","Hog",7
+"Fish 1","Human",10
+"Fish 1","Racoon",30
+"Fish 1","River otter",0
+"Fish 1","Rodent",0
+"Fish 1","Striped Skunk",0
+"Fish 1","Turkey vulture",8
+"Fish 1","Virginia opossum",35
+"Fish 1","White-tailed deer",18
+"Fish 1","Wild turkey",0
+"Fish 2","Armadillo",122
+"Fish 2","Bird",6
+"Fish 2","Black vulture",0
+"Fish 2","Bobcat",2
+"Fish 2","Bug",1
+"Fish 2","Coyote",5
+"Fish 2","Domestic cat",0
+"Fish 2","Domestic dog",0
+"Fish 2","Eastern Cottontail",9
+"Fish 2","Eastern gray squirrel",48
+"Fish 2","Flying squirrel",0
+"Fish 2","Fox squirrel",2
+"Fish 2","Hog",44
+"Fish 2","Human",11
+"Fish 2","Racoon",19
+"Fish 2","River otter",0
+"Fish 2","Rodent",13
+"Fish 2","Striped Skunk",0
+"Fish 2","Turkey vulture",0
+"Fish 2","Virginia opossum",41
+"Fish 2","White-tailed deer",79
+"Fish 2","Wild turkey",0
+"Fish 3","Armadillo",5
+"Fish 3","Bird",1
+"Fish 3","Black vulture",0
+"Fish 3","Bobcat",2
+"Fish 3","Bug",0
+"Fish 3","Coyote",0
+"Fish 3","Domestic cat",0
+"Fish 3","Domestic dog",0
+"Fish 3","Eastern Cottontail",0
+"Fish 3","Eastern gray squirrel",1
+"Fish 3","Flying squirrel",0
+"Fish 3","Fox squirrel",0
+"Fish 3","Hog",7
+"Fish 3","Human",6
+"Fish 3","Racoon",0
+"Fish 3","River otter",0
+"Fish 3","Rodent",0
+"Fish 3","Striped Skunk",0
+"Fish 3","Turkey vulture",4
+"Fish 3","Virginia opossum",0
+"Fish 3","White-tailed deer",16
+"Fish 3","Wild turkey",0
+"Hardwood Canopy 1","Armadillo",6
+"Hardwood Canopy 1","Bird",0
+"Hardwood Canopy 1","Black vulture",0
+"Hardwood Canopy 1","Bobcat",0
+"Hardwood Canopy 1","Bug",0
+"Hardwood Canopy 1","Coyote",2
+"Hardwood Canopy 1","Domestic cat",0
+"Hardwood Canopy 1","Domestic dog",0
+"Hardwood Canopy 1","Eastern Cottontail",0
+"Hardwood Canopy 1","Eastern gray squirrel",0
+"Hardwood Canopy 1","Flying squirrel",0
+"Hardwood Canopy 1","Fox squirrel",0
+"Hardwood Canopy 1","Hog",16
+"Hardwood Canopy 1","Human",6
+"Hardwood Canopy 1","Racoon",0
+"Hardwood Canopy 1","River otter",0
+"Hardwood Canopy 1","Rodent",0
+"Hardwood Canopy 1","Striped Skunk",0
+"Hardwood Canopy 1","Turkey vulture",0
+"Hardwood Canopy 1","Virginia opossum",0
+"Hardwood Canopy 1","White-tailed deer",126
+"Hardwood Canopy 1","Wild turkey",2
+"Hardwood Canopy 2","Armadillo",8
+"Hardwood Canopy 2","Bird",0
+"Hardwood Canopy 2","Black vulture",0
+"Hardwood Canopy 2","Bobcat",0
+"Hardwood Canopy 2","Bug",1
+"Hardwood Canopy 2","Coyote",0
+"Hardwood Canopy 2","Domestic cat",0
+"Hardwood Canopy 2","Domestic dog",0
+"Hardwood Canopy 2","Eastern Cottontail",0
+"Hardwood Canopy 2","Eastern gray squirrel",6
+"Hardwood Canopy 2","Flying squirrel",2
+"Hardwood Canopy 2","Fox squirrel",0
+"Hardwood Canopy 2","Hog",9
+"Hardwood Canopy 2","Human",6
+"Hardwood Canopy 2","Racoon",0
+"Hardwood Canopy 2","River otter",0
+"Hardwood Canopy 2","Rodent",0
+"Hardwood Canopy 2","Striped Skunk",0
+"Hardwood Canopy 2","Turkey vulture",0
+"Hardwood Canopy 2","Virginia opossum",0
+"Hardwood Canopy 2","White-tailed deer",32
+"Hardwood Canopy 2","Wild turkey",0
+"Perfume 0","Armadillo",20
+"Perfume 0","Bird",3
+"Perfume 0","Black vulture",0
+"Perfume 0","Bobcat",0
+"Perfume 0","Bug",0
+"Perfume 0","Coyote",9
+"Perfume 0","Domestic cat",0
+"Perfume 0","Domestic dog",0
+"Perfume 0","Eastern Cottontail",0
+"Perfume 0","Eastern gray squirrel",24
+"Perfume 0","Flying squirrel",1
+"Perfume 0","Fox squirrel",6
+"Perfume 0","Hog",18
+"Perfume 0","Human",4
+"Perfume 0","Racoon",83
+"Perfume 0","River otter",0
+"Perfume 0","Rodent",0
+"Perfume 0","Striped Skunk",0
+"Perfume 0","Turkey vulture",0
+"Perfume 0","Virginia opossum",23
+"Perfume 0","White-tailed deer",239
+"Perfume 0","Wild turkey",0
+"Perfume 1","Armadillo",0
+"Perfume 1","Bird",7
+"Perfume 1","Black vulture",0
+"Perfume 1","Bobcat",0
+"Perfume 1","Bug",5
+"Perfume 1","Coyote",4
+"Perfume 1","Domestic cat",0
+"Perfume 1","Domestic dog",0
+"Perfume 1","Eastern Cottontail",0
+"Perfume 1","Eastern gray squirrel",0
+"Perfume 1","Flying squirrel",0
+"Perfume 1","Fox squirrel",0
+"Perfume 1","Hog",0
+"Perfume 1","Human",0
+"Perfume 1","Racoon",3
+"Perfume 1","River otter",0
+"Perfume 1","Rodent",0
+"Perfume 1","Striped Skunk",0
+"Perfume 1","Turkey vulture",0
+"Perfume 1","Virginia opossum",0
+"Perfume 1","White-tailed deer",21
+"Perfume 1","Wild turkey",2
+"Perfume 2","Armadillo",22
+"Perfume 2","Bird",2
+"Perfume 2","Black vulture",0
+"Perfume 2","Bobcat",8
+"Perfume 2","Bug",0
+"Perfume 2","Coyote",4
+"Perfume 2","Domestic cat",0
+"Perfume 2","Domestic dog",2
+"Perfume 2","Eastern Cottontail",6
+"Perfume 2","Eastern gray squirrel",80
+"Perfume 2","Flying squirrel",0
+"Perfume 2","Fox squirrel",2
+"Perfume 2","Hog",0
+"Perfume 2","Human",2
+"Perfume 2","Racoon",57
+"Perfume 2","River otter",0
+"Perfume 2","Rodent",2
+"Perfume 2","Striped Skunk",0
+"Perfume 2","Turkey vulture",0
+"Perfume 2","Virginia opossum",27
+"Perfume 2","White-tailed deer",38
+"Perfume 2","Wild turkey",0
+"Pine Canopy 1","Armadillo",4
+"Pine Canopy 1","Bird",0
+"Pine Canopy 1","Black vulture",0
+"Pine Canopy 1","Bobcat",0
+"Pine Canopy 1","Bug",0
+"Pine Canopy 1","Coyote",0
+"Pine Canopy 1","Domestic cat",0
+"Pine Canopy 1","Domestic dog",0
+"Pine Canopy 1","Eastern Cottontail",0
+"Pine Canopy 1","Eastern gray squirrel",0
+"Pine Canopy 1","Flying squirrel",2
+"Pine Canopy 1","Fox squirrel",0
+"Pine Canopy 1","Hog",0
+"Pine Canopy 1","Human",3
+"Pine Canopy 1","Racoon",1
+"Pine Canopy 1","River otter",0
+"Pine Canopy 1","Rodent",0
+"Pine Canopy 1","Striped Skunk",0
+"Pine Canopy 1","Turkey vulture",0
+"Pine Canopy 1","Virginia opossum",0
+"Pine Canopy 1","White-tailed deer",1
+"Pine Canopy 1","Wild turkey",0
+"Pine Canopy 2","Armadillo",2
+"Pine Canopy 2","Bird",0
+"Pine Canopy 2","Black vulture",0
+"Pine Canopy 2","Bobcat",0
+"Pine Canopy 2","Bug",0
+"Pine Canopy 2","Coyote",0
+"Pine Canopy 2","Domestic cat",0
+"Pine Canopy 2","Domestic dog",0
+"Pine Canopy 2","Eastern Cottontail",0
+"Pine Canopy 2","Eastern gray squirrel",0
+"Pine Canopy 2","Flying squirrel",0
+"Pine Canopy 2","Fox squirrel",0
+"Pine Canopy 2","Hog",0
+"Pine Canopy 2","Human",2
+"Pine Canopy 2","Racoon",0
+"Pine Canopy 2","River otter",0
+"Pine Canopy 2","Rodent",0
+"Pine Canopy 2","Striped Skunk",0
+"Pine Canopy 2","Turkey vulture",0
+"Pine Canopy 2","Virginia opossum",0
+"Pine Canopy 2","White-tailed deer",0
+"Pine Canopy 2","Wild turkey",0
+"Pine Canopy 3","Armadillo",3
+"Pine Canopy 3","Bird",0
+"Pine Canopy 3","Black vulture",0
+"Pine Canopy 3","Bobcat",0
+"Pine Canopy 3","Bug",0
+"Pine Canopy 3","Coyote",1
+"Pine Canopy 3","Domestic cat",0
+"Pine Canopy 3","Domestic dog",0
+"Pine Canopy 3","Eastern Cottontail",0
+"Pine Canopy 3","Eastern gray squirrel",0
+"Pine Canopy 3","Flying squirrel",0
+"Pine Canopy 3","Fox squirrel",0
+"Pine Canopy 3","Hog",0
+"Pine Canopy 3","Human",2
+"Pine Canopy 3","Racoon",0
+"Pine Canopy 3","River otter",0
+"Pine Canopy 3","Rodent",0
+"Pine Canopy 3","Striped Skunk",0
+"Pine Canopy 3","Turkey vulture",0
+"Pine Canopy 3","Virginia opossum",0
+"Pine Canopy 3","White-tailed deer",3
+"Pine Canopy 3","Wild turkey",0

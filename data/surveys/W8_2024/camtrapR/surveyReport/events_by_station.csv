@@ -1,0 +1,56 @@
+"Station","Species","n_events"
+"Control 1","Human",1
+"Control 2","Human",1
+"Control 2","White-tailed deer",3
+"Control 3","Armadillo",1
+"Control 3","Human",2
+"Control 3","Raccoon",3
+"Control 3","White-tailed deer",43
+"Control 4","Armadillo",2
+"Control 4","Eastern gray squirrel",1
+"Control 4","Gray fox",1
+"Control 4","Human",1
+"Control 4","White-tailed deer",6
+"Fish 1","Hog",1
+"Fish 1","Human",2
+"Fish 1","Turkey vulture",2
+"Fish 1","White-tailed deer",32
+"Fish 2","Bird",1
+"Fish 2","Human",1
+"Fish 2","Turkey vulture",12
+"Fish 3","Armadillo",4
+"Fish 3","Bird",1
+"Fish 3","Black vulture",3
+"Fish 3","Bobcat",2
+"Fish 3","Coyote",36
+"Fish 3","Human",2
+"Fish 3","Raccoon",24
+"Fish 3","Turkey vulture",24
+"Fish 3","Virginia opossum",1
+"Fish 3","White-tailed deer",10
+"Fish 4","Armadillo",3
+"Fish 4","Bird",18
+"Fish 4","Black vulture",20
+"Fish 4","Coyote",1
+"Fish 4","Fox squirrel",2
+"Fish 4","Gray fox",8
+"Fish 4","Hog",2
+"Fish 4","Human",1
+"Fish 4","Raccoon",3
+"Fish 4","Turkey vulture",15
+"Fish 4","Virginia opossum",21
+"Fish 4","White-tailed deer",1
+"Perfume 1","Armadillo",1
+"Perfume 1","Hog",4
+"Perfume 1","Human",3
+"Perfume 1","Raccoon",2
+"Perfume 1","White-tailed deer",9
+"Perfume 2","Human",2
+"Perfume 3","Human",1
+"Perfume 4","Armadillo",22
+"Perfume 4","Bobcat",1
+"Perfume 4","Fox squirrel",1
+"Perfume 4","Hog",2
+"Perfume 4","Human",1
+"Perfume 4","Raccoon",3
+"Perfume 4","Virginia opossum",1

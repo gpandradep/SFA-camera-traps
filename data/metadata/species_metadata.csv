@@ -1,0 +1,25 @@
+Species,Species_display,include_in_richness,category_type
+Armadillo,Armadillo,True,wildlife
+Bird,Unidentified bird,False,broad category
+Black vulture,Black vulture,True,wildlife
+Bobcat,Bobcat,True,wildlife
+Bug,Unidentified invertebrate,False,broad category
+Coyote,Coyote,True,wildlife
+Domestic cat,Domestic cat,False,domestic
+Domestic dog,Domestic dog,False,domestic
+Eastern Cottontail,Eastern cottontail,True,wildlife
+Eastern gray squirrel,Eastern gray squirrel,True,wildlife
+Flying squirrel,Flying squirrel,True,wildlife
+Fox squirrel,Fox squirrel,True,wildlife
+Gray fox,Gray fox,True,wildlife
+Hog,Feral hog,True,wildlife
+Human,Human,False,human
+Racoon,Raccoon,True,wildlife
+Raccoon,Raccoon,True,wildlife
+River otter,River otter,True,wildlife
+Rodent,Unidentified rodent,False,broad category
+Striped Skunk,Striped skunk,True,wildlife
+Turkey vulture,Turkey vulture,True,wildlife
+Virginia opossum,Virginia opossum,True,wildlife
+White-tailed deer,White-tailed deer,True,wildlife
+Wild turkey,Wild turkey,True,wildlife

@@ -1,0 +1,308 @@
+/* ==========================================================
+   SFA Camera Trap Project
+   Visual language adapted from the project presentation
+   ========================================================== */
+
+:root {
+  --forest: #173f2b;
+  --forest-soft: #335c45;
+  --sage: #76945e;
+  --sage-light: #e7efe0;
+  --orange: #c25c08;
+  --purple: #5d3291;
+  --paper: #fafbf8;
+  --ink: #26332c;
+  --muted: #66736b;
+  --line: #e0e6df;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+main {
+  max-width: 1120px;
+}
+
+.navbar {
+  background: rgba(250, 251, 248, 0.97) !important;
+  border-bottom: 1px solid var(--line);
+  box-shadow: none;
+}
+
+.navbar-brand {
+  color: var(--forest) !important;
+  font-weight: 650;
+}
+
+/* Navbar logo */
+.navbar-logo {
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+  color: var(--forest-soft) !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--orange) !important;
+}
+
+h1, h2, h3 {
+  color: var(--forest);
+  letter-spacing: -0.018em;
+}
+
+h2 {
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+  border-bottom: none;
+}
+
+a {
+  color: var(--forest-soft);
+  text-decoration-color: rgba(194, 92, 8, 0.45);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+.hero {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  overflow: hidden;
+  margin: 1rem 0 3rem;
+  box-shadow: 0 12px 36px rgba(23, 63, 43, 0.06);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.65fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.7rem 3.2rem;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.5rem, 5vw, 4.3rem);
+  line-height: 1.02;
+  margin: 0 0 1rem;
+  max-width: 760px;
+}
+
+.hero-copy h1::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin-top: 1.2rem;
+  border-radius: 99px;
+  background: var(--orange);
+}
+
+.hero-copy .lead {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 1.13rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* Home hero logo */
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.hero-logo img {
+  width: 120%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.2rem 0 2.5rem;
+}
+
+.portal-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.portal-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.5rem 1.6rem 1.4rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.portal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(23, 63, 43, 0.08);
+}
+
+.portal-card h3 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.65rem;
+}
+
+.portal-card p:last-child {
+  margin-bottom: 0;
+}
+
+.status {
+  display: inline-block;
+  background: var(--sage-light);
+  color: var(--forest);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.76rem;
+  font-weight: 650;
+  margin-bottom: 0.7rem;
+}
+
+.status.active {
+  background: #fff0e4;
+  color: #9b4605;
+}
+
+.map-wrap {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 0.8rem;
+  margin: 1.2rem 0 2rem;
+  box-shadow: 0 8px 24px rgba(23, 63, 43, 0.05);
+}
+
+.soft-panel {
+  background: #f4f6f0;
+  border-left: 4px solid var(--orange);
+  border-radius: 0 14px 14px 0;
+  padding: 1.15rem 1.3rem;
+  margin: 1.4rem 0;
+}
+
+.table {
+  background: white;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.7rem 0.75rem;
+}
+
+.table thead th {
+  color: var(--forest);
+  border-bottom-width: 1px;
+}
+
+.callout {
+  border-radius: 14px;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a.active {
+  color: var(--forest) !important;
+  border-left-color: var(--orange) !important;
+}
+
+.nav-footer {
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .portal-grid.three {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-logo img {
+    max-width: 140px;
+  }
+
+  .portal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================
+   Field Station sampling design cards
+   ========================================================== */
+
+.triangle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.triangle-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.5rem 1.4rem 1.6rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(23, 63, 43, 0.05);
+}
+
+.triangle-card h3 {
+  margin-top: 0.9rem;
+  margin-bottom: 0.8rem;
+  color: var(--forest);
+  font-size: 1.5rem;
+}
+
+.triangle-card p {
+  margin-bottom: 0;
+  color: var(--forest-soft);
+  line-height: 1.6;
+}
+
+.triangle-icon {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 0.4rem auto;
+  border-radius: 999px;
+  background: #eef4ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangle-icon img {
+  max-width: 36px;
+  max-height: 36px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .triangle-grid {
+    grid-template-columns: 1fr;
+  }
+}

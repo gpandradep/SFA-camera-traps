@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "SFA Camera Trap Project"
+
+  navbar:
+    background: light
+    logo: images/project-logo.png
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Projects"
+        menu:
+          - text: "Field Station – Bait Project"
+            href: surveys/field-station/index.qmd
+      - text: "Explore"
+        icon: map
+        href: explore/index.qmd
+  
+    right:
+      - icon: search
+
+  search: true
+
+  page-footer:
+    left: "SFA Camera Trap Project"
+    center: "Internal project materials — do not distribute without authorization."
+    right: "Arthur Temple College of Forestry and Agriculture"
+
+format:
+  html:
+    theme: zephyr
+    css: styles.css
+    toc: true
+    smooth-scroll: true
+    link-external-newwindow: true

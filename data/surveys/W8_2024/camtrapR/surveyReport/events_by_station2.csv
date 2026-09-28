@@ -1,0 +1,169 @@
+"Station","Species","n_events"
+"Control 1","Armadillo",0
+"Control 1","Bird",0
+"Control 1","Black vulture",0
+"Control 1","Bobcat",0
+"Control 1","Coyote",0
+"Control 1","Eastern gray squirrel",0
+"Control 1","Fox squirrel",0
+"Control 1","Gray fox",0
+"Control 1","Hog",0
+"Control 1","Human",1
+"Control 1","Raccoon",0
+"Control 1","Turkey vulture",0
+"Control 1","Virginia opossum",0
+"Control 1","White-tailed deer",0
+"Control 2","Armadillo",0
+"Control 2","Bird",0
+"Control 2","Black vulture",0
+"Control 2","Bobcat",0
+"Control 2","Coyote",0
+"Control 2","Eastern gray squirrel",0
+"Control 2","Fox squirrel",0
+"Control 2","Gray fox",0
+"Control 2","Hog",0
+"Control 2","Human",1
+"Control 2","Raccoon",0
+"Control 2","Turkey vulture",0
+"Control 2","Virginia opossum",0
+"Control 2","White-tailed deer",3
+"Control 3","Armadillo",1
+"Control 3","Bird",0
+"Control 3","Black vulture",0
+"Control 3","Bobcat",0
+"Control 3","Coyote",0
+"Control 3","Eastern gray squirrel",0
+"Control 3","Fox squirrel",0
+"Control 3","Gray fox",0
+"Control 3","Hog",0
+"Control 3","Human",2
+"Control 3","Raccoon",3
+"Control 3","Turkey vulture",0
+"Control 3","Virginia opossum",0
+"Control 3","White-tailed deer",43
+"Control 4","Armadillo",2
+"Control 4","Bird",0
+"Control 4","Black vulture",0
+"Control 4","Bobcat",0
+"Control 4","Coyote",0
+"Control 4","Eastern gray squirrel",1
+"Control 4","Fox squirrel",0
+"Control 4","Gray fox",1
+"Control 4","Hog",0
+"Control 4","Human",1
+"Control 4","Raccoon",0
+"Control 4","Turkey vulture",0
+"Control 4","Virginia opossum",0
+"Control 4","White-tailed deer",6
+"Fish 1","Armadillo",0
+"Fish 1","Bird",0
+"Fish 1","Black vulture",0
+"Fish 1","Bobcat",0
+"Fish 1","Coyote",0
+"Fish 1","Eastern gray squirrel",0
+"Fish 1","Fox squirrel",0
+"Fish 1","Gray fox",0
+"Fish 1","Hog",1
+"Fish 1","Human",2
+"Fish 1","Raccoon",0
+"Fish 1","Turkey vulture",2
+"Fish 1","Virginia opossum",0
+"Fish 1","White-tailed deer",32
+"Fish 2","Armadillo",0
+"Fish 2","Bird",1
+"Fish 2","Black vulture",0
+"Fish 2","Bobcat",0
+"Fish 2","Coyote",0
+"Fish 2","Eastern gray squirrel",0
+"Fish 2","Fox squirrel",0
+"Fish 2","Gray fox",0
+"Fish 2","Hog",0
+"Fish 2","Human",1
+"Fish 2","Raccoon",0
+"Fish 2","Turkey vulture",12
+"Fish 2","Virginia opossum",0
+"Fish 2","White-tailed deer",0
+"Fish 3","Armadillo",4
+"Fish 3","Bird",1
+"Fish 3","Black vulture",3
+"Fish 3","Bobcat",2
+"Fish 3","Coyote",36
+"Fish 3","Eastern gray squirrel",0
+"Fish 3","Fox squirrel",0
+"Fish 3","Gray fox",0
+"Fish 3","Hog",0
+"Fish 3","Human",2
+"Fish 3","Raccoon",24
+"Fish 3","Turkey vulture",24
+"Fish 3","Virginia opossum",1
+"Fish 3","White-tailed deer",10
+"Fish 4","Armadillo",3
+"Fish 4","Bird",18
+"Fish 4","Black vulture",20
+"Fish 4","Bobcat",0
+"Fish 4","Coyote",1
+"Fish 4","Eastern gray squirrel",0
+"Fish 4","Fox squirrel",2
+"Fish 4","Gray fox",8
+"Fish 4","Hog",2
+"Fish 4","Human",1
+"Fish 4","Raccoon",3
+"Fish 4","Turkey vulture",15
+"Fish 4","Virginia opossum",21
+"Fish 4","White-tailed deer",1
+"Perfume 1","Armadillo",1
+"Perfume 1","Bird",0
+"Perfume 1","Black vulture",0
+"Perfume 1","Bobcat",0
+"Perfume 1","Coyote",0
+"Perfume 1","Eastern gray squirrel",0
+"Perfume 1","Fox squirrel",0
+"Perfume 1","Gray fox",0
+"Perfume 1","Hog",4
+"Perfume 1","Human",3
+"Perfume 1","Raccoon",2
+"Perfume 1","Turkey vulture",0
+"Perfume 1","Virginia opossum",0
+"Perfume 1","White-tailed deer",9
+"Perfume 2","Armadillo",0
+"Perfume 2","Bird",0
+"Perfume 2","Black vulture",0
+"Perfume 2","Bobcat",0
+"Perfume 2","Coyote",0
+"Perfume 2","Eastern gray squirrel",0
+"Perfume 2","Fox squirrel",0
+"Perfume 2","Gray fox",0
+"Perfume 2","Hog",0
+"Perfume 2","Human",2
+"Perfume 2","Raccoon",0
+"Perfume 2","Turkey vulture",0
+"Perfume 2","Virginia opossum",0
+"Perfume 2","White-tailed deer",0
+"Perfume 3","Armadillo",0
+"Perfume 3","Bird",0
+"Perfume 3","Black vulture",0
+"Perfume 3","Bobcat",0
+"Perfume 3","Coyote",0
+"Perfume 3","Eastern gray squirrel",0
+"Perfume 3","Fox squirrel",0
+"Perfume 3","Gray fox",0
+"Perfume 3","Hog",0
+"Perfume 3","Human",1
+"Perfume 3","Raccoon",0
+"Perfume 3","Turkey vulture",0
+"Perfume 3","Virginia opossum",0
+"Perfume 3","White-tailed deer",0
+"Perfume 4","Armadillo",22
+"Perfume 4","Bird",0
+"Perfume 4","Black vulture",0
+"Perfume 4","Bobcat",1
+"Perfume 4","Coyote",0
+"Perfume 4","Eastern gray squirrel",0
+"Perfume 4","Fox squirrel",1
+"Perfume 4","Gray fox",0
+"Perfume 4","Hog",2
+"Perfume 4","Human",1
+"Perfume 4","Raccoon",3
+"Perfume 4","Turkey vulture",0
+"Perfume 4","Virginia opossum",1
+"Perfume 4","White-tailed deer",0

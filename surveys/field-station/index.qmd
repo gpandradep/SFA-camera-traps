@@ -1,0 +1,135 @@
+---
+title: "Field Station – Bait Project"
+subtitle: "Project overview and general methods"
+toc: true
+toc-depth: 3
+---
+
+## Project overview
+
+The Field Station – Bait Project is an annual camera-trap study conducted during the Wildlife Field Techniques field station.
+
+The project was designed to evaluate how different attractants influence the detection and activity of mammals and medium- to large-bodied birds during camera-trap surveys. Because surveys are conducted at different properties each year, the project also produces multi-year datasets that can support additional undergraduate research questions related to wildlife occurrence, activity, sampling effort, community composition, and camera-trap methodology.
+
+Although the general sampling framework is maintained among years, some aspects of the design may vary depending on the property, equipment availability, or specific objectives for that field season. These differences are documented on each survey page.
+
+## General sampling design - "Triangle"
+
+At each study site, we arrange our cameras in a triangular array. Each vertex of the triangle applies a different attractant strategy to test behavioral responses.
+
+::::::::: triangle-grid
+:::: triangle-card
+::: triangle-icon
+![](../../images/icons/control.png){fig-alt="Control treatment icon"}
+:::
+
+### Control
+
+Passive monitoring with no attractants or bait applied
+::::
+
+:::: triangle-card
+::: triangle-icon
+![](../../images/icons/lure.png){fig-alt="Lure treatment icon"}
+:::
+
+### Lure
+
+Scent-based attraction using Calvin Klein Obsession perfume, known to attract felids and other mammals.
+::::
+
+:::: triangle-card
+::: triangle-icon
+![](../../images/icons/bait.png){fig-alt="Bait treatment icon"}
+:::
+
+### Bait
+
+Food-based attraction using sardines or other fish-based bait.
+::::
+:::::::::
+
+Camera-trap triads are generally separated by approximately **1 km** from one another. Within each triad, stations are separated by approximately **200 m**.
+
+![](/images/sampling.png){fig-align="center"}
+
+The number of triads varies among years.
+
+::: callout-note
+### Survey-specific modifications
+
+The general triad design is shared across Field Station surveys, but some years include modifications such as paired cameras, different fish-based attractants, or additional camera components. These differences should be considered when comparing datasets among years.
+:::
+
+## Camera deployment protocol
+
+At each station, cameras are mounted on trees or poles approximately **50 cm above the ground**.
+
+Cameras are generally oriented north or south to reduce direct sunlight and glare and are positioned at locations where animal movement is likely, such as wildlife trails or other natural travel routes.
+
+Cameras are programmed to record:
+
+- three photographs per trigger event; and
+- one video per trigger event.
+
+Cameras operate continuously, 24 hours per day, from deployment until retrieval unless interrupted by equipment failure, battery depletion, memory limitations, environmental conditions, or other malfunctions.
+
+## Sampling periods
+
+Data from the Field Station project are commonly considered at two temporal scales.
+
+### 30-day bait experiment
+
+Analyses designed to evaluate the effect of attractant treatments use the **first 30 days following deployment at each station**.
+
+This creates a standardized exposure period across stations and treatments, even when stations were deployed on slightly different dates.
+
+Periods during which a station was not operational are excluded from sampling effort.
+
+### Full survey
+
+Other ecological analyses may use the **complete sampling period** available for each station, from deployment through retrieval.
+
+The full-survey dataset can be useful for questions that are not specifically focused on comparing attractant treatments and that benefit from maximizing the amount of available camera-trap information.
+
+::: callout-important
+### Choose the sampling period based on the research question
+
+For questions focused on the effect of bait or attractant treatments, use the standardized **30-day bait experiment** period.
+
+For other ecological questions, the **full survey** may be appropriate. Students should confirm the sampling period used in their analysis and report it clearly in methods and summaries.
+:::
+
+## Sampling effort
+
+Sampling effort is summarized at the **camera-trap station level**.
+
+This distinction is important because the number of physical cameras may not always equal the number of sampling stations. For example, some surveys use one camera per station, while others use paired cameras.
+
+When paired cameras are used, a station is considered operational when at least one camera in the pair is functioning.
+
+Survey-specific pages report sampling effort for both the 30-day bait experiment and the complete survey period.
+
+## Field Station surveys
+
+::::: {layout-ncol="2"}
+::: card
+### Winston 8 Tree Farm — 2024
+
+The 2024 survey used four complete camera-trap triads with one camera per station.
+
+[View Winston 8 — 2024](W8_2024.qmd)
+:::
+
+::: card
+### Cherokee Ridge — 2025
+
+The 2025 survey used paired ground cameras and included a separate canopy-camera component.
+
+[View Cherokee Ridge — 2025](CR_2025.qmd)
+:::
+:::::
+
+### Caddo Lake — 2026
+
+The 2026 survey will be added once camera deployment, retrieval, and data-processing information are finalized.

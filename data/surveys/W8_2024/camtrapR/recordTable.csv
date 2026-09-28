@@ -1,0 +1,371 @@
+RootFolder,File,Station,DateTime,Species,N_individuals,Sex,Age,Identifier,comments,Fav,n_images,Date,Time,delta.time.secs,delta.time.mins,delta.time.hours,delta.time.days
+Field Station 2024,DSCF0001.JPG,Control 1,6/4/2024 10:14,Human,2,Unknown,Adult,,,FALSE,21,6/4/2024,10:14:23,0,0,0,0
+Field Station 2024,DSCF0001.JPG,Control 2,6/4/2024 10:01,Human,1,Male,Adult,,,FALSE,9,6/4/2024,10:01:32,0,0,0,0
+Field Station 2024,DSCF0018.AVI,Control 2,6/8/2024 5:46,White-tailed deer,2,Famale,Adult,,A second WTD can be seen moving in the herbaceous layer in the background,FALSE,8,6/8/2024,5:46:32,0,0,0,0
+Field Station 2024,DSCF0034.AVI,Control 2,6/20/2024 10:09,White-tailed deer,1,Unknown,Unknown,,,FALSE,1,6/20/2024,10:09:36,1052584,17543.1,292.4,12.2
+Field Station 2024,DSCF0036.AVI,Control 2,6/21/2024 9:53,White-tailed deer,1,Male,Juvenile,,,FALSE,13,6/21/2024,9:53:54,85458,1424.3,23.7,1
+Field Station 2024,DSCF0036.AVI,Control 3,6/5/2024 1:22,Armadillo,1,Unknown,Unknown,,,FALSE,1,6/5/2024,1:22:52,0,0,0,0
+Field Station 2024,DSCF0001.JPG,Control 3,6/4/2024 12:15,Human,2,"Famale,Male",Adult,Meredith Rash,,FALSE,13,6/4/2024,12:15:52,0,0,0,0
+Field Station 2024,DSCF0743.JPG,Control 3,7/30/2024 9:15,Human,1,Male,Adult,,,FALSE,3,7/30/2024,9:15:52,4827600,80460,1341,55.9
+Field Station 2024,DSCF0018.AVI,Control 3,6/4/2024 21:25,Raccoon,1,Unknown,Adult,,,FALSE,6,6/4/2024,21:25:12,0,0,0,0
+Field Station 2024,DSCF0028.AVI,Control 3,6/4/2024 21:40,Raccoon,1,Unknown,Adult,,,FALSE,4,6/4/2024,21:40:18,906,15.1,0.3,0
+Field Station 2024,DSCF0079.JPG,Control 3,6/9/2024 1:38,Raccoon,1,Unknown,Adult,,,FALSE,2,6/9/2024,1:38:59,359921,5998.7,100,4.2
+Field Station 2024,DSCF0037.JPG,Control 3,6/5/2024 2:47,White-tailed deer,1,Unknown,Adult,,,FALSE,2,6/5/2024,2:47:09,0,0,0,0
+Field Station 2024,DSCF0039.JPG,Control 3,6/6/2024 6:04,White-tailed deer,1,Famale,Adult,,,FALSE,14,6/6/2024,6:04:53,98264,1637.7,27.3,1.1
+Field Station 2024,DSCF0059.JPG,Control 3,6/7/2024 20:23,White-tailed deer,1,Famale,Adult,,,FALSE,16,6/7/2024,20:23:15,137902,2298.4,38.3,1.6
+Field Station 2024,DSCF0088.AVI,Control 3,6/15/2024 20:37,White-tailed deer,1,Male,Adult,,,FALSE,7,6/15/2024,20:37:20,692045,11534.1,192.2,8
+Field Station 2024,DSCF0101.JPG,Control 3,6/17/2024 10:21,White-tailed deer,1,Famale,Adult,,,FALSE,3,6/17/2024,10:21:47,135867,2264.4,37.7,1.6
+Field Station 2024,DSCF0115.JPG,Control 3,6/20/2024 9:37,White-tailed deer,2,Famale,"Adult,Juvenile",,,FALSE,19,6/20/2024,9:37:13,256526,4275.4,71.3,3
+Field Station 2024,DSCF0157.JPG,Control 3,6/20/2024 19:59,White-tailed deer,1,Famale,Adult,,,FALSE,9,6/20/2024,19:59:16,37323,622,10.4,0.4
+Field Station 2024,DSCF0167.JPG,Control 3,6/20/2024 20:33,White-tailed deer,1,Famale,Adult,,,FALSE,3,6/20/2024,20:33:01,2025,33.8,0.6,0
+Field Station 2024,DSCF0181.JPG,Control 3,6/21/2024 19:13,White-tailed deer,1,Famale,Adult,,,FALSE,12,6/21/2024,19:13:54,81653,1360.9,22.7,0.9
+Field Station 2024,DSCF0197.JPG,Control 3,6/21/2024 20:03,White-tailed deer,1,Famale,Adult,,,FALSE,7,6/21/2024,20:03:49,2995,49.9,0.8,0
+Field Station 2024,DSCF0209.JPG,Control 3,6/22/2024 8:24,White-tailed deer,1,Unknown,Juvenile,,,FALSE,14,6/22/2024,8:24:38,44449,740.8,12.3,0.5
+Field Station 2024,DSCF0233.JPG,Control 3,6/24/2024 19:34,White-tailed deer,1,Male,Adult,,,FALSE,12,6/24/2024,19:34:35,212997,3549.9,59.2,2.5
+Field Station 2024,DSCF0247.JPG,Control 3,6/24/2024 19:51,White-tailed deer,1,Unknown,Juvenile,,,FALSE,2,6/24/2024,19:51:10,995,16.6,0.3,0
+Field Station 2024,DSCF0251.JPG,Control 3,6/24/2024 20:37,White-tailed deer,1,Famale,Adult,,,FALSE,4,6/24/2024,20:37:07,2757,46,0.8,0
+Field Station 2024,DSCF0257.JPG,Control 3,6/24/2024 22:30,White-tailed deer,1,Famale,Adult,,deer looks like it's wearing a gas mask,FALSE,3,6/24/2024,22:30:23,6796,113.3,1.9,0.1
+Field Station 2024,DSCF0261.JPG,Control 3,6/25/2024 5:51,White-tailed deer,1,Famale,Adult,,,FALSE,4,6/25/2024,5:51:20,26457,441,7.3,0.3
+Field Station 2024,DSCF0310.AVI,Control 3,6/30/2024 5:03,White-tailed deer,1,Famale,Adult,,,FALSE,3,6/30/2024,5:03:04,429104,7151.7,119.2,5
+Field Station 2024,DSCF0420.AVI,Control 3,7/6/2024 19:28,White-tailed deer,1,Famale,Adult,,,FALSE,17,7/6/2024,19:28:32,570328,9505.5,158.4,6.6
+Field Station 2024,DSCF0443.JPG,Control 3,7/7/2024 8:32,White-tailed deer,2,Famale,Adult,,,FALSE,32,7/7/2024,8:32:30,47038,784,13.1,0.5
+Field Station 2024,DSCF0483.JPG,Control 3,7/7/2024 8:48,White-tailed deer,1,Famale,Adult,,,FALSE,5,7/7/2024,8:48:14,944,15.7,0.3,0
+Field Station 2024,DSCF0491.JPG,Control 3,7/7/2024 9:08,White-tailed deer,1,Famale,Adult,,,FALSE,6,7/7/2024,9:08:34,1220,20.3,0.3,0
+Field Station 2024,DSCF0501.JPG,Control 3,7/8/2024 12:37,White-tailed deer,1,Famale,Adult,,,FALSE,4,7/8/2024,12:37:37,98943,1649,27.5,1.1
+Field Station 2024,DSCF0505.JPG,Control 3,7/12/2024 22:26,White-tailed deer,1,Unknown,Adult,,,FALSE,1,7/12/2024,22:26:26,380929,6348.8,105.8,4.4
+Field Station 2024,DSCF0507.JPG,Control 3,7/14/2024 16:27,White-tailed deer,1,Famale,Adult,,,FALSE,2,7/14/2024,16:27:31,151265,2521.1,42,1.8
+Field Station 2024,DSCF0509.JPG,Control 3,7/14/2024 20:33,White-tailed deer,2,Male,Adult,,,FALSE,3,7/14/2024,20:33:32,14761,246,4.1,0.2
+Field Station 2024,DSCF0517.JPG,Control 3,7/15/2024 13:03,White-tailed deer,1,Famale,Adult,,,FALSE,3,7/15/2024,13:03:02,59370,989.5,16.5,0.7
+Field Station 2024,DSCF0521.JPG,Control 3,7/16/2024 6:28,White-tailed deer,1,Unknown,Adult,,,FALSE,1,7/16/2024,6:28:08,62706,1045.1,17.4,0.7
+Field Station 2024,DSCF0529.JPG,Control 3,7/17/2024 8:21,White-tailed deer,1,Famale,Adult,,,FALSE,4,7/17/2024,8:21:58,93230,1553.8,25.9,1.1
+Field Station 2024,DSCF0539.JPG,Control 3,7/18/2024 19:24,White-tailed deer,2,"Famale,Unknown","Adult,Unknown",,,FALSE,19,7/18/2024,19:24:01,126123,2102.1,35,1.5
+Field Station 2024,DSCF0567.JPG,Control 3,7/19/2024 19:53,White-tailed deer,1,Famale,Adult,,,FALSE,7,7/19/2024,19:53:55,88194,1469.9,24.5,1
+Field Station 2024,DSCF0575.JPG,Control 3,7/20/2024 11:44,White-tailed deer,1,Famale,Adult,,,FALSE,33,7/20/2024,11:44:34,57039,950.6,15.8,0.7
+Field Station 2024,DSCF0623.JPG,Control 3,7/20/2024 12:00,White-tailed deer,1,Famale,Adult,,,FALSE,5,7/20/2024,12:00:58,984,16.4,0.3,0
+Field Station 2024,DSCF0631.JPG,Control 3,7/20/2024 14:35,White-tailed deer,1,Famale,Adult,,,FALSE,15,7/20/2024,14:35:54,9296,154.9,2.6,0.1
+Field Station 2024,DSCF0651.JPG,Control 3,7/20/2024 15:28,White-tailed deer,1,Famale,Adult,,,FALSE,1,7/20/2024,15:28:30,3156,52.6,0.9,0
+Field Station 2024,DSCF0655.JPG,Control 3,7/21/2024 14:45,White-tailed deer,1,Unknown,Adult,,,FALSE,3,7/21/2024,14:45:24,83814,1396.9,23.3,1
+Field Station 2024,DSCF0661.JPG,Control 3,7/22/2024 20:27,White-tailed deer,1,Male,Adult,,,FALSE,3,7/22/2024,20:27:26,106922,1782,29.7,1.2
+Field Station 2024,DSCF0667.JPG,Control 3,7/23/2024 15:46,White-tailed deer,1,Famale,Adult,,,FALSE,12,7/23/2024,15:46:41,69555,1159.2,19.3,0.8
+Field Station 2024,DSCF0681.JPG,Control 3,7/25/2024 8:04,White-tailed deer,2,"Famale,Unknown","Adult,Unknown",,,FALSE,11,7/25/2024,8:04:45,145084,2418.1,40.3,1.7
+Field Station 2024,DSCF0697.JPG,Control 3,7/25/2024 8:49,White-tailed deer,1,Unknown,Juvenile,,,FALSE,7,7/25/2024,8:49:18,2673,44.5,0.7,0
+Field Station 2024,DSCF0705.JPG,Control 3,7/27/2024 0:26,White-tailed deer,1,Unknown,Juvenile,,,FALSE,2,7/27/2024,0:26:01,142603,2376.7,39.6,1.7
+Field Station 2024,DSCF0707.JPG,Control 3,7/27/2024 18:44,White-tailed deer,1,Famale,Adult,,,FALSE,20,7/27/2024,18:44:20,65899,1098.3,18.3,0.8
+Field Station 2024,DSCF0737.JPG,Control 3,7/27/2024 21:00,White-tailed deer,1,Unknown,Adult,,,FALSE,2,7/27/2024,21:00:20,8160,136,2.3,0.1
+Field Station 2024,DSCF0741.JPG,Control 3,7/29/2024 19:25,White-tailed deer,1,Unknown,Adult,,,FALSE,2,7/29/2024,19:25:09,167089,2784.8,46.4,1.9
+Field Station 2024,DSCF0034.AVI,Control 4,6/8/2024 23:24,Armadillo,1,,,,,FALSE,1,6/8/2024,23:24:54,0,0,0,0
+Field Station 2024,DSCF0042.AVI,Control 4,6/12/2024 6:00,Armadillo,1,Unknown,,,,FALSE,1,6/12/2024,6:00:14,282920,4715.3,78.6,3.3
+Field Station 2024,DSCF0073.JPG,Control 4,6/25/2024 17:02,Eastern gray squirrel,1,Unknown,,,,FALSE,2,6/25/2024,17:02:01,0,0,0,0
+Field Station 2024,DSCF0031.JPG,Control 4,6/7/2024 21:12,Gray fox,1,Unknown,,,,FALSE,2,6/7/2024,21:12:19,0,0,0,0
+Field Station 2024,DSCF0003.JPG,Control 4,6/6/2024 9:49,Human,5,Unknown,,,,FALSE,6,6/6/2024,9:49:19,0,0,0,0
+Field Station 2024,DSCF0053.JPG,Control 4,6/15/2024 9:35,White-tailed deer,1,Male,,,,FALSE,1,6/15/2024,9:35:04,0,0,0,0
+Field Station 2024,DSCF0055.JPG,Control 4,6/16/2024 5:59,White-tailed deer,1,Male,,,,FALSE,5,6/16/2024,5:59:52,73488,1224.8,20.4,0.8
+Field Station 2024,DSCF0064.AVI,Control 4,6/18/2024 15:13,White-tailed deer,1,Famale,,,,FALSE,3,6/18/2024,15:13:08,205996,3433.3,57.2,2.4
+Field Station 2024,DSCF0071.JPG,Control 4,6/23/2024 20:54,White-tailed deer,1,Male,,,,FALSE,2,6/23/2024,20:54:19,452471,7541.2,125.7,5.2
+Field Station 2024,DSCF0077.JPG,Control 4,6/28/2024 17:26,White-tailed deer,1,Famale,,,,FALSE,18,6/28/2024,17:26:25,419526,6992.1,116.5,4.9
+Field Station 2024,DSCF0101.JPG,Control 4,6/29/2024 16:17,White-tailed deer,1,Famale,,,,FALSE,11,6/29/2024,16:17:35,82270,1371.2,22.9,1
+Field Station 2024,DSCF0052.AVI,Fish 1,6/15/2024 9:03,Hog,1,Unknown,,,,FALSE,13,6/15/2024,9:03:18,0,0,0,0
+Field Station 2024,DSCF0001.JPG,Fish 1,6/4/2024 10:32,Human,1,Unknown,,,,FALSE,1,6/4/2024,10:32:08,0,0,0,0
+Field Station 2024,DSCF0423.JPG,Fish 1,7/30/2024 10:29,Human,0,,,,,FALSE,2,7/30/2024,10:29:05,4838217,80637,1344,56
+Field Station 2024,DSCF0012.AVI,Fish 1,6/5/2024 11:24,Turkey vulture,1,Unknown,,,,FALSE,1,6/5/2024,11:24:16,0,0,0,0
+Field Station 2024,DSCF0072.AVI,Fish 1,6/17/2024 16:07,Turkey vulture,1,Unknown,,,,FALSE,2,6/17/2024,16:07:00,1053764,17562.7,292.7,12.2
+Field Station 2024,DSCF0016.AVI,Fish 1,6/7/2024 7:08,White-tailed deer,1,Famale,,,,FALSE,1,6/7/2024,7:08:36,0,0,0,0
+Field Station 2024,DSCF0019.JPG,Fish 1,6/7/2024 19:59,White-tailed deer,1,Famale,,,,FALSE,2,6/7/2024,19:59:38,46262,771,12.8,0.5
+Field Station 2024,DSCF0028.AVI,Fish 1,6/10/2024 16:04,White-tailed deer,1,Unknown,,,,FALSE,2,6/10/2024,16:04:30,245092,4084.9,68.1,2.8
+Field Station 2024,DSCF0036.AVI,Fish 1,6/10/2024 19:18,White-tailed deer,1,Unknown,,,,FALSE,2,6/10/2024,19:18:38,11648,194.1,3.2,0.1
+Field Station 2024,DSCF0040.AVI,Fish 1,6/12/2024 5:22,White-tailed deer,1,Famale,,,,FALSE,5,6/12/2024,5:22:06,122608,2043.5,34.1,1.4
+Field Station 2024,DSCF0087.JPG,Fish 1,6/22/2024 21:05,White-tailed deer,1,Unknown,,,,FALSE,2,6/22/2024,21:05:33,920607,15343.5,255.7,10.7
+Field Station 2024,DSCF0093.JPG,Fish 1,7/15/2024 7:26,White-tailed deer,1,Famale,,,,FALSE,1,7/15/2024,7:26:06,1938033,32300.6,538.3,22.4
+Field Station 2024,DSCF0097.JPG,Fish 1,7/15/2024 8:52,White-tailed deer,1,Famale,,,,FALSE,1,7/15/2024,8:52:48,5202,86.7,1.4,0.1
+Field Station 2024,DSCF0100.AVI,Fish 1,7/16/2024 6:18,White-tailed deer,1,Famale,,,,FALSE,31,7/16/2024,6:18:04,77116,1285.3,21.4,0.9
+Field Station 2024,DSCF0141.JPG,Fish 1,7/17/2024 21:33,White-tailed deer,1,Famale,,,,FALSE,3,7/17/2024,21:33:19,141315,2355.2,39.3,1.6
+Field Station 2024,DSCF0145.JPG,Fish 1,7/18/2024 2:35,White-tailed deer,1,Famale,,,,FALSE,9,7/18/2024,2:35:57,18158,302.6,5,0.2
+Field Station 2024,DSCF0158.AVI,Fish 1,7/18/2024 6:09,White-tailed deer,2,Unknown,,,,FALSE,1,7/18/2024,6:09:28,12811,213.5,3.6,0.1
+Field Station 2024,DSCF0161.JPG,Fish 1,7/18/2024 10:36,White-tailed deer,1,Male,,,,FALSE,10,7/18/2024,10:36:02,15994,266.6,4.4,0.2
+Field Station 2024,DSCF0176.AVI,Fish 1,7/19/2024 22:47,White-tailed deer,1,Famale,,,,FALSE,30,7/19/2024,22:47:48,130306,2171.8,36.2,1.5
+Field Station 2024,DSCF0210.AVI,Fish 1,7/19/2024 23:03,White-tailed deer,1,Famale,,,,FALSE,17,7/19/2024,23:03:46,958,16,0.3,0
+Field Station 2024,DSCF0233.JPG,Fish 1,7/21/2024 19:49,White-tailed deer,1,Famale,,,,FALSE,10,7/21/2024,19:49:29,161143,2685.7,44.8,1.9
+Field Station 2024,DSCF0246.AVI,Fish 1,7/22/2024 7:06,White-tailed deer,1,Famale,,,,FALSE,10,7/22/2024,7:06:24,40615,676.9,11.3,0.5
+Field Station 2024,DSCF0261.JPG,Fish 1,7/23/2024 4:05,White-tailed deer,1,Famale,,,,FALSE,23,7/23/2024,4:05:28,75544,1259.1,21,0.9
+Field Station 2024,DSCF0285.JPG,Fish 1,7/23/2024 19:13,White-tailed deer,1,Famale,,,,FALSE,11,7/23/2024,19:13:59,54511,908.5,15.1,0.6
+Field Station 2024,DSCF0302.AVI,Fish 1,7/24/2024 4:04,White-tailed deer,1,Famale,,,,FALSE,5,7/24/2024,4:04:06,31807,530.1,8.8,0.4
+Field Station 2024,DSCF0307.JPG,Fish 1,7/24/2024 22:01,White-tailed deer,1,Famale,,,,FALSE,3,7/24/2024,22:01:14,64628,1077.1,18,0.8
+Field Station 2024,DSCF0315.JPG,Fish 1,7/25/2024 19:10,White-tailed deer,1,,,,,FALSE,8,7/25/2024,19:10:46,76172,1269.5,21.2,0.9
+Field Station 2024,DSCF0327.JPG,Fish 1,7/25/2024 21:16,White-tailed deer,1,Unknown,,,,FALSE,2,7/25/2024,21:16:38,7552,125.9,2.1,0.1
+Field Station 2024,DSCF0330.AVI,Fish 1,7/26/2024 6:13,White-tailed deer,1,Famale,,,,FALSE,3,7/26/2024,6:13:12,32194,536.6,8.9,0.4
+Field Station 2024,DSCF0334.AVI,Fish 1,7/26/2024 7:07,White-tailed deer,2,Unknown,,,,FALSE,1,7/26/2024,7:07:30,3258,54.3,0.9,0
+Field Station 2024,DSCF0335.JPG,Fish 1,7/26/2024 20:28,White-tailed deer,1,Famale,,,,FALSE,2,7/26/2024,20:28:48,48078,801.3,13.4,0.6
+Field Station 2024,DSCF0340.AVI,Fish 1,7/27/2024 17:23,White-tailed deer,1,Famale,,,,FALSE,9,7/27/2024,17:23:50,75302,1255,20.9,0.9
+Field Station 2024,DSCF0353.JPG,Fish 1,7/27/2024 20:05,White-tailed deer,1,Famale,,,,FALSE,4,7/27/2024,20:05:28,9698,161.6,2.7,0.1
+Field Station 2024,DSCF0360.AVI,Fish 1,7/29/2024 7:04,White-tailed deer,1,Famale,,,,FALSE,2,7/29/2024,7:04:04,125916,2098.6,35,1.5
+Field Station 2024,DSCF0380.AVI,Fish 1,7/29/2024 22:43,White-tailed deer,1,Famale,,,,FALSE,12,7/29/2024,22:43:36,56372,939.5,15.7,0.7
+Field Station 2024,DSCF0397.JPG,Fish 1,7/29/2024 22:58,White-tailed deer,1,Famale,,,,FALSE,5,7/29/2024,22:58:54,918,15.3,0.3,0
+Field Station 2024,DSCF0407.JPG,Fish 1,7/30/2024 3:21,White-tailed deer,1,Unknown,,,,FALSE,11,7/30/2024,3:21:03,15729,262.1,4.4,0.2
+Field Station 2024,DSCF0226.AVI,Fish 2,6/6/2024 8:19,Bird,2,Unknown,Unknown,,Turkey Vulture and unidentified hawk spp.,TRUE,2,6/6/2024,8:19:30,0,0,0,0
+Field Station 2024,DSCF0001.JPG,Fish 2,6/5/2024 10:38,Human,3,Male,Adult,,,FALSE,10,6/5/2024,10:38:13,0,0,0,0
+Field Station 2024,DSCF0017.JPG,Fish 2,6/5/2024 11:40,Turkey vulture,1,Unknown,Unknown,,,FALSE,32,6/5/2024,11:40:38,0,0,0,0
+Field Station 2024,DSCF0065.JPG,Fish 2,6/5/2024 11:56,Turkey vulture,1,Unknown,Adult,,,FALSE,25,6/5/2024,11:56:43,965,16.1,0.3,0
+Field Station 2024,DSCF0095.JPG,Fish 2,6/5/2024 12:11,Turkey vulture,1,Unknown,Adult,,,FALSE,19,6/5/2024,12:11:48,905,15.1,0.3,0
+Field Station 2024,DSCF0123.JPG,Fish 2,6/6/2024 7:48,Turkey vulture,1,Unknown,Adult,,,FALSE,34,6/6/2024,7:48:43,70615,1176.9,19.6,0.8
+Field Station 2024,DSCF0167.JPG,Fish 2,6/6/2024 8:03,Turkey vulture,1,Unknown,Adult,,,FALSE,48,6/6/2024,8:03:49,906,15.1,0.3,0
+Field Station 2024,DSCF0223.JPG,Fish 2,6/6/2024 8:19,Turkey vulture,1,Unknown,Adult,,,FALSE,10,6/6/2024,8:19:10,921,15.3,0.3,0
+Field Station 2024,DSCF0239.JPG,Fish 2,6/6/2024 9:58,Turkey vulture,1,Unknown,Adult,,,FALSE,51,6/6/2024,9:58:35,5965,99.4,1.7,0.1
+Field Station 2024,DSCF0299.JPG,Fish 2,6/6/2024 10:17,Turkey vulture,1,Unknown,Adult,,,FALSE,29,6/6/2024,10:17:07,1112,18.5,0.3,0
+Field Station 2024,DSCF0337.JPG,Fish 2,6/6/2024 10:40,Turkey vulture,1,Unknown,Adult,,,FALSE,31,6/6/2024,10:40:53,1426,23.8,0.4,0
+Field Station 2024,DSCF0375.JPG,Fish 2,6/6/2024 10:56,Turkey vulture,1,Unknown,Adult,,,FALSE,37,6/6/2024,10:56:08,915,15.2,0.3,0
+Field Station 2024,DSCF0427.JPG,Fish 2,6/6/2024 11:11,Turkey vulture,1,Unknown,Adult,,,FALSE,40,6/6/2024,11:11:52,944,15.7,0.3,0
+Field Station 2024,DSCF0479.JPG,Fish 2,6/6/2024 11:27,Turkey vulture,1,Unknown,Adult,,,FALSE,7,6/6/2024,11:27:19,927,15.4,0.3,0
+Field Station 2024,DSCF0791.JPG,Fish 3,6/11/2024 0:39,Armadillo,1,Unknown,Unknown,,,FALSE,2,6/11/2024,0:39:43,0,0,0,0
+Field Station 2024,DSCF0793.JPG,Fish 3,6/11/2024 5:43,Armadillo,1,Unknown,Unknown,,,FALSE,1,6/11/2024,5:43:56,18253,304.2,5.1,0.2
+Field Station 2024,DSCF0811.JPG,Fish 3,6/14/2024 0:29,Armadillo,2,Unknown,Unknown,,,FALSE,3,6/14/2024,0:29:18,240322,4005.4,66.8,2.8
+Field Station 2024,DSCF0897.JPG,Fish 3,6/23/2024 22:35,Armadillo,2,Unknown,Unknown,,,FALSE,2,6/23/2024,22:35:42,857184,14286.4,238.1,9.9
+Field Station 2024,DSCF0777.JPG,Fish 3,6/10/2024 14:31,Bird,1,Unknown,Unknown,,,FALSE,3,6/10/2024,14:31:24,0,0,0,0
+Field Station 2024,DSCF0095.JPG,Fish 3,6/6/2024 10:18,Black vulture,1,Unknown,Unknown,,,FALSE,22,6/6/2024,10:18:55,0,0,0,0
+Field Station 2024,DSCF0159.JPG,Fish 3,6/6/2024 10:34,Black vulture,4,Unknown,Unknown,,,FALSE,33,6/6/2024,10:34:11,916,15.3,0.3,0
+Field Station 2024,DSCF0201.JPG,Fish 3,6/6/2024 10:49,Black vulture,3,Unknown,Unknown,,,FALSE,6,6/6/2024,10:49:50,939,15.7,0.3,0
+Field Station 2024,DSCF0823.JPG,Fish 3,6/16/2024 23:33,Bobcat,1,Unknown,Unknown,,,FALSE,2,6/16/2024,23:33:15,0,0,0,0
+Field Station 2024,DSCF0156.JPG,Fish 3,7/15/2024 21:34,Bobcat,1,Unknown,Unknown,,,FALSE,2,7/15/2024,21:34:48,2498493,41641.6,694,28.9
+Field Station 2024,DSCF0763.JPG,Fish 3,6/9/2024 21:13,Coyote,1,Unknown,Unknown,,,FALSE,5,6/9/2024,21:13:58,0,0,0,0
+Field Station 2024,DSCF0781.JPG,Fish 3,6/10/2024 20:49,Coyote,1,Unknown,Unknown,,,FALSE,6,6/10/2024,20:49:03,84905,1415.1,23.6,1
+Field Station 2024,DSCF0796.AVI,Fish 3,6/11/2024 8:34,Coyote,1,Unknown,Unknown,,,FALSE,4,6/11/2024,8:34:38,42335,705.6,11.8,0.5
+Field Station 2024,DSCF0809.JPG,Fish 3,6/13/2024 16:43,Coyote,2,Unknown,Unknown,,,FALSE,2,6/13/2024,16:43:20,202122,3368.7,56.1,2.3
+Field Station 2024,DSCF0817.JPG,Fish 3,6/15/2024 15:56,Coyote,1,Unknown,Unknown,,,FALSE,6,6/15/2024,15:56:09,169969,2832.8,47.2,2
+Field Station 2024,DSCF0830.AVI,Fish 3,6/18/2024 0:13,Coyote,1,Unknown,Unknown,,,FALSE,4,6/18/2024,0:13:30,202641,3377.3,56.3,2.3
+Field Station 2024,DSCF0837.JPG,Fish 3,6/18/2024 3:32,Coyote,1,Unknown,Unknown,,,FALSE,8,6/18/2024,3:32:26,11936,198.9,3.3,0.1
+Field Station 2024,DSCF0847.JPG,Fish 3,6/18/2024 17:35,Coyote,1,Unknown,Unknown,,,FALSE,8,6/18/2024,17:35:34,50588,843.1,14.1,0.6
+Field Station 2024,DSCF0869.JPG,Fish 3,6/22/2024 17:47,Coyote,1,Unknown,Unknown,,,FALSE,4,6/22/2024,17:47:47,346333,5772.2,96.2,4
+Field Station 2024,DSCF0891.JPG,Fish 3,6/23/2024 17:18,Coyote,1,Unknown,Unknown,,,FALSE,5,6/23/2024,17:18:55,84668,1411.1,23.5,1
+Field Station 2024,DSCF0923.JPG,Fish 3,6/24/2024 12:17,Coyote,1,Unknown,Unknown,,,FALSE,8,6/24/2024,12:17:02,68287,1138.1,19,0.8
+Field Station 2024,DSCF0935.JPG,Fish 3,6/24/2024 12:56,Coyote,1,Unknown,Unknown,,,FALSE,8,6/24/2024,12:56:30,2368,39.5,0.7,0
+Field Station 2024,DSCF0950.AVI,Fish 3,6/24/2024 19:23,Coyote,1,Unknown,Unknown,,,FALSE,4,6/24/2024,19:23:24,23214,386.9,6.4,0.3
+Field Station 2024,DSCF0959.JPG,Fish 3,6/24/2024 19:43,Coyote,1,Unknown,Unknown,,,FALSE,11,6/24/2024,19:43:09,1185,19.8,0.3,0
+Field Station 2024,DSCF0975.JPG,Fish 3,6/25/2024 2:07,Coyote,1,Unknown,Unknown,,,FALSE,6,6/25/2024,2:07:07,23038,384,6.4,0.3
+Field Station 2024,DSCF0981.JPG,Fish 3,6/25/2024 7:28,Coyote,1,Unknown,Unknown,,,FALSE,3,6/25/2024,7:28:35,19288,321.5,5.4,0.2
+Field Station 2024,DSCF0987.JPG,Fish 3,6/25/2024 19:38,Coyote,1,Unknown,Unknown,,,FALSE,4,6/25/2024,19:38:34,43799,730,12.2,0.5
+Field Station 2024,DSCF0993.JPG,Fish 3,6/25/2024 20:08,Coyote,1,Unknown,Unknown,,,FALSE,5,6/25/2024,20:08:44,1810,30.2,0.5,0
+Field Station 2024,DSCF0004.JPG,Fish 3,6/26/2024 18:01,Coyote,1,Unknown,Unknown,,,FALSE,15,6/26/2024,18:01:24,78760,1312.7,21.9,0.9
+Field Station 2024,DSCF0026.JPG,Fish 3,6/27/2024 0:54,Coyote,1,Unknown,Unknown,,,FALSE,2,6/27/2024,0:54:17,24773,412.9,6.9,0.3
+Field Station 2024,DSCF0040.JPG,Fish 3,6/28/2024 20:11,Coyote,1,Unknown,Unknown,,,FALSE,2,6/28/2024,20:11:28,155831,2597.2,43.3,1.8
+Field Station 2024,DSCF0042.JPG,Fish 3,6/29/2024 1:10,Coyote,1,Unknown,Unknown,,,FALSE,1,6/29/2024,1:10:06,17918,298.6,5,0.2
+Field Station 2024,DSCF0054.JPG,Fish 3,7/2/2024 19:51,Coyote,1,Unknown,Unknown,,,FALSE,2,7/2/2024,19:51:11,326465,5441.1,90.7,3.8
+Field Station 2024,DSCF0056.JPG,Fish 3,7/2/2024 20:10,Coyote,1,Unknown,Unknown,,,FALSE,1,7/2/2024,20:10:42,1171,19.5,0.3,0
+Field Station 2024,DSCF0060.JPG,Fish 3,7/5/2024 20:40,Coyote,1,Unknown,Unknown,,,FALSE,16,7/5/2024,20:40:23,260981,4349.7,72.5,3
+Field Station 2024,DSCF0076.JPG,Fish 3,7/6/2024 6:48,Coyote,1,Unknown,Unknown,,,FALSE,12,7/6/2024,6:48:48,36505,608.4,10.1,0.4
+Field Station 2024,DSCF0090.JPG,Fish 3,7/6/2024 23:13,Coyote,1,Unknown,Unknown,,,FALSE,13,7/6/2024,23:13:29,59081,984.7,16.4,0.7
+Field Station 2024,DSCF0104.JPG,Fish 3,7/6/2024 23:28,Coyote,1,Unknown,Unknown,,,FALSE,10,7/6/2024,23:28:40,911,15.2,0.3,0
+Field Station 2024,DSCF0116.JPG,Fish 3,7/8/2024 18:44,Coyote,1,Unknown,Unknown,,,FALSE,2,7/8/2024,18:44:21,155741,2595.7,43.3,1.8
+Field Station 2024,DSCF0120.JPG,Fish 3,7/8/2024 21:37,Coyote,1,Unknown,Unknown,,,FALSE,8,7/8/2024,21:37:47,10406,173.4,2.9,0.1
+Field Station 2024,DSCF0128.JPG,Fish 3,7/9/2024 15:06,Coyote,1,Unknown,Unknown,,,FALSE,4,7/9/2024,15:06:36,62929,1048.8,17.5,0.7
+Field Station 2024,DSCF0134.JPG,Fish 3,7/12/2024 15:31,Coyote,1,Unknown,Unknown,,,FALSE,2,7/12/2024,15:31:40,260704,4345.1,72.4,3
+Field Station 2024,DSCF0138.JPG,Fish 3,7/12/2024 21:15,Coyote,1,Unknown,Unknown,,,FALSE,3,7/12/2024,21:15:10,20610,343.5,5.7,0.2
+Field Station 2024,DSCF0144.JPG,Fish 3,7/15/2024 5:48,Coyote,1,Unknown,Unknown,,,FALSE,10,7/15/2024,5:48:20,203590,3393.2,56.6,2.4
+Field Station 2024,DSCF0159.AVI,Fish 3,7/17/2024 6:34,Coyote,1,Unknown,Unknown,,,FALSE,9,7/17/2024,6:34:38,175578,2926.3,48.8,2
+Field Station 2024,DSCF0479.AVI,Fish 3,7/25/2024 1:04,Coyote,1,Unknown,Unknown,,,FALSE,2,7/25/2024,1:04:50,671412,11190.2,186.5,7.8
+Field Station 2024,DSCF0001.JPG,Fish 3,6/4/2024 11:31,Human,0,,,Ransom,,FALSE,31,6/4/2024,11:31:39,0,0,0,0
+Field Station 2024,DSCF0350 (2).JPG,Fish 3,7/30/2024 8:56,Human,0,,,,,FALSE,4,7/30/2024,8:56:29,4829090,80484.8,1341.4,55.9
+Field Station 2024,DSCF0041.JPG,Fish 3,6/4/2024 21:50,Raccoon,1,Unknown,Unknown,,,FALSE,2,6/4/2024,21:50:53,0,0,0,0
+Field Station 2024,DSCF0044.AVI,Fish 3,6/4/2024 22:19,Raccoon,1,Unknown,Unknown,,,FALSE,3,6/4/2024,22:19:48,1735,28.9,0.5,0
+Field Station 2024,DSCF0048.AVI,Fish 3,6/5/2024 3:43,Raccoon,1,Unknown,Unknown,,,FALSE,1,6/5/2024,3:43:44,19436,323.9,5.4,0.2
+Field Station 2024,DSCF0049.JPG,Fish 3,6/5/2024 21:48,Raccoon,1,Unknown,Unknown,,,FALSE,2,6/5/2024,21:48:17,65073,1084.6,18.1,0.8
+Field Station 2024,DSCF0054.AVI,Fish 3,6/5/2024 22:16,Raccoon,1,Unknown,Unknown,,,FALSE,3,6/5/2024,22:16:46,1709,28.5,0.5,0
+Field Station 2024,DSCF0058.AVI,Fish 3,6/6/2024 1:35,Raccoon,1,Unknown,Unknown,,,FALSE,9,6/6/2024,1:35:44,11938,199,3.3,0.1
+Field Station 2024,DSCF0069.JPG,Fish 3,6/6/2024 3:27,Raccoon,1,Unknown,Unknown,,,FALSE,1,6/6/2024,3:27:34,6710,111.8,1.9,0.1
+Field Station 2024,DSCF0071.JPG,Fish 3,6/6/2024 4:20,Raccoon,1,Unknown,Unknown,,,FALSE,3,6/6/2024,4:20:52,3198,53.3,0.9,0
+Field Station 2024,DSCF0077.JPG,Fish 3,6/6/2024 4:37,Raccoon,1,Unknown,Unknown,,,FALSE,1,6/6/2024,4:37:04,972,16.2,0.3,0
+Field Station 2024,DSCF0079.JPG,Fish 3,6/6/2024 7:36,Raccoon,1,Unknown,Unknown,,,FALSE,2,6/6/2024,7:36:53,10789,179.8,3,0.1
+Field Station 2024,DSCF0673.JPG,Fish 3,6/7/2024 0:29,Raccoon,1,Unknown,Unknown,,,FALSE,3,6/7/2024,0:29:37,60764,1012.7,16.9,0.7
+Field Station 2024,DSCF0679.JPG,Fish 3,6/7/2024 1:27,Raccoon,1,Unknown,Unknown,,,FALSE,3,6/7/2024,1:27:31,3474,57.9,1,0
+Field Station 2024,DSCF0683.JPG,Fish 3,6/7/2024 3:47,Raccoon,1,Unknown,Unknown,,,FALSE,4,6/7/2024,3:47:31,8400,140,2.3,0.1
+Field Station 2024,DSCF0735.JPG,Fish 3,6/7/2024 20:37,Raccoon,1,Unknown,Unknown,,,FALSE,2,6/7/2024,20:37:15,60584,1009.7,16.8,0.7
+Field Station 2024,DSCF0746.AVI,Fish 3,6/8/2024 22:49,Raccoon,1,Unknown,Unknown,,,FALSE,6,6/8/2024,22:49:28,94333,1572.2,26.2,1.1
+Field Station 2024,DSCF0753.JPG,Fish 3,6/8/2024 23:05,Raccoon,1,Unknown,Unknown,,,FALSE,3,6/8/2024,23:05:08,940,15.7,0.3,0
+Field Station 2024,DSCF0759.JPG,Fish 3,6/9/2024 3:56,Raccoon,1,Unknown,Unknown,,,FALSE,3,6/9/2024,3:56:17,17469,291.1,4.9,0.2
+Field Station 2024,DSCF0774.AVI,Fish 3,6/10/2024 3:13,Raccoon,1,Unknown,Unknown,,,FALSE,1,6/10/2024,3:13:52,83855,1397.6,23.3,1
+Field Station 2024,DSCF0776.AVI,Fish 3,6/10/2024 5:10,Raccoon,1,Unknown,Unknown,,,FALSE,1,6/10/2024,5:10:28,6996,116.6,1.9,0.1
+Field Station 2024,DSCF0801.JPG,Fish 3,6/12/2024 2:07,Raccoon,1,Unknown,Unknown,,,FALSE,1,6/12/2024,2:07:30,161822,2697,45,1.9
+Field Station 2024,DSCF0805.JPG,Fish 3,6/13/2024 5:16,Raccoon,1,Unknown,Unknown,,,FALSE,1,6/13/2024,5:16:02,97712,1628.5,27.1,1.1
+Field Station 2024,DSCF0807.JPG,Fish 3,6/13/2024 8:22,Raccoon,1,Unknown,Unknown,,,FALSE,2,6/13/2024,8:22:13,11171,186.2,3.1,0.1
+Field Station 2024,DSCF0059.AVI,Fish 3,7/4/2024 8:32,Raccoon,1,Unknown,Unknown,,,FALSE,1,7/4/2024,8:32:20,1815007,30250.1,504.2,21
+Field Station 2024,DSCF0173.AVI,Fish 3,7/21/2024 6:23,Raccoon,1,Unknown,Unknown,,,FALSE,1,7/21/2024,6:23:30,1461070,24351.2,405.9,16.9
+Field Station 2024,DSCF0081.JPG,Fish 3,6/6/2024 10:11,Turkey vulture,1,Unknown,Adult,,,FALSE,9,6/6/2024,10:11:07,0,0,0,0
+Field Station 2024,DSCF0211.JPG,Fish 3,6/6/2024 13:42,Turkey vulture,1,Unknown,Unknown,,,FALSE,18,6/6/2024,13:42:57,12710,211.8,3.5,0.1
+Field Station 2024,DSCF0239.JPG,Fish 3,6/6/2024 14:28,Turkey vulture,1,Unknown,Unknown,,,FALSE,16,6/6/2024,14:28:28,2731,45.5,0.8,0
+Field Station 2024,DSCF0261.JPG,Fish 3,6/6/2024 15:24,Turkey vulture,1,Unknown,Unknown,,,FALSE,16,6/6/2024,15:24:37,3369,56.1,0.9,0
+Field Station 2024,DSCF0283.JPG,Fish 3,6/6/2024 15:40,Turkey vulture,3,Unknown,Unknown,,,FALSE,18,6/6/2024,15:40:05,928,15.5,0.3,0
+Field Station 2024,DSCF0341.JPG,Fish 3,6/6/2024 16:05,Turkey vulture,3,Unknown,Unknown,,,FALSE,11,6/6/2024,16:05:06,1501,25,0.4,0
+Field Station 2024,DSCF0367.JPG,Fish 3,6/6/2024 16:22,Turkey vulture,3,Unknown,Unknown,,,FALSE,19,6/6/2024,16:22:03,1017,17,0.3,0
+Field Station 2024,DSCF0487.JPG,Fish 3,6/6/2024 16:55,Turkey vulture,4,Unknown,Unknown,,,FALSE,48,6/6/2024,16:55:28,2005,33.4,0.6,0
+Field Station 2024,DSCF0555.JPG,Fish 3,6/6/2024 17:18,Turkey vulture,1,Unknown,Unknown,,,FALSE,26,6/6/2024,17:18:15,1367,22.8,0.4,0
+Field Station 2024,DSCF0585.JPG,Fish 3,6/6/2024 17:33,Turkey vulture,1,Unknown,Unknown,,,FALSE,12,6/6/2024,17:33:35,920,15.3,0.3,0
+Field Station 2024,DSCF0599.JPG,Fish 3,6/6/2024 17:48,Turkey vulture,2,Unknown,Unknown,,,FALSE,11,6/6/2024,17:48:47,912,15.2,0.3,0
+Field Station 2024,DSCF0613.JPG,Fish 3,6/6/2024 18:15,Turkey vulture,2,Unknown,Unknown,,,FALSE,3,6/6/2024,18:15:10,1583,26.4,0.4,0
+Field Station 2024,DSCF0617.JPG,Fish 3,6/6/2024 18:34,Turkey vulture,1,Unknown,Unknown,,,FALSE,9,6/6/2024,18:34:28,1158,19.3,0.3,0
+Field Station 2024,DSCF0635.JPG,Fish 3,6/6/2024 19:03,Turkey vulture,2,Unknown,Unknown,,,FALSE,25,6/6/2024,19:03:14,1726,28.8,0.5,0
+Field Station 2024,DSCF0669.JPG,Fish 3,6/6/2024 19:18,Turkey vulture,2,Unknown,Unknown,,,FALSE,4,6/6/2024,19:18:17,903,15.1,0.3,0
+Field Station 2024,DSCF0687.JPG,Fish 3,6/7/2024 6:32,Turkey vulture,2,Unknown,Unknown,,,FALSE,7,6/7/2024,6:32:53,40476,674.6,11.2,0.5
+Field Station 2024,DSCF0695.JPG,Fish 3,6/7/2024 6:50,Turkey vulture,2,Unknown,Unknown,,,FALSE,11,6/7/2024,6:50:50,1077,18,0.3,0
+Field Station 2024,DSCF0709.JPG,Fish 3,6/7/2024 7:08,Turkey vulture,2,Unknown,Unknown,,,FALSE,11,6/7/2024,7:08:07,1037,17.3,0.3,0
+Field Station 2024,DSCF0721.JPG,Fish 3,6/7/2024 7:23,Turkey vulture,2,Unknown,Unknown,,,FALSE,2,6/7/2024,7:23:24,917,15.3,0.3,0
+Field Station 2024,DSCF0725.JPG,Fish 3,6/7/2024 7:40,Turkey vulture,3,Unknown,Unknown,,,FALSE,5,6/7/2024,7:40:01,997,16.6,0.3,0
+Field Station 2024,DSCF0731.JPG,Fish 3,6/7/2024 7:56,Turkey vulture,3,Unknown,Unknown,,,FALSE,1,6/7/2024,7:56:32,991,16.5,0.3,0
+Field Station 2024,DSCF0733.JPG,Fish 3,6/7/2024 8:17,Turkey vulture,3,Unknown,Unknown,,,FALSE,2,6/7/2024,8:17:11,1239,20.6,0.3,0
+Field Station 2024,DSCF0737.JPG,Fish 3,6/8/2024 18:36,Turkey vulture,1,Unknown,Unknown,,,FALSE,2,6/8/2024,18:36:12,123541,2059,34.3,1.4
+Field Station 2024,DSCF0741.JPG,Fish 3,6/8/2024 19:24,Turkey vulture,1,Unknown,Unknown,,,FALSE,1,6/8/2024,19:24:06,2874,47.9,0.8,0
+Field Station 2024,DSCF0757.JPG,Fish 3,6/9/2024 0:42,Virginia opossum,1,Unknown,Unknown,,,FALSE,2,6/9/2024,0:42:39,0,0,0,0
+Field Station 2024,DSCF0803.JPG,Fish 3,6/12/2024 6:34,White-tailed deer,1,Unknown,Unknown,,,FALSE,2,6/12/2024,6:34:53,0,0,0,0
+Field Station 2024,DSCF0835.JPG,Fish 3,6/18/2024 1:25,White-tailed deer,1,Unknown,Unknown,,,FALSE,2,6/18/2024,1:25:45,499852,8330.9,138.8,5.8
+Field Station 2024,DSCF0877.JPG,Fish 3,6/22/2024 20:44,White-tailed deer,1,Unknown,Unknown,,,FALSE,11,6/22/2024,20:44:39,415134,6918.9,115.3,4.8
+Field Station 2024,DSCF0899.JPG,Fish 3,6/24/2024 8:17,White-tailed deer,2,Male,Unknown,,,FALSE,10,6/24/2024,8:17:09,127950,2132.5,35.5,1.5
+Field Station 2024,DSCF0914.AVI,Fish 3,6/24/2024 8:34,White-tailed deer,1,Male,Unknown,,,FALSE,8,6/24/2024,8:34:52,1063,17.7,0.3,0
+Field Station 2024,DSCF0048.JPG,Fish 3,6/30/2024 14:46,White-tailed deer,1,Unknown,Unknown,,,FALSE,2,6/30/2024,14:46:39,540707,9011.8,150.2,6.3
+Field Station 2024,DSCF0052.JPG,Fish 3,7/1/2024 2:12,White-tailed deer,1,Unknown,Unknown,,,FALSE,2,7/1/2024,2:12:09,41130,685.5,11.4,0.5
+Field Station 2024,DSCF0174.JPG,Fish 3,7/22/2024 18:48,White-tailed deer,1,Male,Unknown,,,FALSE,2,7/22/2024,18:48:59,1874210,31236.8,520.6,21.7
+Field Station 2024,DSCF0482.JPG,Fish 3,7/26/2024 15:18,White-tailed deer,1,Unknown,Unknown,,,FALSE,2,7/26/2024,15:18:48,332989,5549.8,92.5,3.9
+Field Station 2024,DSCF0279 (2).JPG,Fish 3,7/29/2024 8:43,White-tailed deer,4,Male,Adult,,,FALSE,1,7/29/2024,8:43:00,235452,3924.2,65.4,2.7
+Field Station 2024,DSCF0605.AVI,Fish 4,6/17/2024 0:57,Armadillo,1,,,,,FALSE,2,6/17/2024,0:57:46,0,0,0,0
+Field Station 2024,DSCF0684.JPG,Fish 4,6/29/2024 2:19,Armadillo,1,,,,,FALSE,1,6/29/2024,2:19:46,1041720,17362,289.4,12.1
+Field Station 2024,DSCF0686.JPG,Fish 4,7/6/2024 4:31,Armadillo,1,,,,,FALSE,3,7/6/2024,4:31:56,612730,10212.2,170.2,7.1
+Field Station 2024,DSCF0444.JPG,Fish 4,6/11/2024 8:28,Bird,1,,,,crow,FALSE,3,6/11/2024,8:28:05,0,0,0,0
+Field Station 2024,DSCF0502.JPG,Fish 4,6/11/2024 18:05,Bird,2,,,,crow,FALSE,1,6/11/2024,18:05:12,34627,577.1,9.6,0.4
+Field Station 2024,DSCF0504.JPG,Fish 4,6/11/2024 18:26,Bird,1,,,,crow,FALSE,3,6/11/2024,18:26:43,1291,21.5,0.4,0
+Field Station 2024,DSCF0520.JPG,Fish 4,6/12/2024 7:18,Bird,2,,,,crow,FALSE,4,6/12/2024,7:18:53,46330,772.2,12.9,0.5
+Field Station 2024,DSCF0526.JPG,Fish 4,6/12/2024 7:41,Bird,1,,,,crow,FALSE,1,6/12/2024,7:41:34,1361,22.7,0.4,0
+Field Station 2024,DSCF0531.AVI,Fish 4,6/12/2024 11:31,Bird,2,,,,crow,FALSE,10,6/12/2024,11:31:58,13824,230.4,3.8,0.2
+Field Station 2024,DSCF0552.JPG,Fish 4,6/14/2024 11:18,Bird,1,,,,crow,FALSE,4,6/14/2024,11:18:33,171995,2866.6,47.8,2
+Field Station 2024,DSCF0559.AVI,Fish 4,6/14/2024 12:38,Bird,1,,,,bird in background,FALSE,1,6/14/2024,12:38:04,4771,79.5,1.3,0.1
+Field Station 2024,DSCF0560.JPG,Fish 4,6/14/2024 14:16,Bird,1,,,,crow,FALSE,1,6/14/2024,14:16:38,5914,98.6,1.6,0.1
+Field Station 2024,DSCF0570.JPG,Fish 4,6/15/2024 9:13,Bird,1,,,,crow,FALSE,2,6/15/2024,9:13:47,68229,1137.2,19,0.8
+Field Station 2024,DSCF0572.JPG,Fish 4,6/15/2024 9:34,Bird,2,,,,crow,FALSE,2,6/15/2024,9:34:25,1238,20.6,0.3,0
+Field Station 2024,DSCF0595.AVI,Fish 4,6/16/2024 8:17,Bird,1,,,,crow,FALSE,1,6/16/2024,8:17:14,81769,1362.8,22.7,0.9
+Field Station 2024,DSCF0596.JPG,Fish 4,6/16/2024 9:05,Bird,1,,,,crow,FALSE,1,6/16/2024,9:05:22,2888,48.1,0.8,0
+Field Station 2024,DSCF0598.JPG,Fish 4,6/16/2024 9:41,Bird,1,,,,crow,FALSE,2,6/16/2024,9:41:44,2182,36.4,0.6,0
+Field Station 2024,DSCF0608.JPG,Fish 4,6/17/2024 10:04,Bird,1,,,,crow,FALSE,2,6/17/2024,10:04:35,87771,1462.8,24.4,1
+Field Station 2024,DSCF0640.JPG,Fish 4,6/18/2024 7:39,Bird,1,,,,crow,FALSE,1,6/18/2024,7:39:08,77673,1294.6,21.6,0.9
+Field Station 2024,DSCF0642.JPG,Fish 4,6/18/2024 12:35,Bird,1,,,,crow,FALSE,1,6/18/2024,12:35:50,17802,296.7,4.9,0.2
+Field Station 2024,DSCF0692.JPG,Fish 4,7/9/2024 9:26,Bird,2,,,,crow,FALSE,1,7/9/2024,9:26:36,1803046,30050.8,500.8,20.9
+Field Station 2024,DSCF0024.AVI,Fish 4,6/8/2024 10:55,Black vulture,1,Unknown,Unknown,,,FALSE,58,6/8/2024,10:55:58,0,0,0,0
+Field Station 2024,DSCF0113.JPG,Fish 4,6/8/2024 11:11,Black vulture,6,,,,,FALSE,40,6/8/2024,11:11:36,938,15.6,0.3,0
+Field Station 2024,DSCF0204.AVI,Fish 4,6/8/2024 11:27,Black vulture,6,,,,,FALSE,7,6/8/2024,11:27:54,978,16.3,0.3,0
+Field Station 2024,DSCF0380.AVI,Fish 4,6/8/2024 12:02,Black vulture,6,,,,,FALSE,37,6/8/2024,12:02:26,2072,34.5,0.6,0
+Field Station 2024,DSCF0449.JPG,Fish 4,6/8/2024 12:17,Black vulture,4,,,,,FALSE,33,6/8/2024,12:17:46,920,15.3,0.3,0
+Field Station 2024,DSCF0775.JPG,Fish 4,6/8/2024 13:35,Black vulture,4,,,,,FALSE,16,6/8/2024,13:35:18,4652,77.5,1.3,0.1
+Field Station 2024,DSCF0862.AVI,Fish 4,6/8/2024 13:53,Black vulture,4,,,,,FALSE,9,6/8/2024,13:53:20,1082,18,0.3,0
+Field Station 2024,DSCF0979.JPG,Fish 4,6/8/2024 14:24,Black vulture,8,,,,,FALSE,20,6/8/2024,14:24:58,1898,31.6,0.5,0
+Field Station 2024,DSCF0062.JPG,Fish 4,6/8/2024 14:47,Black vulture,4,,,,,FALSE,3,6/8/2024,14:47:20,1342,22.4,0.4,0
+Field Station 2024,DSCF0162.JPG,Fish 4,6/8/2024 15:14,Black vulture,4,,,,,FALSE,25,6/8/2024,15:14:06,1606,26.8,0.4,0
+Field Station 2024,DSCF0210.JPG,Fish 4,6/8/2024 15:29,Black vulture,4,,,,,FALSE,7,6/8/2024,15:29:12,906,15.1,0.3,0
+Field Station 2024,DSCF0348.JPG,Fish 4,6/10/2024 15:28,Black vulture,1,,,,,FALSE,5,6/10/2024,15:28:11,172739,2879,48,2
+Field Station 2024,DSCF0364.JPG,Fish 4,6/10/2024 15:52,Black vulture,1,,,,,FALSE,3,6/10/2024,15:52:36,1465,24.4,0.4,0
+Field Station 2024,DSCF0382.JPG,Fish 4,6/10/2024 16:11,Black vulture,1,,,,,FALSE,5,6/10/2024,16:11:58,1162,19.4,0.3,0
+Field Station 2024,DSCF0449.AVI,Fish 4,6/11/2024 14:08,Black vulture,1,,,,,FALSE,9,6/11/2024,14:08:48,79010,1316.8,21.9,0.9
+Field Station 2024,DSCF0474.JPG,Fish 4,6/11/2024 14:35,Black vulture,1,,,,,FALSE,1,6/11/2024,14:35:45,1617,27,0.4,0
+Field Station 2024,DSCF0494.JPG,Fish 4,6/11/2024 14:51,Black vulture,1,,,,,FALSE,3,6/11/2024,14:51:39,954,15.9,0.3,0
+Field Station 2024,DSCF0500.JPG,Fish 4,6/11/2024 15:08,Black vulture,1,,,,,FALSE,1,6/11/2024,15:08:22,1003,16.7,0.3,0
+Field Station 2024,DSCF0626.JPG,Fish 4,6/17/2024 12:07,Black vulture,1,,,,,FALSE,8,6/17/2024,12:07:35,507553,8459.2,141,5.9
+Field Station 2024,DSCF0650.JPG,Fish 4,6/21/2024 13:30,Black vulture,1,,,,,FALSE,10,6/21/2024,13:30:32,350577,5843,97.4,4.1
+Field Station 2024,DSCF0586.JPG,Fish 4,6/15/2024 23:35,Coyote,1,,,,,FALSE,2,6/15/2024,23:35:28,0,0,0,0
+Field Station 2024,DSCF0529.AVI,Fish 4,6/12/2024 9:57,Fox squirrel,1,,,,,FALSE,1,6/12/2024,9:57:16,0,0,0,0
+Field Station 2024,DSCF0556.JPG,Fish 4,6/14/2024 12:22,Fox squirrel,1,,,,,FALSE,1,6/14/2024,12:22:40,181524,3025.4,50.4,2.1
+Field Station 2024,DSCF0256.JPG,Fish 4,6/8/2024 23:15,Gray fox,1,,,,,FALSE,12,6/8/2024,23:15:33,0,0,0,0
+Field Station 2024,DSCF0282.JPG,Fish 4,6/9/2024 22:44,Gray fox,1,,,,,FALSE,5,6/9/2024,22:44:51,84558,1409.3,23.5,1
+Field Station 2024,DSCF0288.JPG,Fish 4,6/9/2024 23:04,Gray fox,1,,,,,FALSE,3,6/9/2024,23:04:36,1185,19.8,0.3,0
+Field Station 2024,DSCF0294.JPG,Fish 4,6/9/2024 23:23,Gray fox,1,,,,,FALSE,6,6/9/2024,23:23:01,1105,18.4,0.3,0
+Field Station 2024,DSCF0302.JPG,Fish 4,6/10/2024 2:48,Gray fox,1,,,,,FALSE,7,6/10/2024,2:48:48,12347,205.8,3.4,0.1
+Field Station 2024,DSCF0438.JPG,Fish 4,6/11/2024 1:28,Gray fox,1,,,,,FALSE,2,6/11/2024,1:28:47,81599,1360,22.7,0.9
+Field Station 2024,DSCF0562.JPG,Fish 4,6/14/2024 23:36,Gray fox,1,,,,,FALSE,3,6/14/2024,23:36:08,338841,5647.4,94.1,3.9
+Field Station 2024,DSCF0574.JPG,Fish 4,6/15/2024 22:52,Gray fox,1,,,,,FALSE,10,6/15/2024,22:52:37,83789,1396.5,23.3,1
+Field Station 2024,DSCF0591.AVI,Fish 4,6/16/2024 4:23,Hog,2,,,,,FALSE,1,6/16/2024,4:23:58,0,0,0,0
+Field Station 2024,DSCF0673.AVI,Fish 4,6/24/2024 23:18,Hog,1,,,,,FALSE,3,6/24/2024,23:18:24,759266,12654.4,210.9,8.8
+Field Station 2024,DSCF0002.AVI,Fish 4,6/6/2024 10:16,Human,2,,,Sophia Grubbs,,FALSE,13,6/6/2024,10:16:00,0,0,0,0
+Field Station 2024,DSCF0511.AVI,Fish 4,6/11/2024 22:38,Raccoon,1,,,,,FALSE,3,6/11/2024,22:38:02,0,0,0,0
+Field Station 2024,DSCF0548.JPG,Fish 4,6/12/2024 18:33,Raccoon,1,,,,,FALSE,2,6/12/2024,18:33:23,71721,1195.3,19.9,0.8
+Field Station 2024,DSCF0676.JPG,Fish 4,6/25/2024 10:40,Raccoon,1,,,,,FALSE,1,6/25/2024,10:40:04,1094801,18246.7,304.1,12.7
+Field Station 2024,DSCF0805.JPG,Fish 4,6/8/2024 13:42,Turkey vulture,1,,,,,FALSE,2,6/8/2024,13:42:21,0,0,0,0
+Field Station 2024,DSCF0223.AVI,Fish 4,6/8/2024 16:09,Turkey vulture,1,,,,,FALSE,3,6/8/2024,16:09:06,8805,146.8,2.4,0.1
+Field Station 2024,DSCF0226.JPG,Fish 4,6/8/2024 16:42,Turkey vulture,2,,,,,FALSE,14,6/8/2024,16:42:21,1995,33.2,0.6,0
+Field Station 2024,DSCF0242.JPG,Fish 4,6/8/2024 17:21,Turkey vulture,1,,,,,FALSE,4,6/8/2024,17:21:20,2339,39,0.7,0
+Field Station 2024,DSCF0246.JPG,Fish 4,6/8/2024 17:36,Turkey vulture,1,,,,,FALSE,1,6/8/2024,17:36:28,908,15.1,0.3,0
+Field Station 2024,DSCF0354.JPG,Fish 4,6/10/2024 15:44,Turkey vulture,1,,,,,FALSE,1,6/10/2024,15:44:20,166072,2767.9,46.1,1.9
+Field Station 2024,DSCF0398.JPG,Fish 4,6/10/2024 18:18,Turkey vulture,1,,,,,FALSE,9,6/10/2024,18:18:18,9238,154,2.6,0.1
+Field Station 2024,DSCF0415.AVI,Fish 4,6/10/2024 18:40,Turkey vulture,1,,,,,FALSE,12,6/10/2024,18:40:32,1334,22.2,0.4,0
+Field Station 2024,DSCF0430.JPG,Fish 4,6/10/2024 18:57,Turkey vulture,1,,,,,FALSE,1,6/10/2024,18:57:36,1024,17.1,0.3,0
+Field Station 2024,DSCF0453.AVI,Fish 4,6/11/2024 14:10,Turkey vulture,1,,,,,FALSE,3,6/11/2024,14:10:36,69180,1153,19.2,0.8
+Field Station 2024,DSCF0472.JPG,Fish 4,6/11/2024 14:32,Turkey vulture,1,,,,,FALSE,3,6/11/2024,14:32:27,1311,21.9,0.4,0
+Field Station 2024,DSCF0496.JPG,Fish 4,6/11/2024 14:53,Turkey vulture,1,,,,,FALSE,1,6/11/2024,14:53:08,1241,20.7,0.3,0
+Field Station 2024,DSCF0542.JPG,Fish 4,6/12/2024 17:35,Turkey vulture,1,,,,,FALSE,2,6/12/2024,17:35:21,96133,1602.2,26.7,1.1
+Field Station 2024,DSCF0544.JPG,Fish 4,6/12/2024 17:53,Turkey vulture,1,,,,,FALSE,2,6/12/2024,17:53:04,1063,17.7,0.3,0
+Field Station 2024,DSCF0610.JPG,Fish 4,6/17/2024 11:52,Turkey vulture,1,,,,,FALSE,10,6/17/2024,11:52:43,410379,6839.6,114,4.8
+Field Station 2024,DSCF0019.JPG,Fish 4,6/8/2024 5:12,Virginia opossum,1,Unknown,Unknown,,,FALSE,2,6/8/2024,5:12:43,0,0,0,0
+Field Station 2024,DSCF0248.JPG,Fish 4,6/8/2024 21:48,Virginia opossum,1,,,,,FALSE,4,6/8/2024,21:48:15,59732,995.5,16.6,0.7
+Field Station 2024,DSCF0252.JPG,Fish 4,6/8/2024 22:26,Virginia opossum,1,,,,,FALSE,3,6/8/2024,22:26:24,2289,38.1,0.6,0
+Field Station 2024,DSCF0270.JPG,Fish 4,6/9/2024 0:44,Virginia opossum,1,,,,,FALSE,2,6/9/2024,0:44:03,8259,137.7,2.3,0.1
+Field Station 2024,DSCF0272.JPG,Fish 4,6/9/2024 2:00,Virginia opossum,1,,,,,FALSE,6,6/9/2024,2:00:54,4611,76.8,1.3,0.1
+Field Station 2024,DSCF0278.JPG,Fish 4,6/9/2024 21:39,Virginia opossum,1,,,,,FALSE,3,6/9/2024,21:39:59,70745,1179.1,19.7,0.8
+Field Station 2024,DSCF0314.JPG,Fish 4,6/10/2024 3:08,Virginia opossum,1,,,,,FALSE,6,6/10/2024,3:08:12,19693,328.2,5.5,0.2
+Field Station 2024,DSCF0324.JPG,Fish 4,6/10/2024 3:50,Virginia opossum,1,,,,,FALSE,2,6/10/2024,3:50:21,2529,42.1,0.7,0
+Field Station 2024,DSCF0326.JPG,Fish 4,6/10/2024 5:07,Virginia opossum,1,,,,,FALSE,3,6/10/2024,5:07:44,4643,77.4,1.3,0.1
+Field Station 2024,DSCF0434.JPG,Fish 4,6/10/2024 21:30,Virginia opossum,1,,,,,FALSE,1,6/10/2024,21:30:32,58968,982.8,16.4,0.7
+Field Station 2024,DSCF0436.JPG,Fish 4,6/10/2024 22:30,Virginia opossum,1,,,,,FALSE,2,6/10/2024,22:30:03,3571,59.5,1,0
+Field Station 2024,DSCF0440.JPG,Fish 4,6/11/2024 5:26,Virginia opossum,1,,,,,FALSE,1,6/11/2024,5:26:38,24995,416.6,6.9,0.3
+Field Station 2024,DSCF0514.JPG,Fish 4,6/12/2024 0:11,Virginia opossum,1,,,,,FALSE,1,6/12/2024,0:11:22,67484,1124.7,18.7,0.8
+Field Station 2024,DSCF0516.JPG,Fish 4,6/12/2024 4:50,Virginia opossum,1,,,,,FALSE,2,6/12/2024,4:50:45,16763,279.4,4.7,0.2
+Field Station 2024,DSCF0568.JPG,Fish 4,6/15/2024 5:50,Virginia opossum,1,,,,,FALSE,1,6/15/2024,5:50:42,262797,4380,73,3
+Field Station 2024,DSCF0588.JPG,Fish 4,6/16/2024 0:58,Virginia opossum,1,,,,,FALSE,2,6/16/2024,0:58:39,68877,1148,19.1,0.8
+Field Station 2024,DSCF0636.JPG,Fish 4,6/18/2024 4:46,Virginia opossum,1,,,,,FALSE,2,6/18/2024,4:46:06,186447,3107.4,51.8,2.2
+Field Station 2024,DSCF0638.JPG,Fish 4,6/18/2024 5:05,Virginia opossum,1,,,,,FALSE,2,6/18/2024,5:05:45,1179,19.6,0.3,0
+Field Station 2024,DSCF0648.JPG,Fish 4,6/20/2024 22:51,Virginia opossum,1,,,,,FALSE,2,6/20/2024,22:51:49,236764,3946.1,65.8,2.7
+Field Station 2024,DSCF0666.JPG,Fish 4,6/23/2024 3:32,Virginia opossum,1,,,,,FALSE,2,6/23/2024,3:32:51,189662,3161,52.7,2.2
+Field Station 2024,DSCF0670.JPG,Fish 4,6/24/2024 5:14,Virginia opossum,1,,,,,FALSE,2,6/24/2024,5:14:46,92515,1541.9,25.7,1.1
+Field Station 2024,DSCF0681.AVI,Fish 4,6/26/2024 21:02,White-tailed deer,1,Famale,,,,FALSE,2,6/26/2024,21:02:40,0,0,0,0
+Field Station 2024,DSCF0166.JPG,Perfume 1,7/3/2024 22:06,Armadillo,1,Unknown,,,,FALSE,2,7/3/2024,22:06:25,0,0,0,0
+Field Station 2024,DSCF0034.JPG,Perfume 1,6/12/2024 9:00,Hog,1,Unknown,,,,FALSE,1,6/12/2024,9:00:37,0,0,0,0
+Field Station 2024,DSCF0039.AVI,Perfume 1,6/12/2024 9:16,Hog,1,Unknown,,,,FALSE,3,6/12/2024,9:16:14,937,15.6,0.3,0
+Field Station 2024,DSCF0057.AVI,Perfume 1,6/15/2024 0:09,Hog,1,Unknown,,,,FALSE,1,6/15/2024,0:09:14,226380,3773,62.9,2.6
+Field Station 2024,DSCF0061.JPG,Perfume 1,6/15/2024 6:51,Hog,1,Unknown,,,,FALSE,2,6/15/2024,6:51:37,24143,402.4,6.7,0.3
+Field Station 2024,DSCF0001.JPG,Perfume 1,6/4/2024 9:39,Human,1,Unknown,,,,FALSE,1,6/4/2024,9:39:09,0,0,0,0
+Field Station 2024,DSCF0083.JPG,Perfume 1,6/18/2024 11:54,Human,1,,,,,FALSE,2,6/18/2024,11:54:21,1217712,20295.2,338.3,14.1
+Field Station 2024,DSCF0232.JPG,Perfume 1,7/30/2024 9:24,Human,1,,,,,FALSE,1,7/30/2024,9:24:55,3619834,60330.6,1005.5,41.9
+Field Station 2024,DSCF0049.JPG,Perfume 1,6/14/2024 3:45,Raccoon,1,Unknown,,,,FALSE,2,6/14/2024,3:45:40,0,0,0,0
+Field Station 2024,DSCF0097.JPG,Perfume 1,6/23/2024 21:35,Raccoon,1,Unknown,,,,FALSE,1,6/23/2024,21:35:21,841781,14029.7,233.8,9.7
+Field Station 2024,DSCF0046.JPG,Perfume 1,6/14/2024 2:38,White-tailed deer,1,Famale,,,,FALSE,2,6/14/2024,2:38:29,0,0,0,0
+Field Station 2024,DSCF0064.JPG,Perfume 1,6/15/2024 7:27,White-tailed deer,1,Famale,,,,FALSE,2,6/15/2024,7:27:33,103744,1729.1,28.8,1.2
+Field Station 2024,DSCF0157.JPG,Perfume 1,6/30/2024 19:59,White-tailed deer,1,Famale,,,,FALSE,3,6/30/2024,19:59:40,1341127,22352.1,372.5,15.5
+Field Station 2024,DSCF0171.AVI,Perfume 1,7/5/2024 21:01,White-tailed deer,2,Famale,,,,FALSE,1,7/5/2024,21:01:42,435722,7262,121,5
+Field Station 2024,DSCF0178.JPG,Perfume 1,7/7/2024 10:21,White-tailed deer,1,Unknown,,,,FALSE,5,7/7/2024,10:21:10,134368,2239.5,37.3,1.6
+Field Station 2024,DSCF0184.JPG,Perfume 1,7/7/2024 18:46,White-tailed deer,1,Unknown,,,,FALSE,3,7/7/2024,18:46:38,30328,505.5,8.4,0.4
+Field Station 2024,DSCF0192.AVI,Perfume 1,7/12/2024 4:59,White-tailed deer,1,Famale,,,,FALSE,6,7/12/2024,4:59:50,382392,6373.2,106.2,4.4
+Field Station 2024,DSCF0201.AVI,Perfume 1,7/14/2024 22:26,White-tailed deer,1,Famale,,,,FALSE,1,7/14/2024,22:26:36,235606,3926.8,65.4,2.7
+Field Station 2024,DSCF0223.JPG,Perfume 1,7/20/2024 6:16,White-tailed deer,1,Unknown,,,,FALSE,1,7/20/2024,6:16:05,460169,7669.5,127.8,5.3
+Field Station 2024,DSCF0001.JPG,Perfume 2,6/5/2024 11:05,Human,3,Male,Adult,,,FALSE,10,6/5/2024,11:05:55,0,0,0,0
+Field Station 2024,DSCF0017.JPG,Perfume 2,6/6/2024 11:23,Human,1,Unknown,Adult,,,FALSE,2,6/6/2024,11:23:04,87429,1457.2,24.3,1
+Field Station 2024,DSCF0001.JPG,Perfume 3,4/6/2024 11:55,Human,3,"Famale,Male",Adult,,,FALSE,10,4/6/2024,11:55:46,0,0,0,0
+Field Station 2024,DSCF0028.AVI,Perfume 4,6/6/2024 23:44,Armadillo,1,Unknown,,,,FALSE,1,6/6/2024,23:44:26,0,0,0,0
+Field Station 2024,DSCF0029.JPG,Perfume 4,6/7/2024 23:29,Armadillo,1,Unknown,,,,FALSE,2,6/7/2024,23:29:43,85517,1425.3,23.8,1
+Field Station 2024,DSCF0032.AVI,Perfume 4,6/9/2024 21:24,Armadillo,1,Unknown,,,,FALSE,1,6/9/2024,21:24:14,165271,2754.5,45.9,1.9
+Field Station 2024,DSCF0043.JPG,Perfume 4,6/11/2024 23:29,Armadillo,1,Unknown,,,,FALSE,1,6/11/2024,23:29:28,180314,3005.2,50.1,2.1
+Field Station 2024,DSCF0045.JPG,Perfume 4,6/12/2024 0:44,Armadillo,1,Unknown,,,,FALSE,2,6/12/2024,0:44:39,4511,75.2,1.3,0.1
+Field Station 2024,DSCF0047.JPG,Perfume 4,6/13/2024 21:41,Armadillo,1,Unknown,,,,FALSE,4,6/13/2024,21:41:04,161785,2696.4,44.9,1.9
+Field Station 2024,DSCF0057.JPG,Perfume 4,6/16/2024 21:48,Armadillo,1,Unknown,,,,FALSE,1,6/16/2024,21:48:48,259664,4327.7,72.1,3
+Field Station 2024,DSCF0061.JPG,Perfume 4,6/17/2024 4:45,Armadillo,1,Unknown,,,,FALSE,3,6/17/2024,4:45:57,25029,417.1,7,0.3
+Field Station 2024,DSCF0065.JPG,Perfume 4,6/17/2024 5:17,Armadillo,1,Unknown,,,,FALSE,1,6/17/2024,5:17:00,1863,31,0.5,0
+Field Station 2024,DSCF0074.AVI,Perfume 4,6/18/2024 2:47,Armadillo,1,Unknown,,,,FALSE,1,6/18/2024,2:47:32,77432,1290.5,21.5,0.9
+Field Station 2024,DSCF0079.JPG,Perfume 4,6/18/2024 21:42,Armadillo,0,,,,,FALSE,1,6/18/2024,21:42:35,68103,1135,18.9,0.8
+Field Station 2024,DSCF0087.JPG,Perfume 4,6/21/2024 19:53,Armadillo,2,Unknown,,,,FALSE,1,6/21/2024,19:53:06,252631,4210.5,70.2,2.9
+Field Station 2024,DSCF0093.JPG,Perfume 4,6/22/2024 3:19,Armadillo,1,Unknown,,,,FALSE,1,6/22/2024,3:19:58,26812,446.9,7.4,0.3
+Field Station 2024,DSCF0095.JPG,Perfume 4,6/22/2024 21:51,Armadillo,1,Unknown,,,,FALSE,1,6/22/2024,21:51:46,66708,1111.8,18.5,0.8
+Field Station 2024,DSCF0106.AVI,Perfume 4,6/28/2024 1:05,Armadillo,1,Unknown,,,,FALSE,2,6/28/2024,1:05:12,443606,7393.4,123.2,5.1
+Field Station 2024,DSCF0114.AVI,Perfume 4,6/30/2024 21:33,Armadillo,1,Unknown,,,,FALSE,1,6/30/2024,21:33:10,246478,4108,68.5,2.9
+Field Station 2024,DSCF0122.AVI,Perfume 4,7/7/2024 3:57,Armadillo,1,Unknown,,,,FALSE,2,7/7/2024,3:57:14,541444,9024.1,150.4,6.3
+Field Station 2024,DSCF0132.AVI,Perfume 4,7/7/2024 6:13,Armadillo,1,Unknown,,,,FALSE,1,7/7/2024,6:13:26,8172,136.2,2.3,0.1
+Field Station 2024,DSCF0135.JPG,Perfume 4,7/10/2024 0:46,Armadillo,1,Unknown,,,,FALSE,2,7/10/2024,0:46:18,239572,3992.9,66.5,2.8
+Field Station 2024,DSCF0140.AVI,Perfume 4,7/10/2024 5:13,Armadillo,1,Unknown,,,,FALSE,1,7/10/2024,5:13:04,16006,266.8,4.4,0.2
+Field Station 2024,DSCF0144.AVI,Perfume 4,7/12/2024 21:02,Armadillo,1,Unknown,,,,FALSE,1,7/12/2024,21:02:48,229784,3829.7,63.8,2.7
+Field Station 2024,DSCF0033.JPG,Perfume 4,6/10/2024 4:38,Bobcat,1,Unknown,,,,FALSE,4,6/10/2024,4:38:23,0,0,0,0
+Field Station 2024,DSCF0039.JPG,Perfume 4,6/11/2024 15:51,Fox squirrel,1,Unknown,,,,FALSE,2,6/11/2024,15:51:28,0,0,0,0
+Field Station 2024,DSCF0053.JPG,Perfume 4,6/16/2024 1:12,Hog,1,Unknown,,,,FALSE,2,6/16/2024,1:12:10,0,0,0,0
+Field Station 2024,DSCF0097.JPG,Perfume 4,6/24/2024 4:20,Hog,1,Unknown,,,,FALSE,2,6/24/2024,4:20:41,702511,11708.5,195.1,8.1
+Field Station 2024,DSCF0001.JPG,Perfume 4,6/6/2024 11:10,Human,0,,,,,FALSE,2,6/6/2024,11:10:39,0,0,0,0
+Field Station 2024,DSCF0031.JPG,Perfume 4,6/9/2024 21:24,Raccoon,1,Unknown,,,,FALSE,1,6/9/2024,21:24:13,0,0,0,0
+Field Station 2024,DSCF0052.AVI,Perfume 4,6/15/2024 5:58,Raccoon,1,Unknown,,,,FALSE,1,6/15/2024,5:58:34,462861,7714.4,128.6,5.4
+Field Station 2024,DSCF0117.JPG,Perfume 4,7/5/2024 17:20,Raccoon,1,Unknown,,,,FALSE,3,7/5/2024,17:20:46,1768932,29482.2,491.4,20.5
+Field Station 2024,DSCF0141.JPG,Perfume 4,7/11/2024 23:23,Virginia opossum,1,Unknown,,,,FALSE,1,7/11/2024,23:23:00,0,0,0,0
