@@ -50,7 +50,7 @@ A shared hub for camera-trap surveys, field methods, sampling effort, and resour
 
 ### Field Station – Bait Project
 
-Camera-trap surveys conducted during the Wildlife Field Techniques field station. The project evaluates how different attractants influence wildlife detections while generating datasets that support additional undergraduate research questions.
+Camera-trap surveys conducted during the Wildlife Field Techniques field station. The project evaluates how different attractants influence wildlife detections.
 
 [Explore Field Station surveys →](surveys/field-station/index.qmd)
 :::
@@ -60,7 +60,7 @@ Camera-trap surveys conducted during the Wildlife Field Techniques field station
 
 ### Wildlife Techniques
 
-Smaller camera-trap surveys conducted during Wildlife Techniques activities in the Nacogdoches area. These datasets can support student projects and comparisons across sites and sampling designs.
+Smaller camera-trap surveys conducted during Wildlife Techniques course to detect wildlife in urban areas.
 
 *Section in development.*
 :::
@@ -68,7 +68,7 @@ Smaller camera-trap surveys conducted during Wildlife Techniques activities in t
 
 ## Study sites
 
-Our long-term camera-trap work currently includes three East Texas study sites, with new locations added as surveys are completed.
+Our camera-trap work currently includes three East Texas study sites, with new locations added as surveys are completed.
 
 ::: map-wrap
 ```{r}
@@ -169,7 +169,7 @@ Species-identification resources and the workflow used to tag and organize camer
 
 Training materials for students who want to move from processed camera-trap data to data summaries, visualization, and analysis in R.
 
-*R course link coming soon.*
+🖥️ [*R course link*](https://gpandradep.github.io/R-CameraTrap-Workshop/)*.*
 :::
 
 ::: portal-card

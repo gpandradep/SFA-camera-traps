@@ -306,3 +306,73 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   People page
+   ============================================================ */
+
+.people-intro {
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin: 1rem 0 2rem;
+}
+
+.person-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.4rem;
+}
+
+.person-card h3 {
+  margin-top: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.person-photo {
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 2px var(--sage-light);
+}
+
+.person-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sage-light);
+  color: var(--forest);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.role-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+
+.role-chip {
+  display: inline-block;
+  padding: 0.28rem 0.58rem;
+  border-radius: 999px;
+  background: var(--sage-light);
+  color: var(--forest);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+}

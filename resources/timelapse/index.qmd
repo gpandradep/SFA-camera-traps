@@ -1,0 +1,58 @@
+---
+title: "Timelapse"
+description: "Software and workflow used to organize, classify, and process camera-trap photographs and videos."
+image: "TimelapseScreenSnapshot.jpg"
+categories:
+  - Software
+  - Data processing
+toc: true
+toc-depth: 3
+---
+
+## The software we use
+
+Our project primarily uses **Timelapse** to manage and process camera-trap photographs and videos.
+
+Timelapse is designed for image-based monitoring projects and works particularly well with camera-trap data. It is flexible, relatively easy to use, and lightweight enough for students to work with large collections of photographs and videos.
+
+Timelapse uses **templates** that define which fields should be completed for a particular project. Because templates can be customized, the information students are asked to record may vary slightly among projects.
+
+Timelapse also supports integration with **AddaxAI**, which can assist with automated species recognition and image review.
+
+### Download Timelapse
+
+Timelapse can be downloaded from:
+
+<https://timelapse.ucalgary.ca/download/>
+
+Students who are new to the software are encouraged to review the tutorial videos available on the Timelapse website before beginning image classification.
+
+## Project workflow
+
+Each student assigned to camera-trap image processing will receive one or more folders containing photographs and videos from a camera-trap station.
+
+Folders may be shared digitally or through an SD card. Each folder represents a different station or camera and is named according to the project and sampling design, for example:
+
+- `Control 1`
+- `Perfume 2A`
+- `Fish 3`
+
+Each folder contains:
+
+- the photographs and videos from that station;
+- `TimelapseData.ddb`; and
+- `TimelapseTemplate.tdb`.
+
+Students should open Timelapse and load the Timelapse database contained within the assigned folder. Once the photographs and videos are loaded, image classification can begin.
+
+## Detailed Timelapse guide
+
+A detailed guide describing how to load a database and work with the project Timelapse template was prepared by **Natalie Ransom**.
+
+[Open the Timelapse guide](https://mslivesfasu-my.sharepoint.com/:b:/g/personal/andradegp_sfasu_edu/IQCidhKqxtsVR5fD8vT8o9MEAeKWssTlcHdBsY0jlGia1Xk?e=QRhCeK)
+
+::: {.callout-important}
+### Before you start
+
+Always work from the folder and template assigned to your project. Field names and classification requirements may differ among camera-trap projects.
+:::

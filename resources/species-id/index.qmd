@@ -1,0 +1,54 @@
+---
+title: "Species Identification"
+description: "Identification guides and project rules for classifying wildlife in camera-trap images."
+image: "DSCF0166.JPG"
+categories:
+  - Species identification
+  - Data processing
+toc: true
+toc-depth: 3
+---
+
+## Identification resources
+
+Accurate species identification is essential for every analysis that uses the camera-trap database.
+
+Our project uses several wildlife identification guides originally developed through **eMammal**, a platform that supported camera-trap projects and has since transitioned toward Wildlife Insights.
+
+### Recommended guides
+
+1. [Snapshot USA Common Mammals Guide](https://emammal.si.edu/sites/default/files/2024-06/snapshot-usa-complete-field-guide.pdf)
+2. [Guide to Identifying Deer](https://emammal.si.edu/sites/default/files/2024-06/ft-deer_id_guide_0.pdf)
+3. [Guide to Identifying Eastern Squirrels](https://emammal.si.edu/sites/default/files/2024-06/squirrel-id-training.pdf)
+4. [Guide to Identifying Canids](https://emammal.si.edu/sites/default/files/2024-06/ft-canid_id_guide.pdf)
+
+Additional project-specific guides can be added to this page as new identification needs arise.
+
+## Classification rule
+
+::: {.callout-important}
+### If you are unsure, do not guess
+
+The quality of every research product produced from these data depends on correct species classification.
+
+If you are uncertain about an identification:
+
+1. classify the record as **Unknown**;
+2. add a comment describing what made the identification difficult; and
+3. flag the image for later review when appropriate.
+
+Never assign a species simply because it appears to be the most likely option.
+:::
+
+## Why identification quality matters
+
+Errors introduced during image classification propagate into every later stage of the project, including:
+
+- species lists;
+- detection counts;
+- activity-pattern analyses;
+- event rates;
+- community summaries; and
+- student research projects.
+
+Careful classification during the initial processing stage is therefore one of the most important quality-control steps in the entire camera-trap workflow.

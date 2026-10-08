@@ -1,0 +1,72 @@
+---
+title: "People"
+subtitle: "The students and collaborators behind the SFA Camera Trap Project"
+page-layout: full
+toc: false
+---
+
+<div class="people-intro">
+The SFA Camera Trap Project is a collaborative effort involving faculty, students, and field-course participants. Students contribute at different stages of the project, from deploying cameras and classifying images to developing independent research projects and presenting their work.
+</div>
+
+## Project leadership
+
+::: {.people-grid}
+
+::: {.person-card}
+<img
+  class="person-photo"
+  src="img/GAP.jpeg"
+  alt="Gabriel Andrade-Ponce">
+
+### Gabriel Andrade-Ponce
+
+**Project lead** | **Postdoctoral Research Associate**
+
+Camera-trap ecology, wildlife monitoring, data analysis, and student research mentoring.
+
+<div class="role-chips">
+<span class="role-chip">Project leadership</span>
+<span class="role-chip">Research</span>
+<span class="role-chip">Mentoring</span>
+</div>
+:::
+
+::: {.person-card}
+<img
+  class="person-photo"
+  src="img/RA.jpg"
+  alt="Reuber Antoniazzi">
+
+### Reuber Antoniazzi
+
+**Project lead**| **Assistant Professor of Forest Wildlife Management**
+
+Field coordination, wildlife techniques, camera deployment, and student mentoring.
+
+<div class="role-chips">
+<span class="role-chip">Project leadership</span>
+<span class="role-chip">Field work</span>
+<span class="role-chip">Mentoring</span>
+</div>
+:::
+
+:::
+
+## Student researchers
+
+Students who have developed research questions, analyzed project data, or presented their work at scientific meetings will be highlighted here.
+
+::: {.soft-panel}
+Student profiles will be added as projects are completed. Profiles may include a photograph, research topic, poster or presentation, and links to related project materials.
+:::
+
+## Image classification team
+
+Students currently contributing to image sorting, species identification, and database quality control will be listed here as the project grows.
+
+## Field crew
+
+Many students contribute to camera deployment and retrieval through field courses and project activities. Because this group can be large, field participants will be acknowledged here as a simple list rather than individual profiles.
+
+*Names will be added by survey and year.*

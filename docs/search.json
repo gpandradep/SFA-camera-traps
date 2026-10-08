@@ -81,14 +81,14 @@
     "href": "index.html#projects",
     "title": "Long-Term Camera Trap Project",
     "section": "Projects",
-    "text": "Projects\n\n\nAnnual field project\n\nField Station – Bait Project\nCamera-trap surveys conducted during the Wildlife Field Techniques field station. The project evaluates how different attractants influence wildlife detections while generating datasets that support additional undergraduate research questions.\nExplore Field Station surveys →\n\n\n\nExpanding collection\n\nWildlife Techniques\nSmaller camera-trap surveys conducted during Wildlife Techniques activities in the Nacogdoches area. These datasets can support student projects and comparisons across sites and sampling designs.\nSection in development."
+    "text": "Projects\n\n\nAnnual field project\n\nField Station – Bait Project\nCamera-trap surveys conducted during the Wildlife Field Techniques field station. The project evaluates how different attractants influence wildlife detections.\nExplore Field Station surveys →\n\n\n\nExpanding collection\n\nWildlife Techniques\nSmaller camera-trap surveys conducted during Wildlife Techniques course to detect wildlife in urban areas.\nSection in development."
   },
   {
     "objectID": "index.html#study-sites",
     "href": "index.html#study-sites",
     "title": "Long-Term Camera Trap Project",
     "section": "Study sites",
-    "text": "Study sites\nOur long-term camera-trap work currently includes three East Texas study sites, with new locations added as surveys are completed."
+    "text": "Study sites\nOur camera-trap work currently includes three East Texas study sites, with new locations added as surveys are completed."
   },
   {
     "objectID": "index.html#current-field-station-surveys",
@@ -102,7 +102,7 @@
     "href": "index.html#resources",
     "title": "Long-Term Camera Trap Project",
     "section": "Resources",
-    "text": "Resources\n\n\nSort & identify\nSpecies-identification resources and the workflow used to tag and organize camera-trap images in Timelapse.\nResources coming soon.\n\n\nAnalyze in R\nTraining materials for students who want to move from processed camera-trap data to data summaries, visualization, and analysis in R.\nR course link coming soon.\n\n\nData & downloads\nStandardized camtrapR outputs, survey metadata, and documentation describing which dataset should be used for different purposes.\nDownload section coming soon."
+    "text": "Resources\n\n\nSort & identify\nSpecies-identification resources and the workflow used to tag and organize camera-trap images in Timelapse.\nResources coming soon.\n\n\nAnalyze in R\nTraining materials for students who want to move from processed camera-trap data to data summaries, visualization, and analysis in R.\n🖥️ R course link.\n\n\nData & downloads\nStandardized camtrapR outputs, survey metadata, and documentation describing which dataset should be used for different purposes.\nDownload section coming soon."
   },
   {
     "objectID": "index.html#using-these-data",
@@ -180,5 +180,215 @@
     "title": "Explore camera-trap data",
     "section": "Station summary",
     "text": "Station summary\n\n  \n\n\n\nStation\nTreatment\nTrap-nights\nIndependent events\n\n\n\n\n\n\n\n\n\n\n\n\n\nInterpreting the explorer\n\n\n\nThe 30-day bait experiment uses the first 30 days after deployment at each station and is the appropriate period for questions focused on attractant treatments. The full survey uses all available sampling effort and records.\nEvents / 100 trap-nights standardizes independent records by sampling effort. Observed species richness includes only categories identified as wildlife species in the project species metadata."
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "This library brings together the main resources used throughout the camera-trap project, including software instructions, species-identification guides, data-processing workflows, and short conceptual guides for analysis.\nResources will continue to be added as the project grows."
+  },
+  {
+    "objectID": "resources/index.html#el-software-que-usamos",
+    "href": "resources/index.html#el-software-que-usamos",
+    "title": "Resources",
+    "section": "El software que usamos",
+    "text": "El software que usamos\nEn este proyecto usamos principalmente Timlapse para el manejo y procesamiento de la informacion de camaras trampa. En general s un sofware dedicado para datos de camras trampa, aunque puede usarse para otro tipo de proyectos que contenga fotos y/o videos. Tambien es muy flexible, relativamente facil de usar y ligero.\nTimelapse funciona con templates, es decir plantillas que dictan que campos o informacion debe consignarse en cada proyecto, lo que lo hace bastante flexible. Por eso quizas, en cada proyecto la informacion y los campos a llenar van a variar ligeramente, pero es justamente eso lo que lo hace tan flexible.\nTimlapse, tambien tiene integrado el uso de Addax AI, el cual es un software especializado en facilitar el uso de modelos de reconocimiento de especies.\nPara descargar Timelapse porfavor dirigete a este link https://timelapse.ucalgary.ca/download/ y sigue las instrucciones\nSe recomienda mirar los videos tutoriales para familiarzarse con el software"
+  },
+  {
+    "objectID": "resources/index.html#el-protocolo-que-seguimos",
+    "href": "resources/index.html#el-protocolo-que-seguimos",
+    "title": "Resources",
+    "section": "El protocolo que seguimos",
+    "text": "El protocolo que seguimos\nCada estudiante asignado va a recibir ya sea mediante el prestamo de una SD card o de manera digital 1 o mas folders con fotos y videos de camaras trampa. Cada folder representa una estacion o camara distinta y estar nombrado dependiendo del proyecto o tratamiento. Por ejemplo, Control 1, Perfume 2A etc.\nCada carpeta tendra los archivos de fotos y videos de la estacion y dos archivos Timelapse: TimelapseData.ddb y TimelapseTemplate.tdb. Los estudiantes deben abrir Timelapse y cargar el archivo Timelapse que esta dentro de ese folder para cargar las fotos y videos en el programa. Cuando las fotos y videos esten cargadas los estudiantes pueden empezar a clasificar las imagenes y consignar toda la informacion necesaria.\nLas instrucciones detalladas de como cargar la base de datos y usar el programa pueden verse en esta guia realizada por Natalie Ransom"
+  },
+  {
+    "objectID": "resources/index.html#guias-de-identificacion-de-especies",
+    "href": "resources/index.html#guias-de-identificacion-de-especies",
+    "title": "Resources",
+    "section": "Guias de identificacion de especies",
+    "text": "Guias de identificacion de especies\nNosotros usamos las guias de identificacion provistas por emammal, que era un equipo y pagina encargada de alojar diferentes proyectos de camras trampa, ahora migraron a Wildlife Insights’.\nLas quias incluyen 1. Snapshot USA Common Mammals Guide 2. Guide to Identifying Deer 3. Guide to Identifying Eastern Squirrels 4. Guide to Identifying Canids\nEs muyyy importante que revisen las guias y sepan identificar claramente las especies. La calidad de cualquier producto de investigacion depende de la correcta clasificacion de las especies. Cualquier duda respecto a la clasificacion por favor agreguen un comentario y clasifiquen la especie como “Unknown”. Nunca traten de adivinar si no stan seguros.\n## Usando el IAR\n# La abundancia y las cámaras trampa\nLa estimación de la abundancia de poblaciones es de vital importancia para la conservación de la vida silvestre. En el caso de los mamíferos, las cámaras trampa son una de las métodos de muestreo más usados [@burton2015]."
+  },
+  {
+    "objectID": "resources/index.html#especies-marcadas-y-no-marcadas",
+    "href": "resources/index.html#especies-marcadas-y-no-marcadas",
+    "title": "Resources",
+    "section": "Especies marcadas y no marcadas",
+    "text": "Especies marcadas y no marcadas\nEn especies marcadas o con marcas naturales es posible usar modelos de captura recaptura para estimar la abundancia [@wearn2017].\n\nPero en especies que no tienen marcas es difícil o imposible reconocer individuos a partir de fotografías, lo que no permite usar modelos de captura recaptura.\n\nEn estos casos muchas veces se usan índices para realizar inferencias sobre la abundancia de especies [@oconnell2010; @obrien2003]."
+  },
+  {
+    "objectID": "resources/index.html#del-rai-a-la-abundancia",
+    "href": "resources/index.html#del-rai-a-la-abundancia",
+    "title": "Resources",
+    "section": "Del RAI a la abundancia",
+    "text": "Del RAI a la abundancia\nCómo cualquier otro índice, la utilidad del RAI para realizar inferencias sobre la abundancia de especies depende de que cumpla con ciertos supuestos generales.\n\nLos registros fotográficos deben ser independientes en el tiempo\nPoblación cerrada, el RAI no cambia durante el muestreo\nTodos los animales/individuos son detectados si están presentes\n\nSí todo esto es cierto para el RAI, entonces se espera que teóricamente tenga una correlación con la abundancia poblacional “real” [@oconnell2010; @obrien2003].\n\nRegistros independientes ⏲️\nSeguramente en tus proyectos o tesis te han dicho que debes considerar solamente los registros independientes para calcular el RAI. Pero, ¿qué es un registro independiente?\n\nMuchas personas intuyen que un registro independiente es aquel donde se tiene cierta certeza de que el mismo individuo no es fotografiado de manera consecutiva. Entonces, muy inocentemente definen en su tesis o artículo 30/60/1440 minutos como el umbral mágico, en el cual dos registros no pertenecen al mismo individuo. Citando seguramente a otra persona que también ha hecho lo mismo [@sollmann2018].\nEstamos olvidando algo crucial y es que usamos el RAI porque no podemos reconocer individuos y por lo tanto no tenemos la certeza de que un individuo diferente pasa en la cámara después de xx cantidad de tiempo.\nRealmente definimos los registros “independientes” para evitar las pseudo-replicas temporales. Es decir, registros que nos dan la misma información debido a que están muy cercanos entre sí. Pero, elegir un intervalo no es una tarea trivial, ya que: un intervalo muy pequeño puede hacer que tengamos registros dependientes, lo que resulta en que sobre-estimemos el índice o que se invaliden muchas pruebas estadísticas [@carroll2000]. Pero escoger un intervalo muy grande puede hacer que perdamos información, lo cual no es algo deseable para especies poco comunes.\n\n¿ Cómo escoger un intervalo adecuado? sigue siendo una pregunta difícil. Lo mejor que podemos hacer es definir ese intervalo con base en el conocimiento ecológico y del movimiento de la especie objetivo [@sollmann2018]. Existe también la posibilidad de definir el umbral de independencia de manera más formal explorando la autocorrelación temporal de los registros [@kays2014; @iannarilli2019] o la inspección de los intervalos de registros subsecuentes [@yasuda2004].\n\nPor lo general las técnicas estadísticas formales para definir independencia temporal son poco usadas por la falta de información y herramientas que sean relativamente difíciles de aplicar. Aunque en este campo el paquete lorelogram [@iannarilli2019] parece ser muy promisorio. En todo caso las primeras aplicaciones del paquete muestran que para la mayoría de los casos la dependencia espacial se pierde con tan solo 3 minutos y en casos extremos 15 min (con atrayentes) [@iannarilli2021].\n\n\nPoblación cerrada\nSeguramente la mayoría también ha escuchado hablar del supuesto de población cerrada. De manera general una población cerrada se da idealmente en determinado periodo de tiempo donde no sucedan muertes, nacimientos, migración o emigración de individuos [@schoen1991]. Esto es particularmente importante cuando intentamos hacer inferencias sobre el parámetros poblacionales de una especie, en este caso abundancia.\nVamos a verlo con un ejemplo exagerado, pero espero que ilustre lo importante que puede ser el supuesto. Imaginemos que tenemos tres años de conteos de una población de un cánido en un área determinada. Por algún motivo esta población esta disminuyendo cada año. Sin embargo, sí yo defino mi temporada de muestreo como los 3 años, no será posible evidenciar la disminución de la población. Al realizar cada conteo por año si sera posible. Esto mismo puede suceder a escala de meses o de temporadas climáticas, pero claro todo va a depender del sistema de estudio y el conocimiento que tengamos del mismo.\n\n\n\n¿ Detectamos todo los que existe ?\nEl RAI supone que todos los individuos que se encuentren en el área serán fotografiados, es decir que la probabilidad de detección es perfecta. En otras palabras, si tenemos la total seguridad de registrar todos los individuos que pasen en frente de la cámara trampa, tendremos la certeza de que los cambios en la tasa fotográfica se deban a los cambios en la abundancia de la especie. Básicamente que la relación de la abundancia real y el RAI sea monotónica [@obrien2011].\n\n\n\nPalmer et al 2018 Relación del RAI con estimaciones de densidad con vuelos\n\n\nAutores cómo @palmer2018 han demostrado que bajo ciertas circunstancias el RAI puede ser un buen reflejo de la abundancia. No obstante, en la mayoría de los casos la probabilidad de detección de las especies no es perfecta [@kéry2009; @burton2015]. Esto quiere decir que es bastante probable que pese a que no detectemos a una especie en una unidad y día determinado, es difícil llegar a concluir que en efecto esta ausente. Lo cual termina por generar que subestimemos el parámetro de interés [@martin-garcia2022].\n\n\n\n\n\n\n\nModificado de Gálvez, N., González, M. J., Vuskovic, T., Bañales- Seguel, C., Opazo, A., Martínez, D., Zurita, R., Ortega, F., & Schuttler, S. (2020). Monitoreo escolar de fauna silvestre: Guía docente para realizar un proyecto centífico escolar mediante foto trampeo (First ed.) Proyecto EXPLORA de Divulgación y Valoración de la Cienciay Tecnología 2018-2019 de CONICYT ED220040.\n\n\nEn cámaras trampa la detección imperfecta es un fenómeno muy común. Recordemos que como herramientas de monitoreo pasivo las cámaras tienen un área efectiva de muestreo bastante pequeña [@andrade-ponce2021; @moeller2022]. En otras palabras, la probabilidad de que una especie pase frente al área donde el sensor de la cámara se active y sea registrada, realmente es baja [@moeller2022].\n\nExisten diversos factores que pueden llegar a afectar la detección de las especies, desde su abundancia natural, el tamaño del ámbito hogareño, el tipo de hábitat, el lugar en que ubiquemos la cámara, entre otras [@burton2015; @andrade-ponce2021; @guillera-arroita2016]. Lo cierto es que se ha demostrado que llegar a ignorar la detección imperfecta de las especies puede hacernos llegar a conclusiones totalmente contrarias sobre la abundancia de las mismas [@sollmann2013].\n\n\nEl uso del espacio afecta la interpretación\nSi en algún mundo idílico cumplimos con los supuestos que ya mencionamos, podríamos llegar a pensar que los cambios en el RAI son un buen reflejo de los cambios en la abundancia de poblacional. No obstante, el uso del hábitat o del espacio también puede afectar la tasa de registro [@stewart2018]. Por ejemplo, especies que se mueven rápido a lo largo de su territorio pueden ser detectadas mayor número de veces, mientras que una especie de movimiento “lento” no. De manera, similar especies con ámbitos hogareños más amplios, pueden ser detectadas en distintas estaciones, aumentando el número de detecciones totales [@broadley2019].\n\nCreo que una manera sensata de usar el RAI es como una medida de actividad o intensidad de uso [@obrien2011]. Por supuesto seguimos teniendo el problema de la detección imperfecta, pero al menos no hacemos inferencia sobre una abundancia, sino sobre la relación entre la tasa de detección y alguna covariable como el hábitat o un disturbio. Precisamente, en este ejemplo vamos a usar el RAI para explicar la relación de la especie con algunas covariables y para ello usaremos modelos lineales. Manos a la obra:"
+  },
+  {
+    "objectID": "resources/index.html#resource-library",
+    "href": "resources/index.html#resource-library",
+    "title": "Resources",
+    "section": "Resource library",
+    "text": "Resource library"
+  },
+  {
+    "objectID": "resources/species-id/index.html",
+    "href": "resources/species-id/index.html",
+    "title": "Species Identification",
+    "section": "",
+    "text": "Accurate species identification is essential for every analysis that uses the camera-trap database.\nOur project uses several wildlife identification guides originally developed through eMammal, a platform that supported camera-trap projects and has since transitioned toward Wildlife Insights.\n\n\n\nSnapshot USA Common Mammals Guide\nGuide to Identifying Deer\nGuide to Identifying Eastern Squirrels\nGuide to Identifying Canids\n\nAdditional project-specific guides can be added to this page as new identification needs arise."
+  },
+  {
+    "objectID": "resources/species-id/index.html#identification-resources",
+    "href": "resources/species-id/index.html#identification-resources",
+    "title": "Species Identification",
+    "section": "",
+    "text": "Accurate species identification is essential for every analysis that uses the camera-trap database.\nOur project uses several wildlife identification guides originally developed through eMammal, a platform that supported camera-trap projects and has since transitioned toward Wildlife Insights.\n\n\n\nSnapshot USA Common Mammals Guide\nGuide to Identifying Deer\nGuide to Identifying Eastern Squirrels\nGuide to Identifying Canids\n\nAdditional project-specific guides can be added to this page as new identification needs arise."
+  },
+  {
+    "objectID": "resources/species-id/index.html#classification-rule",
+    "href": "resources/species-id/index.html#classification-rule",
+    "title": "Species Identification",
+    "section": "Classification rule",
+    "text": "Classification rule\n\n\n\n\n\n\nIf you are unsure, do not guess\n\n\n\nThe quality of every research product produced from these data depends on correct species classification.\nIf you are uncertain about an identification:\n\nclassify the record as Unknown;\nadd a comment describing what made the identification difficult; and\nflag the image for later review when appropriate.\n\nNever assign a species simply because it appears to be the most likely option."
+  },
+  {
+    "objectID": "resources/species-id/index.html#why-identification-quality-matters",
+    "href": "resources/species-id/index.html#why-identification-quality-matters",
+    "title": "Species Identification",
+    "section": "Why identification quality matters",
+    "text": "Why identification quality matters\nErrors introduced during image classification propagate into every later stage of the project, including:\n\nspecies lists;\ndetection counts;\nactivity-pattern analyses;\nevent rates;\ncommunity summaries; and\nstudent research projects.\n\nCareful classification during the initial processing stage is therefore one of the most important quality-control steps in the entire camera-trap workflow."
+  },
+  {
+    "objectID": "resources/rai/index.html",
+    "href": "resources/rai/index.html",
+    "title": "RAI: abundance, activity, or detection rate?",
+    "section": "",
+    "text": "Estimating population abundance is an important goal in wildlife conservation. For mammals, camera traps are among the most widely used sampling tools (Burton et al. 2015)."
+  },
+  {
+    "objectID": "resources/rai/index.html#abundance-and-camera-traps",
+    "href": "resources/rai/index.html#abundance-and-camera-traps",
+    "title": "RAI: abundance, activity, or detection rate?",
+    "section": "",
+    "text": "Estimating population abundance is an important goal in wildlife conservation. For mammals, camera traps are among the most widely used sampling tools (Burton et al. 2015)."
+  },
+  {
+    "objectID": "resources/rai/index.html#marked-and-unmarked-species",
+    "href": "resources/rai/index.html#marked-and-unmarked-species",
+    "title": "RAI: abundance, activity, or detection rate?",
+    "section": "Marked and unmarked species",
+    "text": "Marked and unmarked species\nFor species in which individuals can be recognized from artificial or natural marks, capture-recapture models can be used to estimate abundance (Wearn and Glover-Kapfer 2017).\n\nFor species without recognizable individual markings, however, it may be difficult or impossible to identify individuals from photographs. Traditional capture-recapture approaches therefore cannot be applied directly.\n\nIn these situations, researchers frequently use indices to make inferences about abundance (O’Connell, Nichols, and Karanth 2010; Timothy G. O’Brien, Kinnaird, and Wibisono 2003)."
+  },
+  {
+    "objectID": "resources/rai/index.html#from-rai-to-abundance",
+    "href": "resources/rai/index.html#from-rai-to-abundance",
+    "title": "RAI: abundance, activity, or detection rate?",
+    "section": "From RAI to abundance",
+    "text": "From RAI to abundance\nLike any index, using RAI to make inferences about population abundance requires important assumptions.\nIn simplified form, these include:\n\nphotographic records should provide meaningful independent sampling information;\nthe population should be sufficiently closed during the sampling period; and\ndetection should not vary in ways that obscure the relationship between photographic rate and true abundance.\n\nIf those assumptions are reasonably satisfied, RAI may theoretically be correlated with true population abundance (O’Connell, Nichols, and Karanth 2010; Timothy G. O’Brien, Kinnaird, and Wibisono 2003)."
+  },
+  {
+    "objectID": "resources/rai/index.html#independent-records",
+    "href": "resources/rai/index.html#independent-records",
+    "title": "RAI: abundance, activity, or detection rate?",
+    "section": "Independent records",
+    "text": "Independent records\nStudents are often told that only independent records should be used to calculate RAI. But what exactly does an independent record represent?\n\nA common interpretation is that two records are independent when enough time has passed that they probably represent different individuals. This has led many camera-trap studies to use thresholds such as 30 minutes, 60 minutes, or even 24 hours (R. Sollmann 2018).\nThere is an important conceptual problem with that interpretation: RAI is often used precisely because individuals cannot be recognized. We therefore cannot know whether an animal photographed after an arbitrary time threshold is a different individual.\nA more useful interpretation is that temporal independence thresholds are used to reduce temporal pseudoreplication: repeated photographs that contain very similar information because they occur close together in time.\nChoosing an interval is not trivial. A very short threshold may retain strongly dependent records, potentially inflating an index or violating assumptions of some statistical analyses (Carroll and Pearson 2000). A very long interval can discard useful information, particularly for uncommon species.\n\n\nChoosing an independence interval\nThere is no universally correct independence threshold.\nWhenever possible, the interval should be selected using ecological knowledge of the target species and its movement behavior (R. Sollmann 2018).\nMore formal approaches can include:\n\nexploring temporal autocorrelation among detections (Kays and Parsons 2014; F. Iannarilli et al. 2019);\nexamining the distribution of time intervals between sequential records (Yasuda 2004); and\nexplicitly evaluating the sensitivity of results to different thresholds.\n\n\nFormal approaches are still relatively uncommon, partly because data and accessible analytical tools are limited. The lorelogram approach described by F. Iannarilli et al. (2019) provides one promising option. Applications of this framework have suggested that temporal dependence may disappear after only a few minutes in many systems, although attractants can extend that interval (Fabiola Iannarilli et al. 2021)."
+  },
+  {
+    "objectID": "resources/rai/index.html#population-closure",
+    "href": "resources/rai/index.html#population-closure",
+    "title": "RAI: abundance, activity, or detection rate?",
+    "section": "Population closure",
+    "text": "Population closure\nA closed population is ideally one in which births, deaths, immigration, and emigration do not change the number of individuals during the sampling period (Schoen and Kim 1991).\nThis becomes important when an index is interpreted as a measure of abundance.\nImagine an exaggerated example in which a canid population declines each year over a three-year period. If all three years are treated as one sampling season, that decline may be obscured. If each year is analyzed separately, the change can become apparent.\nThe same problem can occur at the scale of months or biological seasons. The appropriate sampling period therefore depends on the ecological system and research question."
+  },
+  {
+    "objectID": "resources/rai/index.html#do-we-detect-everything-that-is-present",
+    "href": "resources/rai/index.html#do-we-detect-everything-that-is-present",
+    "title": "RAI: abundance, activity, or detection rate?",
+    "section": "Do we detect everything that is present?",
+    "text": "Do we detect everything that is present?\nInterpreting RAI as abundance implicitly assumes a strong relationship between the number of animals present and the number of photographic records obtained.\nIn the ideal case, changes in photographic rate would closely track changes in population abundance (Timothy G. O’Brien 2011).\n\n\n\nPalmer et al. 2018: relationship between RAI and aerial-survey density estimates\n\n\nUnder some circumstances, RAI can reflect abundance reasonably well (Palmer et al. 2018). However, wildlife detection is rarely perfect (Kéry et al. 2009; Burton et al. 2015).\nA species may be present at a site without being photographed during a particular sampling occasion. Failure to account for imperfect detection can therefore bias inference about the ecological parameter of interest (Martin-Garcia et al. 2022).\n\n\n\n\n\n\n\nModified from Gálvez et al. (2020).\n\n\nCamera traps have a relatively small effective sampling area (Andrade-Ponce et al. 2021; Moeller et al. 2022). An animal must move through the camera’s detection zone and activate the sensor before it can be recorded.\n\nDetection probability can vary with many factors, including local abundance, home-range size, habitat, camera placement, movement behavior, and other species-specific characteristics (Burton et al. 2015; Andrade-Ponce et al. 2021; Guillera-Arroita 2016).\nIgnoring imperfect detection can even produce conclusions about abundance that differ from those obtained with methods that explicitly model detectability (Rahel Sollmann et al. 2013)."
+  },
+  {
+    "objectID": "resources/rai/index.html#space-use-affects-interpretation",
+    "href": "resources/rai/index.html#space-use-affects-interpretation",
+    "title": "RAI: abundance, activity, or detection rate?",
+    "section": "Space use affects interpretation",
+    "text": "Space use affects interpretation\nEven if the previous assumptions were reasonably satisfied, habitat use and movement can still influence photographic rates (Stewart et al. 2018).\nFor example, species that move quickly through their home ranges may pass camera stations more often. Species with larger home ranges may encounter multiple stations, increasing their total number of detections (Broadley et al. 2019).\n\nFor this reason, a sensible use of photographic rates is often to interpret them as a measure of activity or intensity of use, rather than automatically treating them as direct estimates of abundance (Timothy G. O’Brien 2011).\nThis does not eliminate the problem of imperfect detection, but it avoids making a stronger population-level inference than the data can support."
+  },
+  {
+    "objectID": "resources/timelapse/index.html",
+    "href": "resources/timelapse/index.html",
+    "title": "Timelapse",
+    "section": "",
+    "text": "Our project primarily uses Timelapse to manage and process camera-trap photographs and videos.\nTimelapse is designed for image-based monitoring projects and works particularly well with camera-trap data. It is flexible, relatively easy to use, and lightweight enough for students to work with large collections of photographs and videos.\nTimelapse uses templates that define which fields should be completed for a particular project. Because templates can be customized, the information students are asked to record may vary slightly among projects.\nTimelapse also supports integration with AddaxAI, which can assist with automated species recognition and image review.\n\n\nTimelapse can be downloaded from:\nhttps://timelapse.ucalgary.ca/download/\nStudents who are new to the software are encouraged to review the tutorial videos available on the Timelapse website before beginning image classification."
+  },
+  {
+    "objectID": "resources/timelapse/index.html#the-software-we-use",
+    "href": "resources/timelapse/index.html#the-software-we-use",
+    "title": "Timelapse",
+    "section": "",
+    "text": "Our project primarily uses Timelapse to manage and process camera-trap photographs and videos.\nTimelapse is designed for image-based monitoring projects and works particularly well with camera-trap data. It is flexible, relatively easy to use, and lightweight enough for students to work with large collections of photographs and videos.\nTimelapse uses templates that define which fields should be completed for a particular project. Because templates can be customized, the information students are asked to record may vary slightly among projects.\nTimelapse also supports integration with AddaxAI, which can assist with automated species recognition and image review.\n\n\nTimelapse can be downloaded from:\nhttps://timelapse.ucalgary.ca/download/\nStudents who are new to the software are encouraged to review the tutorial videos available on the Timelapse website before beginning image classification."
+  },
+  {
+    "objectID": "resources/timelapse/index.html#project-workflow",
+    "href": "resources/timelapse/index.html#project-workflow",
+    "title": "Timelapse",
+    "section": "Project workflow",
+    "text": "Project workflow\nEach student assigned to camera-trap image processing will receive one or more folders containing photographs and videos from a camera-trap station.\nFolders may be shared digitally or through an SD card. Each folder represents a different station or camera and is named according to the project and sampling design, for example:\n\nControl 1\nPerfume 2A\nFish 3\n\nEach folder contains:\n\nthe photographs and videos from that station;\nTimelapseData.ddb; and\nTimelapseTemplate.tdb.\n\nStudents should open Timelapse and load the Timelapse database contained within the assigned folder. Once the photographs and videos are loaded, image classification can begin."
+  },
+  {
+    "objectID": "resources/timelapse/index.html#detailed-timelapse-guide",
+    "href": "resources/timelapse/index.html#detailed-timelapse-guide",
+    "title": "Timelapse",
+    "section": "Detailed Timelapse guide",
+    "text": "Detailed Timelapse guide\nA detailed guide describing how to load a database and work with the project Timelapse template was prepared by Natalie Ransom.\nOpen the Timelapse guide\n\n\n\n\n\n\nBefore you start\n\n\n\nAlways work from the folder and template assigned to your project. Field names and classification requirements may differ among camera-trap projects."
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "This library brings together research products developed with data from the SFA Camera Trap Project. It includes student posters, conference presentations, manuscripts, and published papers.\nThe goal is not only to document project outputs, but also to provide examples that future students can use when developing their own research questions, analyses, figures, and scientific posters."
+  },
+  {
+    "objectID": "research/index.html#research-library",
+    "href": "research/index.html#research-library",
+    "title": "Research",
+    "section": "Research library",
+    "text": "Research library\nAt the moment, research products can be added as individual pages under:\nresearch/items/\nEach project can include:\n\na short abstract or project summary;\nauthors and student presenters;\nconference or journal information;\na photograph of the presenter or project;\na downloadable poster or manuscript;\nlinks to a published article or external resource; and\nrelated survey or dataset information.\n\n\n\n\n\n\n\nNote\n\n\n\nThe research library will be populated as existing posters, presentations, and publications are added to the website."
+  },
+  {
+    "objectID": "people/index.html",
+    "href": "people/index.html",
+    "title": "People",
+    "section": "",
+    "text": "The SFA Camera Trap Project is a collaborative effort involving faculty, students, and field-course participants. Students contribute at different stages of the project, from deploying cameras and classifying images to developing independent research projects and presenting their work."
+  },
+  {
+    "objectID": "people/index.html#project-leadership",
+    "href": "people/index.html#project-leadership",
+    "title": "People",
+    "section": "Project leadership",
+    "text": "Project leadership\n\n\n\n\nGabriel Andrade-Ponce\nProject lead | Postdoctoral Research Associate\nCamera-trap ecology, wildlife monitoring, data analysis, and student research mentoring.\n\nProject leadership Research Mentoring\n\n\n\n\n\n\nReuber Antoniazzi\nProject lead| Assistant Professor of Forest Wildlife Management\nField coordination, wildlife techniques, camera deployment, and student mentoring.\n\nProject leadership Field work Mentoring"
+  },
+  {
+    "objectID": "people/index.html#student-researchers",
+    "href": "people/index.html#student-researchers",
+    "title": "People",
+    "section": "Student researchers",
+    "text": "Student researchers\nStudents who have developed research questions, analyzed project data, or presented their work at scientific meetings will be highlighted here.\n\nStudent profiles will be added as projects are completed. Profiles may include a photograph, research topic, poster or presentation, and links to related project materials."
+  },
+  {
+    "objectID": "people/index.html#image-classification-team",
+    "href": "people/index.html#image-classification-team",
+    "title": "People",
+    "section": "Image classification team",
+    "text": "Image classification team\nStudents currently contributing to image sorting, species identification, and database quality control will be listed here as the project grows."
+  },
+  {
+    "objectID": "people/index.html#field-crew",
+    "href": "people/index.html#field-crew",
+    "title": "People",
+    "section": "Field crew",
+    "text": "Field crew\nMany students contribute to camera deployment and retrieval through field courses and project activities. Because this group can be large, field participants will be acknowledged here as a simple list rather than individual profiles.\nNames will be added by survey and year."
   }
 ]

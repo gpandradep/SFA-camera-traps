@@ -15,6 +15,15 @@ website:
         menu:
           - text: "Field Station – Bait Project"
             href: surveys/field-station/index.qmd
+      - text: "Research"
+        icon: journal-text
+        href: research/index.qmd
+      - text: "People"
+        icon: people
+        href: people/index.qmd
+      - text: "Resources"
+        icon: book
+        href: resources/index.qmd
       - text: "Explore"
         icon: map
         href: explore/index.qmd

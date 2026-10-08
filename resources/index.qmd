@@ -1,0 +1,37 @@
+---
+title: "Resources"
+subtitle: "Tools, guides, and concepts for working with the SFA Camera Trap Project"
+page-layout: full
+toc: false
+
+listing:
+  contents:
+    - "*/index.qmd"
+  type: grid
+  sort: "title"
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  fields:
+    - image
+    - title
+    - description
+    - categories
+  grid-columns: 3
+---
+
+<div class="explore-intro">
+This library brings together the main resources used throughout the camera-trap project, including software instructions, species-identification guides, data-processing workflows, and short conceptual guides for analysis.
+
+Resources will continue to be added as the project grows.
+</div>
+
+::: {.soft-panel}
+### Where should I start?
+
+If you are working with raw camera-trap images, begin with **Timelapse** and **Species Identification**.
+
+If you are beginning an analysis, review the relevant conceptual resources before calculating or interpreting summary metrics.
+:::
+
+## Resource library

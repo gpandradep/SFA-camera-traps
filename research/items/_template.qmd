@@ -1,0 +1,43 @@
+---
+title: "Research project title"
+description: "One- or two-sentence description of the project."
+image: "img/cover.jpg"
+categories:
+  - Poster
+  - Student research
+year: 2026
+toc: true
+---
+
+## Project overview
+
+Briefly describe the ecological question, the camera-trap dataset used, and the main goal of the project.
+
+## Authors
+
+**Student presenter:** Name
+
+**Coauthors / mentors:** Names
+
+## Abstract
+
+Add the project abstract or a concise summary here.
+
+## Research product
+
+If the project has a poster:
+
+[Download the poster](poster.pdf)
+
+If it has a manuscript or published article, provide the appropriate link or downloadable file here.
+
+## Key findings
+
+Summarize the main findings in accessible language.
+
+## Related data
+
+Identify the relevant survey or project, for example:
+
+- Winston 8 — 2024
+- Cherokee Ridge — 2025
