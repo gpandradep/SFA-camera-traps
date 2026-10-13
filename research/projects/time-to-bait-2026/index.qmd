@@ -1,0 +1,23 @@
+---
+title: "Testing Whether Bait and Lure Effects on Wildlife Detections Change Over Time"
+
+description: "Coming soon."
+
+image: "img/cover.png"
+
+categories:
+  - Poster
+  - Undergraduate research
+  - Bait experiment
+  - Field Station
+
+year: 2026
+status: "Coming soon"
+toc: true
+---
+
+## Working hard to bring you the best scientific content on camera traps...
+
+## Authors
+
+**Natalie Ransom**, **Sophia Grubbs**

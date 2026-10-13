@@ -3,70 +3,852 @@ title: "People"
 subtitle: "The students and collaborators behind the SFA Camera Trap Project"
 page-layout: full
 toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
 
+```{r}
+#| include: false
+
+library(tidyverse)
+library(here)
+
+people <- read_csv(
+  here("people", "people.csv"),
+  show_col_types = FALSE
+)
+
+level_order <- c(
+  "Bobcat",
+  "White-tailed Deer",
+  "Raccoon",
+  "Squirrel"
+)
+
+wildlife_icon <- function(level) {
+  case_when(
+    level == "Bobcat" ~ "img/wildlife-levels/bobcat.svg",
+    level == "White-tailed Deer" ~ "img/wildlife-levels/deer.svg",
+    level == "Raccoon" ~ "img/wildlife-levels/raccoon.svg",
+    level == "Squirrel" ~ "img/wildlife-levels/squirrel.svg",
+    TRUE ~ NA_character_
+  )
+}
+
+people <- people |>
+  mutate(
+    wildlife_level = factor(
+      wildlife_level,
+      levels = level_order
+    )
+  )
+
+initials <- function(x) {
+  parts <- str_split(
+    str_squish(x),
+    "\\s+"
+  )[[1]]
+
+  paste0(
+    substr(parts[1], 1, 1),
+    ifelse(
+      length(parts) > 1,
+      substr(parts[length(parts)], 1, 1),
+      ""
+    )
+  )
+}
+
+render_badges <- function(x) {
+
+  if (is.na(x) || x == "") {
+    return("")
+  }
+
+  badges <- str_trim(
+    str_split(x, ";")[[1]]
+  )
+
+  paste0(
+    '<div class="people-badges">',
+    paste0(
+      '<span class="people-badge">',
+      badges,
+      '</span>',
+      collapse = ""
+    ),
+    '</div>'
+  )
+}
+
+render_avatar <- function(name, photo) {
+
+  if (
+    !is.na(photo) &&
+    photo != ""
+  ) {
+    paste0(
+      '<img class="people-avatar" src="',
+      photo,
+      '" alt="',
+      name,
+      '">'
+    )
+  } else {
+    paste0(
+      '<div class="people-avatar people-avatar-placeholder">',
+      initials(name),
+      '</div>'
+    )
+  }
+}
+
+render_email <- function(email) {
+
+  if (
+    is.na(email) ||
+    email == ""
+  ) {
+    return("")
+  }
+
+  paste0(
+    '<a class="people-email" href="mailto:',
+    email,
+    '">',
+    email,
+    '</a>'
+  )
+}
+
+render_leader_card <- function(row) {
+
+  paste0(
+    '<article class="leader-card">',
+
+      '<div class="leader-top">',
+        render_avatar(
+          row$name,
+          row$photo
+        ),
+
+        '<div class="leader-heading">',
+          '<h3>',
+            row$name,
+          '</h3>',
+
+          '<div class="leader-title">',
+            '<strong>',
+              row$category,
+            '</strong>',
+            ' <span>·</span> ',
+            '<strong>',
+              row$title,
+            '</strong>',
+          '</div>',
+
+          render_email(
+            row$email
+          ),
+        '</div>',
+      '</div>',
+
+      '<p class="leader-bio">',
+        row$bio,
+      '</p>',
+
+      render_badges(
+        row$badges
+      ),
+
+    '</article>'
+  )
+}
+
+render_student_card <- function(row) {
+
+  nprojects <- if (
+    is.na(row$projects) ||
+    row$projects == ""
+  ) {
+    0
+  } else {
+    str_count(
+      row$projects,
+      ";"
+    ) + 1
+  }
+
+  # Wildlife level icon
+  level_icon <- wildlife_icon(
+    as.character(
+      row$wildlife_level
+    )
+  )
+
+  level_badge <- if (
+    !is.na(level_icon)
+  ) {
+    paste0(
+      '<div class="wildlife-icon-wrap" title="',
+      as.character(
+        row$wildlife_level
+      ),
+      '">',
+        '<img class="wildlife-icon" src="',
+        level_icon,
+        '" alt="',
+        as.character(
+          row$wildlife_level
+        ),
+        '">',
+      '</div>'
+    )
+  } else {
+    ""
+  }
+
+  paste0(
+    '<article class="student-card">',
+
+      level_badge,
+
+      '<div class="student-card-top">',
+
+        render_avatar(
+          row$name,
+          row$photo
+        ),
+
+        '<div class="student-heading">',
+
+          '<h3>',
+            row$name,
+          '</h3>',
+
+          '<div class="student-meta">',
+            row$category,
+          '</div>',
+
+        '</div>',
+
+      '</div>',
+
+      render_badges(
+        row$badges
+      ),
+
+      '<div class="student-stats">',
+
+        '<div>',
+          '<span class="stat-number">',
+            format(
+              row$photos_id,
+              big.mark = ",",
+              scientific = FALSE
+            ),
+          '</span>',
+
+          '<span class="stat-caption">',
+            'photos classified',
+          '</span>',
+        '</div>',
+
+        '<div>',
+          '<span class="stat-number">',
+            nprojects,
+          '</span>',
+
+          '<span class="stat-caption">',
+            ifelse(
+              nprojects == 1,
+              'project',
+              'projects'
+            ),
+          '</span>',
+        '</div>',
+
+      '</div>',
+
+      '<div class="student-details">',
+
+        '<div>',
+          '<strong>With the project:</strong> ',
+          row$time,
+        '</div>',
+
+        '<div>',
+          '<strong>Projects:</strong> ',
+          str_replace_all(
+            row$projects,
+            ";",
+            " · "
+          ),
+        '</div>',
+
+      '</div>',
+
+    '</article>'
+  )
+}
+
+render_past_row <- function(row) {
+
+  paste0(
+    '<div class="past-person">',
+
+      '<div class="past-person-main">',
+        render_avatar(
+          row$name,
+          row$photo
+        ),
+
+        '<div>',
+          '<h4>',
+            row$name,
+          '</h4>',
+
+          '<div class="past-meta">',
+            row$category,
+            ' · ',
+            as.character(
+              row$wildlife_level
+            ),
+          '</div>',
+
+          render_badges(
+            row$badges
+          ),
+        '</div>',
+      '</div>',
+
+      '<div class="past-projects">',
+        str_replace_all(
+          row$projects,
+          ";",
+          " · "
+        ),
+      '</div>',
+
+      '<div class="past-photos">',
+        format(
+          row$photos_id,
+          big.mark = ",",
+          scientific = FALSE
+        ),
+        '<span>',
+          ' photos',
+        '</span>',
+      '</div>',
+
+    '</div>'
+  )
+}
+```
+
+<style>
+.people-intro {
+  max-width: 920px;
+  margin-bottom: 2rem;
+}
+
+.leadership-grid,
+.student-grid {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.leadership-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 2.6rem;
+}
+
+.student-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1rem 0 2.5rem;
+}
+
+.leader-card,
+.student-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.leader-card {
+  padding: 1.5rem;
+}
+
+.student-card {
+  position: relative;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.wildlife-icon-wrap {
+  position: absolute;
+  top: 0.95rem;
+  right: 0.95rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fafbf8;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wildlife-icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+.leader-top,
+.student-card-top,
+.past-person-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.people-avatar {
+  width: 104px;
+  height: 104px;
+  min-width: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 2px var(--sage-light);
+}
+
+.student-card .people-avatar {
+  width: 84px;
+  height: 84px;
+  min-width: 84px;
+}
+
+.past-person .people-avatar {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  font-size: 0.92rem;
+}
+
+.people-avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sage-light);
+  color: var(--forest);
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.leader-card h3,
+.student-card h3,
+.past-person h4 {
+  margin: 0;
+  color: var(--forest);
+}
+
+.leader-card h3 {
+  font-size: 1.22rem;
+}
+
+.student-card h3 {
+  font-size: 1.04rem;
+}
+
+.past-person h4 {
+  font-size: 0.95rem;
+}
+
+.leader-title {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.people-email {
+  display: inline-block;
+  margin-top: 0.35rem;
+  color: var(--forest-soft);
+  font-size: 0.78rem;
+  text-decoration: none;
+}
+
+.people-email:hover {
+  text-decoration: underline;
+}
+
+.leader-bio {
+  margin: 1rem 0 0.85rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.student-meta,
+.past-meta {
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.wildlife-level {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: baseline;
+  padding: 0.55rem 0.7rem;
+  background: #fafbf8;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--forest);
+}
+
+.wildlife-label {
+  color: var(--muted);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.people-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.people-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background: var(--sage-light);
+  color: var(--forest);
+  font-size: 0.69rem;
+  font-weight: 600;
+}
+
+.student-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.student-stats > div {
+  padding: 0.6rem 0.7rem;
+  background: #fafbf8;
+  border-radius: 10px;
+}
+
+.stat-number,
+.stat-caption {
+  display: block;
+}
+
+.stat-number {
+  color: var(--forest);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.stat-caption {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
+.student-details {
+  margin-top: auto;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+
+.level-guide {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 1rem 0 2.25rem;
+}
+
+.level-guide > div {
+  padding: 0.8rem;
+  background: #fafbf8;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.level-card strong,
+.level-card span {
+  display: block;
+}
+
+.level-card span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+.pause-panel {
+  margin: 1rem 0 2.4rem;
+}
+
+.past-list {
+  margin: 1rem 0 2rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.past-person {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(130px, 1fr) minmax(90px, auto);
+  gap: 1rem;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.past-person:last-child {
+  border-bottom: none;
+}
+
+.past-person .people-badges {
+  margin-top: 0.4rem;
+}
+
+.past-projects,
+.past-photos {
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.past-photos {
+  text-align: right;
+  color: var(--forest);
+  font-weight: 650;
+}
+
+.past-photos span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  .student-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .level-guide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .past-person {
+    grid-template-columns: 1fr;
+  }
+
+  .past-photos {
+    text-align: left;
+  }
+}
+
+@media (max-width: 650px) {
+  .leadership-grid,
+  .student-grid,
+  .level-guide {
+    grid-template-columns: 1fr;
+  }
+}
+
+.level-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+}
+
+.level-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  margin-bottom: 0.15rem;
+}
+</style>
+
 <div class="people-intro">
-The SFA Camera Trap Project is a collaborative effort involving faculty, students, and field-course participants. Students contribute at different stages of the project, from deploying cameras and classifying images to developing independent research projects and presenting their work.
+The SFA Camera Trap Project is built by students and collaborators who contribute at different stages of the research process — from camera deployment and image classification to data analysis, scientific posters, and independent research.
 </div>
 
 ## Project leadership
 
-::: {.people-grid}
+```{r}
+#| results: asis
 
-::: {.person-card}
-<img
-  class="person-photo"
-  src="img/GAP.jpeg"
-  alt="Gabriel Andrade-Ponce">
+leaders <- people |>
+  filter(group == "Leadership")
 
-### Gabriel Andrade-Ponce
+cat('<div class="leadership-grid">')
 
-**Project lead** | **Postdoctoral Research Associate**
+for (i in seq_len(nrow(leaders))) {
+  cat(
+    render_leader_card(
+      leaders[i, ]
+    )
+  )
+}
 
-Camera-trap ecology, wildlife monitoring, data analysis, and student research mentoring.
+cat('</div>')
+```
 
-<div class="role-chips">
-<span class="role-chip">Project leadership</span>
-<span class="role-chip">Research</span>
-<span class="role-chip">Mentoring</span>
+## Project Wildlife Levels
+
+These levels recognize growing experience with the camera-trap workflow. They are a way to visualize students progression through the project.
+
+```{=html}
+<div class="level-guide">
+
+  <div class="level-card">
+    <img
+      class="level-icon"
+      src="img/wildlife-levels/squirrel.svg"
+      alt="Squirrel">
+    <strong>Squirrel</strong>
+    <span>Getting started and learning the project workflow.</span>
+  </div>
+
+  <div class="level-card">
+    <img
+      class="level-icon"
+      src="img/wildlife-levels/raccoon.svg"
+      alt="Raccoon">
+    <strong>Raccoon</strong>
+    <span>Regular contributor expanding skills and independence.</span>
+  </div>
+
+  <div class="level-card">
+  <img
+      class="level-icon"
+      src="img/wildlife-levels/deer.svg"
+      alt="White-tailed Deer">
+    <strong>White-tailed Deer</strong>
+    
+    <span>Experienced contributor taking on research or training responsibilities.</span>
+  </div>
+
+  <div class="level-card">
+    <img
+      class="level-icon"
+      src="img/wildlife-levels/bobcat.svg"
+      alt="Bobcat">
+    <strong>Bobcat</strong>
+    <span>Core team member with broad experience across multiple project components.</span>
+  </div>
+
 </div>
-:::
+```
 
-::: {.person-card}
-<img
-  class="person-photo"
-  src="img/RA.jpg"
-  alt="Reuber Antoniazzi">
+## Current student researchers
 
-### Reuber Antoniazzi
+Students in this group have moved beyond image classification into research questions, data analysis, honors work, posters, or conference presentations.
 
-**Project lead**| **Assistant Professor of Forest Wildlife Management**
+```{r}
+#| results: asis
 
-Field coordination, wildlife techniques, camera deployment, and student mentoring.
+current_research <- people |>
+  filter(
+    group == "Student",
+    category == "Research",
+    status == "Current"
+  )
 
-<div class="role-chips">
-<span class="role-chip">Project leadership</span>
-<span class="role-chip">Field work</span>
-<span class="role-chip">Mentoring</span>
-</div>
-:::
+cat('<div class="student-grid">')
 
-:::
+for (i in seq_len(nrow(current_research))) {
+  cat(
+    render_student_card(
+      current_research[i, ]
+    )
+  )
+}
 
-## Student researchers
+cat('</div>')
+```
 
-Students who have developed research questions, analyzed project data, or presented their work at scientific meetings will be highlighted here.
+## Current image classification team
 
-::: {.soft-panel}
-Student profiles will be added as projects are completed. Profiles may include a photograph, research topic, poster or presentation, and links to related project materials.
-:::
+These students contribute to one of the most important stages of the project: reviewing camera-trap images, identifying wildlife, and building the databases used in later analyses.
 
-## Image classification team
+```{r}
+#| results: asis
 
-Students currently contributing to image sorting, species identification, and database quality control will be listed here as the project grows.
+current_classification <- people |>
+  filter(
+    group == "Student",
+    category == "Image classification",
+    status == "Current"
+  )
+
+cat('<div class="student-grid">')
+
+for (i in seq_len(nrow(current_classification))) {
+  cat(
+    render_student_card(
+      current_classification[i, ]
+    )
+  )
+}
+
+cat('</div>')
+```
+
+
+## Past contributors
+
+Past contributors helped build the datasets, field collections, and research products that support the project today.
+
+```{r}
+#| results: asis
+
+past_people <- people |>
+  filter(
+    group == "Student",
+    status %in% c(
+      "Past contributor",
+      "Alumni"
+    )
+  ) |>
+  arrange(
+    desc(
+      wildlife_level
+    ),
+    name
+  )
+
+cat('<div class="past-list">')
+
+for (i in seq_len(nrow(past_people))) {
+  cat(
+    render_past_row(
+      past_people[i, ]
+    )
+  )
+}
+
+cat('</div>')
+```
 
 ## Field crew
 
-Many students contribute to camera deployment and retrieval through field courses and project activities. Because this group can be large, field participants will be acknowledged here as a simple list rather than individual profiles.
+Many additional students contribute to camera deployment and retrieval through Wildlife Techniques, Field Station, and other project activities.
 
-*Names will be added by survey and year.*

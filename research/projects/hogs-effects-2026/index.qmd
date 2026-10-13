@@ -1,0 +1,23 @@
+---
+title: "Feral Hog Associations with Wildlife Detection Rates and Species Richness"
+
+description: "Coming soon."
+
+image: "img/cover.png"
+
+categories:
+  - Poster
+  - Undergraduate research
+  - Feral Hogs
+  - Field Station
+
+year: 2026
+status: "Coming soon"
+toc: true
+---
+
+## Working hard to bring you the best scientific content on camera traps...
+
+## Authors
+
+**Isabella Egerman**

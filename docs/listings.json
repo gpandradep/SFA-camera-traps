@@ -6,5 +6,16 @@
       "/resources/species-id/index.html",
       "/resources/timelapse/index.html"
     ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/projects/bait-guilds/index.html",
+      "/research/projects/deer-classes-2026/index.html",
+      "/research/projects/hogs-effects-2026/index.html",
+      "/research/projects/time-to-bait-2026/index.html",
+      "/research/projects/bait-types-diel-activity-2025/index.html",
+      "/research/projects/bait-types-east-texas-2025/index.html"
+    ]
   }
 ]

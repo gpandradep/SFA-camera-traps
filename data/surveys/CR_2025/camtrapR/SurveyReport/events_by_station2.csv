@@ -12,14 +12,14 @@
 "Control 0","Flying squirrel",0
 "Control 0","Fox squirrel",0
 "Control 0","Hog",0
-"Control 0","Human",0
+"Control 0","Human",1
 "Control 0","Racoon",0
 "Control 0","River otter",0
 "Control 0","Rodent",0
 "Control 0","Striped Skunk",0
 "Control 0","Turkey vulture",0
 "Control 0","Virginia opossum",0
-"Control 0","White-tailed deer",1
+"Control 0","White-tailed deer",0
 "Control 0","Wild turkey",0
 "Control 1","Armadillo",6
 "Control 1","Bird",0
@@ -153,29 +153,29 @@
 "Fish 1","Virginia opossum",35
 "Fish 1","White-tailed deer",18
 "Fish 1","Wild turkey",0
-"Fish 2","Armadillo",122
+"Fish 2","Armadillo",142
 "Fish 2","Bird",6
 "Fish 2","Black vulture",0
-"Fish 2","Bobcat",2
+"Fish 2","Bobcat",8
 "Fish 2","Bug",1
-"Fish 2","Coyote",5
+"Fish 2","Coyote",14
 "Fish 2","Domestic cat",0
 "Fish 2","Domestic dog",0
-"Fish 2","Eastern Cottontail",9
-"Fish 2","Eastern gray squirrel",48
+"Fish 2","Eastern Cottontail",17
+"Fish 2","Eastern gray squirrel",49
 "Fish 2","Flying squirrel",0
-"Fish 2","Fox squirrel",2
-"Fish 2","Hog",44
+"Fish 2","Fox squirrel",11
+"Fish 2","Hog",52
 "Fish 2","Human",11
-"Fish 2","Racoon",19
+"Fish 2","Racoon",62
 "Fish 2","River otter",0
 "Fish 2","Rodent",13
 "Fish 2","Striped Skunk",0
-"Fish 2","Turkey vulture",0
-"Fish 2","Virginia opossum",41
-"Fish 2","White-tailed deer",79
+"Fish 2","Turkey vulture",6
+"Fish 2","Virginia opossum",76
+"Fish 2","White-tailed deer",119
 "Fish 2","Wild turkey",0
-"Fish 3","Armadillo",5
+"Fish 3","Armadillo",4
 "Fish 3","Bird",1
 "Fish 3","Black vulture",0
 "Fish 3","Bobcat",2
@@ -184,11 +184,11 @@
 "Fish 3","Domestic cat",0
 "Fish 3","Domestic dog",0
 "Fish 3","Eastern Cottontail",0
-"Fish 3","Eastern gray squirrel",1
+"Fish 3","Eastern gray squirrel",0
 "Fish 3","Flying squirrel",0
 "Fish 3","Fox squirrel",0
-"Fish 3","Hog",7
-"Fish 3","Human",6
+"Fish 3","Hog",6
+"Fish 3","Human",4
 "Fish 3","Racoon",0
 "Fish 3","River otter",0
 "Fish 3","Rodent",0
@@ -307,6 +307,28 @@
 "Perfume 2","Virginia opossum",27
 "Perfume 2","White-tailed deer",38
 "Perfume 2","Wild turkey",0
+"Perfume 3","Armadillo",12
+"Perfume 3","Bird",3
+"Perfume 3","Black vulture",0
+"Perfume 3","Bobcat",2
+"Perfume 3","Bug",0
+"Perfume 3","Coyote",17
+"Perfume 3","Domestic cat",0
+"Perfume 3","Domestic dog",0
+"Perfume 3","Eastern Cottontail",0
+"Perfume 3","Eastern gray squirrel",2
+"Perfume 3","Flying squirrel",0
+"Perfume 3","Fox squirrel",0
+"Perfume 3","Hog",5
+"Perfume 3","Human",6
+"Perfume 3","Racoon",6
+"Perfume 3","River otter",0
+"Perfume 3","Rodent",0
+"Perfume 3","Striped Skunk",2
+"Perfume 3","Turkey vulture",0
+"Perfume 3","Virginia opossum",2
+"Perfume 3","White-tailed deer",29
+"Perfume 3","Wild turkey",0
 "Pine Canopy 1","Armadillo",4
 "Pine Canopy 1","Bird",0
 "Pine Canopy 1","Black vulture",0

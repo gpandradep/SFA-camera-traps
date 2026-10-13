@@ -77,6 +77,146 @@
     "text": "Study site\nCherokee Ridge is a privately owned property in East Texas.\n\n\n\n\n\n\nSite description to complete\n\n\n\nAdd the property location, approximate area, dominant vegetation, forest-management history, prescribed-fire regime, and other habitat characteristics relevant to interpretation of the camera-trap data."
   },
   {
+    "objectID": "resources/species-id/index.html",
+    "href": "resources/species-id/index.html",
+    "title": "Species Identification",
+    "section": "",
+    "text": "Accurate species identification is essential for every analysis that uses the camera-trap database.\nOur project uses several wildlife identification guides originally developed through eMammal, a platform that supported camera-trap projects and has since transitioned toward Wildlife Insights.\n\n\n\nSnapshot USA Common Mammals Guide\nGuide to Identifying Deer\nGuide to Identifying Eastern Squirrels\nGuide to Identifying Canids\n\nAdditional project-specific guides can be added to this page as new identification needs arise."
+  },
+  {
+    "objectID": "resources/species-id/index.html#identification-resources",
+    "href": "resources/species-id/index.html#identification-resources",
+    "title": "Species Identification",
+    "section": "",
+    "text": "Accurate species identification is essential for every analysis that uses the camera-trap database.\nOur project uses several wildlife identification guides originally developed through eMammal, a platform that supported camera-trap projects and has since transitioned toward Wildlife Insights.\n\n\n\nSnapshot USA Common Mammals Guide\nGuide to Identifying Deer\nGuide to Identifying Eastern Squirrels\nGuide to Identifying Canids\n\nAdditional project-specific guides can be added to this page as new identification needs arise."
+  },
+  {
+    "objectID": "resources/species-id/index.html#classification-rule",
+    "href": "resources/species-id/index.html#classification-rule",
+    "title": "Species Identification",
+    "section": "Classification rule",
+    "text": "Classification rule\n\n\n\n\n\n\nIf you are unsure, do not guess\n\n\n\nThe quality of every research product produced from these data depends on correct species classification.\nIf you are uncertain about an identification:\n\nclassify the record as Unknown;\nadd a comment describing what made the identification difficult; and\nflag the image for later review when appropriate.\n\nNever assign a species simply because it appears to be the most likely option."
+  },
+  {
+    "objectID": "resources/species-id/index.html#why-identification-quality-matters",
+    "href": "resources/species-id/index.html#why-identification-quality-matters",
+    "title": "Species Identification",
+    "section": "Why identification quality matters",
+    "text": "Why identification quality matters\nErrors introduced during image classification propagate into every later stage of the project, including:\n\nspecies lists;\ndetection counts;\nactivity-pattern analyses;\nevent rates;\ncommunity summaries; and\nstudent research projects.\n\nCareful classification during the initial processing stage is therefore one of the most important quality-control steps in the entire camera-trap workflow."
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "This library brings together the main resources used throughout the camera-trap project, including software instructions, species-identification guides, data-processing workflows, and short conceptual guides for analysis.\nResources will continue to be added as the project grows."
+  },
+  {
+    "objectID": "resources/index.html#resource-library",
+    "href": "resources/index.html#resource-library",
+    "title": "Resources",
+    "section": "Resource library",
+    "text": "Resource library"
+  },
+  {
+    "objectID": "research/projects/hogs-effects-2026/index.html#authors",
+    "href": "research/projects/hogs-effects-2026/index.html#authors",
+    "title": "Feral Hog Associations with Wildlife Detection Rates and Species Richness",
+    "section": "Authors",
+    "text": "Authors\nIsabella Egerman"
+  },
+  {
+    "objectID": "research/projects/bait-types-east-texas-2025/index.html#authors",
+    "href": "research/projects/bait-types-east-texas-2025/index.html#authors",
+    "title": "Effects of Bait Types on Camera Trap Detections of East Texas Animals",
+    "section": "Authors",
+    "text": "Authors\nNatalie Ransom★, Sophia Grubbs★, Andrew Moore, Clare Shaughnessy, Meredith Rash, Reuber Antoniazzi, Gabriel Andrade-Ponce\n★ Student presenter\nConference poster\nPresented at the 2026 TWS Chapter meeting and the Undergraduate Research showcase Stephen F. Austin State University\nDownload poster\n\n\n  \n\n  \n\n  \n\n  \n\n\n\n\nScenes from the 2026 TWS Chapter meeting and the undergraduate research presentation of this project."
+  },
+  {
+    "objectID": "research/projects/bait-types-east-texas-2025/index.html#abstract",
+    "href": "research/projects/bait-types-east-texas-2025/index.html#abstract",
+    "title": "Effects of Bait Types on Camera Trap Detections of East Texas Animals",
+    "section": "Abstract",
+    "text": "Abstract\nBaiting is commonly used to increase animal detections in camera-trap studies, but may introduce non-target effects that alter the observed community. To evaluate how bait type influences detection rates, this study compared species visitation at sites baited with fish heads, sites baited with perfume, and unbaited control sites.The study was conducted at Winston 8 Ranch in East Texas, using twelve cameras deployed from June to September 2024. Visitation rate was calculated as the number of independent records of each species divided by the number of camera operation days.We hypothesized that baited sites would show higher detections than control sites; that perfume would primarily attract carnivores; that fish sites would attract opportunists and scavengers; and that both baits would deter herbivores.Across the twelve species detected, eleven occurred at fish-baited sites, seven at perfume-baited sites, and five at control sites. Fish heads were the most effective bait overall and did not appear to deter herbivorous species such as deer.Unexpectedly, perfume-baited sites produced a high number of Nine-banded armadillo (Dasypus novemcinctus) detections rather than the anticipated carnivore detections. White-tailed deer (Odocoileus virginianus) also had comparable numbers of observations at control and fish-baited sites. Overall, baited camera stations increased wildlife detections without an apparent detrimental effect on non-target species recorded in this East Texas survey."
+  },
+  {
+    "objectID": "research/projects/bait-types-east-texas-2025/index.html#related-survey",
+    "href": "research/projects/bait-types-east-texas-2025/index.html#related-survey",
+    "title": "Effects of Bait Types on Camera Trap Detections of East Texas Animals",
+    "section": "Related survey",
+    "text": "Related survey"
+  },
+  {
+    "objectID": "research/projects/bait-types-east-texas-2025/index.html#related-survey-1",
+    "href": "research/projects/bait-types-east-texas-2025/index.html#related-survey-1",
+    "title": "Effects of Bait Types on Camera Trap Detections of East Texas Animals",
+    "section": "Related survey",
+    "text": "Related survey\nProject: Field Station – Bait Project\nSurvey: Winston 8 — 2024"
+  },
+  {
+    "objectID": "research/projects/bait-guilds/index.html#authors",
+    "href": "research/projects/bait-guilds/index.html#authors",
+    "title": "Lured by Lunch: Dietary Guild Responses to Camera-Trap Attractants",
+    "section": "Authors",
+    "text": "Authors\nAndrew Moore"
+  },
+  {
+    "objectID": "people/index.html",
+    "href": "people/index.html",
+    "title": "People",
+    "section": "",
+    "text": "The SFA Camera Trap Project is built by students and collaborators who contribute at different stages of the research process — from camera deployment and image classification to data analysis, scientific posters, and independent research."
+  },
+  {
+    "objectID": "people/index.html#project-leadership",
+    "href": "people/index.html#project-leadership",
+    "title": "People",
+    "section": "Project leadership",
+    "text": "Project leadership\n\n\n\n\n\n\nGabriel Andrade-Ponce\n\n\nProject lead · Postdoctoral Research Associate\n\nGabriel.Andrade@sfasu.edu\n\n\n\nCamera-trap ecology, wildlife monitoring, data analysis, and student research mentoring.\n\n\nProject leadershipResearchMentoringData analysis\n\n\n\n\n\n\n\nReuber Antoniazzi\n\n\nProject lead · Assistant Professor of Forest Wildlife Management\n\nReuber.Antoniazzi@sfasu.edu\n\n\n\nWildlife, wildlife techniques, wildlife ecology, and student mentoring.\n\n\nProject leadershipResearchMentoring"
+  },
+  {
+    "objectID": "people/index.html#project-wildlife-levels",
+    "href": "people/index.html#project-wildlife-levels",
+    "title": "People",
+    "section": "Project Wildlife Levels",
+    "text": "Project Wildlife Levels\nThese levels recognize growing experience with the camera-trap workflow. They are a way to visualize students progression through the project.\n\n\n  \n    \n    Squirrel\n    Getting started and learning the project workflow.\n  \n\n  \n    \n    Raccoon\n    Regular contributor expanding skills and independence.\n  \n\n  \n  \n    White-tailed Deer\n    \n    Experienced contributor taking on research or training responsibilities.\n  \n\n  \n    \n    Bobcat\n    Core team member with broad experience across multiple project components."
+  },
+  {
+    "objectID": "people/index.html#current-student-researchers",
+    "href": "people/index.html#current-student-researchers",
+    "title": "People",
+    "section": "Current student researchers",
+    "text": "Current student researchers\nStudents in this group have moved beyond image classification into research questions, data analysis, honors work, posters, or conference presentations.\n\n\n\n\n\n\n\nAM\n\n\n\nAndrew Moore\n\n\nResearch\n\n\n\n\nPoster presenterPhoto IDCamera deploymentR training\n\n\n\n19,733photos classified\n\n\n2projects\n\n\n\n\nWith the project: Fall 2025–current\n\n\nProjects: FS 2024 · FS 2025\n\n\n\n\n\n\n\n\n\nNR\n\n\n\nNatalie Ransom\n\n\nResearch\n\n\n\n\nPoster presenterPhoto IDCamera deploymentR training\n\n\n\n14,401photos classified\n\n\n2projects\n\n\n\n\nWith the project: Fall 2025–current\n\n\nProjects: FS 2024 · FS 2025\n\n\n\n\n\n\n\n\n\nSG\n\n\n\nSophia Grubbs\n\n\nResearch\n\n\n\n\nPoster presenterPhoto IDCamera deploymentR training\n\n\n\n13,043photos classified\n\n\n2projects\n\n\n\n\nWith the project: Fall 2025–current\n\n\nProjects: FS 2024 · FS 2025\n\n\n\n\n\n\n\n\n\nDR\n\n\n\nDagan Ray\n\n\nResearch\n\n\n\n\nOngoing researchPhoto IDCamera deploymentR training\n\n\n\n6,869photos classified\n\n\n1project\n\n\n\n\nWith the project: Summer 2026–current\n\n\nProjects: FS 2025\n\n\n\n\n\n\n\n\n\nIE\n\n\n\nIsabella Egerman\n\n\nResearch\n\n\n\n\nOngoing researchPhoto IDHonors contract\n\n\n\n1,312photos classified\n\n\n1project\n\n\n\n\nWith the project: Fall 2026–current\n\n\nProjects: WT 2026"
+  },
+  {
+    "objectID": "people/index.html#current-image-classification-team",
+    "href": "people/index.html#current-image-classification-team",
+    "title": "People",
+    "section": "Current image classification team",
+    "text": "Current image classification team\nThese students contribute to one of the most important stages of the project: reviewing camera-trap images, identifying wildlife, and building the databases used in later analyses.\n\n\n\n\n\n\n\nRB\n\n\n\nRylie Brantley\n\n\nImage classification\n\n\n\n\nPhoto ID\n\n\n\n2,103photos classified\n\n\n1project\n\n\n\n\nWith the project: Summer 2026–current\n\n\nProjects: FS 2025\n\n\n\n\n\n\n\n\n\nNW\n\n\n\nNathan Wilmore\n\n\nImage classification\n\n\n\n\nPhoto ID\n\n\n\n2,818photos classified\n\n\n1project\n\n\n\n\nWith the project: Summer 2026–current\n\n\nProjects: FS 2025\n\n\n\n\n\n\n\n\n\nTH\n\n\n\nTJ Huggins\n\n\nImage classification\n\n\n\n\nPhoto IDCamera deployment\n\n\n\n1,711photos classified\n\n\n1project\n\n\n\n\nWith the project: Summer 2026–current\n\n\nProjects: FS 2025\n\n\n\n\n\n\n\n\n\nDP\n\n\n\nDrew Pitts\n\n\nImage classification\n\n\n\n\nPhoto IDCamera deployment\n\n\n\n2,504photos classified\n\n\n1project\n\n\n\n\nWith the project: Summer 2026–current\n\n\nProjects: WT 2026\n\n\n\n\n\n\n\n\n\nMM\n\n\n\nMatthew Minyard\n\n\nImage classification\n\n\n\n\nPhoto IDR trainingCamera deployment\n\n\n\n5,491photos classified\n\n\n2projects\n\n\n\n\nWith the project: Summer 2026–current\n\n\nProjects: WT 2026 · FS 2026\n\n\n\n\n\n\n\n\n\nCM\n\n\n\nColin McKinney-Garcia\n\n\nImage classification\n\n\n\n\nPhoto IDCamera deployment\n\n\n\n1,072photos classified\n\n\n1project\n\n\n\n\nWith the project: Summer 2026–current\n\n\nProjects: WT 2026"
+  },
+  {
+    "objectID": "people/index.html#past-contributors",
+    "href": "people/index.html#past-contributors",
+    "title": "People",
+    "section": "Past contributors",
+    "text": "Past contributors\nPast contributors helped build the datasets, field collections, and research products that support the project today.\n\n\n\n\nHP\n\n\n\nHadyn Pollard\n\n\nImage classification · Squirrel\n\n\nPhoto IDCamera deployment\n\n\n\n\nFS 2025\n\n\n3,618 photos\n\n\n\n\n\nJF\n\n\n\nJames Ferris\n\n\nImage classification · Squirrel\n\n\nPhoto IDCamera deployment\n\n\n\n\nFS 2025\n\n\n2,439 photos\n\n\n\n\n\nKH\n\n\n\nKyle Hughes\n\n\nImage classification · Squirrel\n\n\nPhoto IDCamera deployment\n\n\n\n\nFS 2025\n\n\n2,568 photos\n\n\n\n\n\nMG\n\n\n\nMadisyn Gravett\n\n\nImage classification · Squirrel\n\n\nPhoto IDCamera deployment\n\n\n\n\nWT 2026\n\n\n1,376 photos\n\n\n\n\n\nMR\n\n\n\nMeredith Rash\n\n\nImage classification · Squirrel\n\n\nPhoto IDCamera deployment\n\n\n\n\nFS 2024\n\n\n700 photos\n\n\n\n\n\nCS\n\n\n\nClare Shaughnessy\n\n\nResearch · White-tailed Deer\n\n\nPoster presenterPhoto IDCamera deployment\n\n\n\n\nFS 2024\n\n\n6,603 photos"
+  },
+  {
+    "objectID": "people/index.html#field-crew",
+    "href": "people/index.html#field-crew",
+    "title": "People",
+    "section": "Field crew",
+    "text": "Field crew\nMany additional students contribute to camera deployment and retrieval through Wildlife Techniques, Field Station, and other project activities."
+  },
+  {
+    "objectID": "explore/index.html#station-summary",
+    "href": "explore/index.html#station-summary",
+    "title": "Explore camera-trap data",
+    "section": "Station summary",
+    "text": "Station summary\n\n  \n\n\n\nStation\nTreatment\nTrap-nights\nIndependent events\n\n\n\n\n\n\n\n\n\n\n\n\n\nInterpreting the explorer\n\n\n\nThe 30-day bait experiment uses the first 30 days after deployment at each station and is the appropriate period for questions focused on attractant treatments. The full survey uses all available sampling effort and records.\nEvents / 100 trap-nights standardizes independent records by sampling effort. Observed species richness includes only categories identified as wildlife species in the project species metadata."
+  },
+  {
     "objectID": "index.html#projects",
     "href": "index.html#projects",
     "title": "Long-Term Camera Trap Project",
@@ -112,55 +252,6 @@
     "text": "Using these data\n\nStudents should review the relevant project and survey pages before beginning an analysis. Sampling design, treatment structure, camera configuration, sampling duration, and data-processing decisions can differ among years and projects.\n\nFor the Field Station bait project, analyses focused on attractant effects generally use the first 30 days of sampling at each station. Other ecological analyses may use the complete available survey period. Each survey page reports sampling effort for both temporal scales."
   },
   {
-    "objectID": "surveys/field-station/index.html",
-    "href": "surveys/field-station/index.html",
-    "title": "Field Station – Bait Project",
-    "section": "",
-    "text": "The Field Station – Bait Project is an annual camera-trap study conducted during the Wildlife Field Techniques field station.\nThe project was designed to evaluate how different attractants influence the detection and activity of mammals and medium- to large-bodied birds during camera-trap surveys. Because surveys are conducted at different properties each year, the project also produces multi-year datasets that can support additional undergraduate research questions related to wildlife occurrence, activity, sampling effort, community composition, and camera-trap methodology.\nAlthough the general sampling framework is maintained among years, some aspects of the design may vary depending on the property, equipment availability, or specific objectives for that field season. These differences are documented on each survey page."
-  },
-  {
-    "objectID": "surveys/field-station/index.html#project-overview",
-    "href": "surveys/field-station/index.html#project-overview",
-    "title": "Field Station – Bait Project",
-    "section": "",
-    "text": "The Field Station – Bait Project is an annual camera-trap study conducted during the Wildlife Field Techniques field station.\nThe project was designed to evaluate how different attractants influence the detection and activity of mammals and medium- to large-bodied birds during camera-trap surveys. Because surveys are conducted at different properties each year, the project also produces multi-year datasets that can support additional undergraduate research questions related to wildlife occurrence, activity, sampling effort, community composition, and camera-trap methodology.\nAlthough the general sampling framework is maintained among years, some aspects of the design may vary depending on the property, equipment availability, or specific objectives for that field season. These differences are documented on each survey page."
-  },
-  {
-    "objectID": "surveys/field-station/index.html#general-sampling-design",
-    "href": "surveys/field-station/index.html#general-sampling-design",
-    "title": "Field Station – Bait Project",
-    "section": "General sampling design",
-    "text": "General sampling design\nThe basic sampling unit is a camera-trap triad. Each triad includes three stations assigned to different attractant treatments:\n\nPerfume treatment: Calvin Klein Obsession perfume\nFish-based bait treatment: the specific fish bait may vary among years\nControl treatment: no attractant\n\nCamera-trap triads are generally separated by approximately 1 km from one another. Within each triad, stations are separated by approximately 200 m.\nThe number of triads varies among years.\n\n\n\n\n\n\nSurvey-specific modifications\n\n\n\nThe general triad design is shared across Field Station surveys, but some years include modifications such as paired cameras, different fish-based attractants, or additional camera components. These differences should be considered when comparing datasets among years."
-  },
-  {
-    "objectID": "surveys/field-station/index.html#camera-deployment-protocol",
-    "href": "surveys/field-station/index.html#camera-deployment-protocol",
-    "title": "Field Station – Bait Project",
-    "section": "Camera deployment protocol",
-    "text": "Camera deployment protocol\nAt each station, cameras are mounted on trees or poles approximately 50 cm above the ground.\nCameras are generally oriented north or south to reduce direct sunlight and glare and are positioned at locations where animal movement is likely, such as wildlife trails or other natural travel routes.\nCameras are programmed to record:\n\nthree photographs per trigger event; and\none video per trigger event.\n\nCameras operate continuously, 24 hours per day, from deployment until retrieval unless interrupted by equipment failure, battery depletion, memory limitations, environmental conditions, or other malfunctions."
-  },
-  {
-    "objectID": "surveys/field-station/index.html#sampling-periods",
-    "href": "surveys/field-station/index.html#sampling-periods",
-    "title": "Field Station – Bait Project",
-    "section": "Sampling periods",
-    "text": "Sampling periods\nData from the Field Station project are commonly considered at two temporal scales.\n\n30-day bait experiment\nAnalyses designed to evaluate the effect of attractant treatments use the first 30 days following deployment at each station.\nThis creates a standardized exposure period across stations and treatments, even when stations were deployed on slightly different dates.\nPeriods during which a station was not operational are excluded from sampling effort.\n\n\nFull survey\nOther ecological analyses may use the complete sampling period available for each station, from deployment through retrieval.\nThe full-survey dataset can be useful for questions that are not specifically focused on comparing attractant treatments and that benefit from maximizing the amount of available camera-trap information.\n\n\n\n\n\n\nChoose the sampling period based on the research question\n\n\n\nFor questions focused on the effect of bait or attractant treatments, use the standardized 30-day bait experiment period.\nFor other ecological questions, the full survey may be appropriate. Students should confirm the sampling period used in their analysis and report it clearly in methods and summaries."
-  },
-  {
-    "objectID": "surveys/field-station/index.html#sampling-effort",
-    "href": "surveys/field-station/index.html#sampling-effort",
-    "title": "Field Station – Bait Project",
-    "section": "Sampling effort",
-    "text": "Sampling effort\nSampling effort is summarized at the camera-trap station level.\nThis distinction is important because the number of physical cameras may not always equal the number of sampling stations. For example, some surveys use one camera per station, while others use paired cameras.\nWhen paired cameras are used, a station is considered operational when at least one camera in the pair is functioning.\nSurvey-specific pages report sampling effort for both the 30-day bait experiment and the complete survey period."
-  },
-  {
-    "objectID": "surveys/field-station/index.html#field-station-surveys",
-    "href": "surveys/field-station/index.html#field-station-surveys",
-    "title": "Field Station – Bait Project",
-    "section": "Field Station surveys",
-    "text": "Field Station surveys\n\n\n\nWinston 8 Tree Farm — 2024\nThe 2024 survey used four complete camera-trap triads with one camera per station.\nView Winston 8 — 2024\n\n\nCherokee Ridge — 2025\nThe 2025 survey used paired ground cameras and included a separate canopy-camera component.\nView Cherokee Ridge — 2025\n\n\n\n\nCaddo Lake — 2026\nThe 2026 survey will be added once camera deployment, retrieval, and data-processing information are finalized."
-  },
-  {
     "objectID": "index.html#data-use-and-confidentiality",
     "href": "index.html#data-use-and-confidentiality",
     "title": "Long-Term Camera Trap Project",
@@ -168,95 +259,53 @@
     "text": "Data use and confidentiality\n\n\n\n\n\n\nProject information is for internal use\n\n\n\nThe information, data, maps, photographs, and other materials available through this website are intended for members and collaborators of the SFA Camera Trap Project.\nMaterials from this website should not be used, reproduced, distributed, shared with individuals outside the project, or posted on social media without prior express authorization from the project coordinators.\nAccess to these materials does not constitute permission to use the data for independent analyses, presentations, publications, reports, or other products. Students and collaborators should confirm appropriate data use and authorship expectations before beginning a project."
   },
   {
-    "objectID": "surveys/field-station/index.html#general-sampling-design---triangle",
-    "href": "surveys/field-station/index.html#general-sampling-design---triangle",
-    "title": "Field Station – Bait Project",
-    "section": "General sampling design - “Triangle”",
-    "text": "General sampling design - “Triangle”\nAt each study site, we arrange our cameras in a triangular array. Each vertex of the triangle applies a different attractant strategy to test behavioral responses.\n\n\n\n\n\n\nControl\nPassive monitoring with no attractants or bait applied\n\n\n\n\n\n\n\nLure\nScent-based attraction using Calvin Klein Obsession perfume, known to attract felids and other mammals.\n\n\n\n\n\n\n\nBait\nFood-based attraction using sardines or other fish-based bait.\n\n\n\nCamera-trap triads are generally separated by approximately 1 km from one another. Within each triad, stations are separated by approximately 200 m.\n\n\n\n\n\nThe number of triads varies among years.\n\n\n\n\n\n\nSurvey-specific modifications\n\n\n\nThe general triad design is shared across Field Station surveys, but some years include modifications such as paired cameras, different fish-based attractants, or additional camera components. These differences should be considered when comparing datasets among years."
-  },
-  {
-    "objectID": "explore/index.html#station-summary",
-    "href": "explore/index.html#station-summary",
-    "title": "Explore camera-trap data",
-    "section": "Station summary",
-    "text": "Station summary\n\n  \n\n\n\nStation\nTreatment\nTrap-nights\nIndependent events\n\n\n\n\n\n\n\n\n\n\n\n\n\nInterpreting the explorer\n\n\n\nThe 30-day bait experiment uses the first 30 days after deployment at each station and is the appropriate period for questions focused on attractant treatments. The full survey uses all available sampling effort and records.\nEvents / 100 trap-nights standardizes independent records by sampling effort. Observed species richness includes only categories identified as wildlife species in the project species metadata."
-  },
-  {
-    "objectID": "resources/index.html",
-    "href": "resources/index.html",
-    "title": "Resources",
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
     "section": "",
-    "text": "This library brings together the main resources used throughout the camera-trap project, including software instructions, species-identification guides, data-processing workflows, and short conceptual guides for analysis.\nResources will continue to be added as the project grows."
+    "text": "This library brings together research products developed with data from the SFA Camera Trap Project. It includes student posters, conference presentations, manuscripts, and published papers."
   },
   {
-    "objectID": "resources/index.html#el-software-que-usamos",
-    "href": "resources/index.html#el-software-que-usamos",
-    "title": "Resources",
-    "section": "El software que usamos",
-    "text": "El software que usamos\nEn este proyecto usamos principalmente Timlapse para el manejo y procesamiento de la informacion de camaras trampa. En general s un sofware dedicado para datos de camras trampa, aunque puede usarse para otro tipo de proyectos que contenga fotos y/o videos. Tambien es muy flexible, relativamente facil de usar y ligero.\nTimelapse funciona con templates, es decir plantillas que dictan que campos o informacion debe consignarse en cada proyecto, lo que lo hace bastante flexible. Por eso quizas, en cada proyecto la informacion y los campos a llenar van a variar ligeramente, pero es justamente eso lo que lo hace tan flexible.\nTimlapse, tambien tiene integrado el uso de Addax AI, el cual es un software especializado en facilitar el uso de modelos de reconocimiento de especies.\nPara descargar Timelapse porfavor dirigete a este link https://timelapse.ucalgary.ca/download/ y sigue las instrucciones\nSe recomienda mirar los videos tutoriales para familiarzarse con el software"
+    "objectID": "research/index.html#research-library",
+    "href": "research/index.html#research-library",
+    "title": "Research",
+    "section": "Research library",
+    "text": "Research library"
   },
   {
-    "objectID": "resources/index.html#el-protocolo-que-seguimos",
-    "href": "resources/index.html#el-protocolo-que-seguimos",
-    "title": "Resources",
-    "section": "El protocolo que seguimos",
-    "text": "El protocolo que seguimos\nCada estudiante asignado va a recibir ya sea mediante el prestamo de una SD card o de manera digital 1 o mas folders con fotos y videos de camaras trampa. Cada folder representa una estacion o camara distinta y estar nombrado dependiendo del proyecto o tratamiento. Por ejemplo, Control 1, Perfume 2A etc.\nCada carpeta tendra los archivos de fotos y videos de la estacion y dos archivos Timelapse: TimelapseData.ddb y TimelapseTemplate.tdb. Los estudiantes deben abrir Timelapse y cargar el archivo Timelapse que esta dentro de ese folder para cargar las fotos y videos en el programa. Cuando las fotos y videos esten cargadas los estudiantes pueden empezar a clasificar las imagenes y consignar toda la informacion necesaria.\nLas instrucciones detalladas de como cargar la base de datos y usar el programa pueden verse en esta guia realizada por Natalie Ransom"
+    "objectID": "research/projects/bait-types-diel-activity-2025/index.html#authors",
+    "href": "research/projects/bait-types-diel-activity-2025/index.html#authors",
+    "title": "From Calvin Klein to Carrion: Diel Responses and Conflicts Revealed by Camera Traps",
+    "section": "Authors",
+    "text": "Authors\nAndrew Moore ★, Reuber Antoniazzi, Clare Shaughnessy ★, Gabriel Andrade-Ponce, Sophia Grubbs, Natalie Ransom, Meredith Rash\n★ Student presenter\nConference poster\nPresented at the 2026 TWS Chapter meeting and the Undergraduate Research showcase Stephen F. Austin State University\nDownload poster\n\n\n  \n\n  \n\n  \n\n  \n\n\n\n\nScenes from the 2026 TWS Chapter meeting and the undergraduate research presentation of this project."
   },
   {
-    "objectID": "resources/index.html#guias-de-identificacion-de-especies",
-    "href": "resources/index.html#guias-de-identificacion-de-especies",
-    "title": "Resources",
-    "section": "Guias de identificacion de especies",
-    "text": "Guias de identificacion de especies\nNosotros usamos las guias de identificacion provistas por emammal, que era un equipo y pagina encargada de alojar diferentes proyectos de camras trampa, ahora migraron a Wildlife Insights’.\nLas quias incluyen 1. Snapshot USA Common Mammals Guide 2. Guide to Identifying Deer 3. Guide to Identifying Eastern Squirrels 4. Guide to Identifying Canids\nEs muyyy importante que revisen las guias y sepan identificar claramente las especies. La calidad de cualquier producto de investigacion depende de la correcta clasificacion de las especies. Cualquier duda respecto a la clasificacion por favor agreguen un comentario y clasifiquen la especie como “Unknown”. Nunca traten de adivinar si no stan seguros.\n## Usando el IAR\n# La abundancia y las cámaras trampa\nLa estimación de la abundancia de poblaciones es de vital importancia para la conservación de la vida silvestre. En el caso de los mamíferos, las cámaras trampa son una de las métodos de muestreo más usados [@burton2015]."
+    "objectID": "research/projects/bait-types-diel-activity-2025/index.html#abstract",
+    "href": "research/projects/bait-types-diel-activity-2025/index.html#abstract",
+    "title": "From Calvin Klein to Carrion: Diel Responses and Conflicts Revealed by Camera Traps",
+    "section": "Abstract",
+    "text": "Abstract\nCamera traps are helpful tools for passively monitoring patterns in animal activity and interactions. Different bait types can affect the foraging activity of animals. In this research, we evaluated the potential interactions among species using different baits, i.e., perfume Calvin Klein Obsession, a well-known attractant for wild cats, fish heads, and no baits (control). We analyzed the diel activity patterns of mammal communities in a managed Pineywood forest in East Texas. White-tailed deer (Odocoileus virginianus), raccoons (Procyon lotor), armadillos (Dasypus novemcinctus), and Virginia opossums (Didelphis virginiana) were recorded in each treatment at different times of the day, revealing that baits could be shaping their activity patterns. Armadillos and Virginia opossums were consistently observed at the fish stations shortly before Coyote (Canis latrans), potentially displaying avoidance behavior. Direct conflict between turkey vultures (Cathartes aura) and black vultures (Coragyps atratus) was observed while both species were attracted to and feeding at the fish head station. Turkey vultures showed a tendency to leave while the black vultures were present and return when the black vultures left, resulting in a bimodal curve for turkey vultures and a unimodal curve for black vultures when graphing activity patterns by species and treatment. Raccoons, which possess a dietary strategy of opportunistic omnivory, were not commonly observed at the fish stations, but were observed at the control station both early in the morning and at night, confirming their presence in the area. These observations highlight activity patterns such as predator-prey dynamics, opportunistic feeding, and competition in animal communities."
   },
   {
-    "objectID": "resources/index.html#especies-marcadas-y-no-marcadas",
-    "href": "resources/index.html#especies-marcadas-y-no-marcadas",
-    "title": "Resources",
-    "section": "Especies marcadas y no marcadas",
-    "text": "Especies marcadas y no marcadas\nEn especies marcadas o con marcas naturales es posible usar modelos de captura recaptura para estimar la abundancia [@wearn2017].\n\nPero en especies que no tienen marcas es difícil o imposible reconocer individuos a partir de fotografías, lo que no permite usar modelos de captura recaptura.\n\nEn estos casos muchas veces se usan índices para realizar inferencias sobre la abundancia de especies [@oconnell2010; @obrien2003]."
+    "objectID": "research/projects/bait-types-diel-activity-2025/index.html#related-survey",
+    "href": "research/projects/bait-types-diel-activity-2025/index.html#related-survey",
+    "title": "From Calvin Klein to Carrion: Diel Responses and Conflicts Revealed by Camera Traps",
+    "section": "Related survey",
+    "text": "Related survey\nProject: Field Station – Bait Project\nSurvey: Winston 8 — 2024"
   },
   {
-    "objectID": "resources/index.html#del-rai-a-la-abundancia",
-    "href": "resources/index.html#del-rai-a-la-abundancia",
-    "title": "Resources",
-    "section": "Del RAI a la abundancia",
-    "text": "Del RAI a la abundancia\nCómo cualquier otro índice, la utilidad del RAI para realizar inferencias sobre la abundancia de especies depende de que cumpla con ciertos supuestos generales.\n\nLos registros fotográficos deben ser independientes en el tiempo\nPoblación cerrada, el RAI no cambia durante el muestreo\nTodos los animales/individuos son detectados si están presentes\n\nSí todo esto es cierto para el RAI, entonces se espera que teóricamente tenga una correlación con la abundancia poblacional “real” [@oconnell2010; @obrien2003].\n\nRegistros independientes ⏲️\nSeguramente en tus proyectos o tesis te han dicho que debes considerar solamente los registros independientes para calcular el RAI. Pero, ¿qué es un registro independiente?\n\nMuchas personas intuyen que un registro independiente es aquel donde se tiene cierta certeza de que el mismo individuo no es fotografiado de manera consecutiva. Entonces, muy inocentemente definen en su tesis o artículo 30/60/1440 minutos como el umbral mágico, en el cual dos registros no pertenecen al mismo individuo. Citando seguramente a otra persona que también ha hecho lo mismo [@sollmann2018].\nEstamos olvidando algo crucial y es que usamos el RAI porque no podemos reconocer individuos y por lo tanto no tenemos la certeza de que un individuo diferente pasa en la cámara después de xx cantidad de tiempo.\nRealmente definimos los registros “independientes” para evitar las pseudo-replicas temporales. Es decir, registros que nos dan la misma información debido a que están muy cercanos entre sí. Pero, elegir un intervalo no es una tarea trivial, ya que: un intervalo muy pequeño puede hacer que tengamos registros dependientes, lo que resulta en que sobre-estimemos el índice o que se invaliden muchas pruebas estadísticas [@carroll2000]. Pero escoger un intervalo muy grande puede hacer que perdamos información, lo cual no es algo deseable para especies poco comunes.\n\n¿ Cómo escoger un intervalo adecuado? sigue siendo una pregunta difícil. Lo mejor que podemos hacer es definir ese intervalo con base en el conocimiento ecológico y del movimiento de la especie objetivo [@sollmann2018]. Existe también la posibilidad de definir el umbral de independencia de manera más formal explorando la autocorrelación temporal de los registros [@kays2014; @iannarilli2019] o la inspección de los intervalos de registros subsecuentes [@yasuda2004].\n\nPor lo general las técnicas estadísticas formales para definir independencia temporal son poco usadas por la falta de información y herramientas que sean relativamente difíciles de aplicar. Aunque en este campo el paquete lorelogram [@iannarilli2019] parece ser muy promisorio. En todo caso las primeras aplicaciones del paquete muestran que para la mayoría de los casos la dependencia espacial se pierde con tan solo 3 minutos y en casos extremos 15 min (con atrayentes) [@iannarilli2021].\n\n\nPoblación cerrada\nSeguramente la mayoría también ha escuchado hablar del supuesto de población cerrada. De manera general una población cerrada se da idealmente en determinado periodo de tiempo donde no sucedan muertes, nacimientos, migración o emigración de individuos [@schoen1991]. Esto es particularmente importante cuando intentamos hacer inferencias sobre el parámetros poblacionales de una especie, en este caso abundancia.\nVamos a verlo con un ejemplo exagerado, pero espero que ilustre lo importante que puede ser el supuesto. Imaginemos que tenemos tres años de conteos de una población de un cánido en un área determinada. Por algún motivo esta población esta disminuyendo cada año. Sin embargo, sí yo defino mi temporada de muestreo como los 3 años, no será posible evidenciar la disminución de la población. Al realizar cada conteo por año si sera posible. Esto mismo puede suceder a escala de meses o de temporadas climáticas, pero claro todo va a depender del sistema de estudio y el conocimiento que tengamos del mismo.\n\n\n\n¿ Detectamos todo los que existe ?\nEl RAI supone que todos los individuos que se encuentren en el área serán fotografiados, es decir que la probabilidad de detección es perfecta. En otras palabras, si tenemos la total seguridad de registrar todos los individuos que pasen en frente de la cámara trampa, tendremos la certeza de que los cambios en la tasa fotográfica se deban a los cambios en la abundancia de la especie. Básicamente que la relación de la abundancia real y el RAI sea monotónica [@obrien2011].\n\n\n\nPalmer et al 2018 Relación del RAI con estimaciones de densidad con vuelos\n\n\nAutores cómo @palmer2018 han demostrado que bajo ciertas circunstancias el RAI puede ser un buen reflejo de la abundancia. No obstante, en la mayoría de los casos la probabilidad de detección de las especies no es perfecta [@kéry2009; @burton2015]. Esto quiere decir que es bastante probable que pese a que no detectemos a una especie en una unidad y día determinado, es difícil llegar a concluir que en efecto esta ausente. Lo cual termina por generar que subestimemos el parámetro de interés [@martin-garcia2022].\n\n\n\n\n\n\n\nModificado de Gálvez, N., González, M. J., Vuskovic, T., Bañales- Seguel, C., Opazo, A., Martínez, D., Zurita, R., Ortega, F., & Schuttler, S. (2020). Monitoreo escolar de fauna silvestre: Guía docente para realizar un proyecto centífico escolar mediante foto trampeo (First ed.) Proyecto EXPLORA de Divulgación y Valoración de la Cienciay Tecnología 2018-2019 de CONICYT ED220040.\n\n\nEn cámaras trampa la detección imperfecta es un fenómeno muy común. Recordemos que como herramientas de monitoreo pasivo las cámaras tienen un área efectiva de muestreo bastante pequeña [@andrade-ponce2021; @moeller2022]. En otras palabras, la probabilidad de que una especie pase frente al área donde el sensor de la cámara se active y sea registrada, realmente es baja [@moeller2022].\n\nExisten diversos factores que pueden llegar a afectar la detección de las especies, desde su abundancia natural, el tamaño del ámbito hogareño, el tipo de hábitat, el lugar en que ubiquemos la cámara, entre otras [@burton2015; @andrade-ponce2021; @guillera-arroita2016]. Lo cierto es que se ha demostrado que llegar a ignorar la detección imperfecta de las especies puede hacernos llegar a conclusiones totalmente contrarias sobre la abundancia de las mismas [@sollmann2013].\n\n\nEl uso del espacio afecta la interpretación\nSi en algún mundo idílico cumplimos con los supuestos que ya mencionamos, podríamos llegar a pensar que los cambios en el RAI son un buen reflejo de los cambios en la abundancia de poblacional. No obstante, el uso del hábitat o del espacio también puede afectar la tasa de registro [@stewart2018]. Por ejemplo, especies que se mueven rápido a lo largo de su territorio pueden ser detectadas mayor número de veces, mientras que una especie de movimiento “lento” no. De manera, similar especies con ámbitos hogareños más amplios, pueden ser detectadas en distintas estaciones, aumentando el número de detecciones totales [@broadley2019].\n\nCreo que una manera sensata de usar el RAI es como una medida de actividad o intensidad de uso [@obrien2011]. Por supuesto seguimos teniendo el problema de la detección imperfecta, pero al menos no hacemos inferencia sobre una abundancia, sino sobre la relación entre la tasa de detección y alguna covariable como el hábitat o un disturbio. Precisamente, en este ejemplo vamos a usar el RAI para explicar la relación de la especie con algunas covariables y para ello usaremos modelos lineales. Manos a la obra:"
+    "objectID": "research/projects/deer-classes-2026/index.html#authors",
+    "href": "research/projects/deer-classes-2026/index.html#authors",
+    "title": "Camera-Trap Detections of White-tailed Deer Demographic Classes",
+    "section": "Authors",
+    "text": "Authors\nDagan Ray"
   },
   {
-    "objectID": "resources/index.html#resource-library",
-    "href": "resources/index.html#resource-library",
-    "title": "Resources",
-    "section": "Resource library",
-    "text": "Resource library"
-  },
-  {
-    "objectID": "resources/species-id/index.html",
-    "href": "resources/species-id/index.html",
-    "title": "Species Identification",
-    "section": "",
-    "text": "Accurate species identification is essential for every analysis that uses the camera-trap database.\nOur project uses several wildlife identification guides originally developed through eMammal, a platform that supported camera-trap projects and has since transitioned toward Wildlife Insights.\n\n\n\nSnapshot USA Common Mammals Guide\nGuide to Identifying Deer\nGuide to Identifying Eastern Squirrels\nGuide to Identifying Canids\n\nAdditional project-specific guides can be added to this page as new identification needs arise."
-  },
-  {
-    "objectID": "resources/species-id/index.html#identification-resources",
-    "href": "resources/species-id/index.html#identification-resources",
-    "title": "Species Identification",
-    "section": "",
-    "text": "Accurate species identification is essential for every analysis that uses the camera-trap database.\nOur project uses several wildlife identification guides originally developed through eMammal, a platform that supported camera-trap projects and has since transitioned toward Wildlife Insights.\n\n\n\nSnapshot USA Common Mammals Guide\nGuide to Identifying Deer\nGuide to Identifying Eastern Squirrels\nGuide to Identifying Canids\n\nAdditional project-specific guides can be added to this page as new identification needs arise."
-  },
-  {
-    "objectID": "resources/species-id/index.html#classification-rule",
-    "href": "resources/species-id/index.html#classification-rule",
-    "title": "Species Identification",
-    "section": "Classification rule",
-    "text": "Classification rule\n\n\n\n\n\n\nIf you are unsure, do not guess\n\n\n\nThe quality of every research product produced from these data depends on correct species classification.\nIf you are uncertain about an identification:\n\nclassify the record as Unknown;\nadd a comment describing what made the identification difficult; and\nflag the image for later review when appropriate.\n\nNever assign a species simply because it appears to be the most likely option."
-  },
-  {
-    "objectID": "resources/species-id/index.html#why-identification-quality-matters",
-    "href": "resources/species-id/index.html#why-identification-quality-matters",
-    "title": "Species Identification",
-    "section": "Why identification quality matters",
-    "text": "Why identification quality matters\nErrors introduced during image classification propagate into every later stage of the project, including:\n\nspecies lists;\ndetection counts;\nactivity-pattern analyses;\nevent rates;\ncommunity summaries; and\nstudent research projects.\n\nCareful classification during the initial processing stage is therefore one of the most important quality-control steps in the entire camera-trap workflow."
+    "objectID": "research/projects/time-to-bait-2026/index.html#authors",
+    "href": "research/projects/time-to-bait-2026/index.html#authors",
+    "title": "Testing Whether Bait and Lure Effects on Wildlife Detections Change Over Time",
+    "section": "Authors",
+    "text": "Authors\nNatalie Ransom, Sophia Grubbs"
   },
   {
     "objectID": "resources/rai/index.html",
@@ -343,52 +392,52 @@
     "text": "Detailed Timelapse guide\nA detailed guide describing how to load a database and work with the project Timelapse template was prepared by Natalie Ransom.\nOpen the Timelapse guide\n\n\n\n\n\n\nBefore you start\n\n\n\nAlways work from the folder and template assigned to your project. Field names and classification requirements may differ among camera-trap projects."
   },
   {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "Research",
+    "objectID": "surveys/field-station/index.html",
+    "href": "surveys/field-station/index.html",
+    "title": "Field Station – Bait Project",
     "section": "",
-    "text": "This library brings together research products developed with data from the SFA Camera Trap Project. It includes student posters, conference presentations, manuscripts, and published papers.\nThe goal is not only to document project outputs, but also to provide examples that future students can use when developing their own research questions, analyses, figures, and scientific posters."
+    "text": "The Field Station – Bait Project is an annual camera-trap study conducted during the Wildlife Field Techniques field station.\nThe project was designed to evaluate how different attractants influence the detection and activity of mammals and medium- to large-bodied birds during camera-trap surveys. Because surveys are conducted at different properties each year, the project also produces multi-year datasets that can support additional undergraduate research questions related to wildlife occurrence, activity, sampling effort, community composition, and camera-trap methodology.\nAlthough the general sampling framework is maintained among years, some aspects of the design may vary depending on the property, equipment availability, or specific objectives for that field season. These differences are documented on each survey page."
   },
   {
-    "objectID": "research/index.html#research-library",
-    "href": "research/index.html#research-library",
-    "title": "Research",
-    "section": "Research library",
-    "text": "Research library\nAt the moment, research products can be added as individual pages under:\nresearch/items/\nEach project can include:\n\na short abstract or project summary;\nauthors and student presenters;\nconference or journal information;\na photograph of the presenter or project;\na downloadable poster or manuscript;\nlinks to a published article or external resource; and\nrelated survey or dataset information.\n\n\n\n\n\n\n\nNote\n\n\n\nThe research library will be populated as existing posters, presentations, and publications are added to the website."
-  },
-  {
-    "objectID": "people/index.html",
-    "href": "people/index.html",
-    "title": "People",
+    "objectID": "surveys/field-station/index.html#project-overview",
+    "href": "surveys/field-station/index.html#project-overview",
+    "title": "Field Station – Bait Project",
     "section": "",
-    "text": "The SFA Camera Trap Project is a collaborative effort involving faculty, students, and field-course participants. Students contribute at different stages of the project, from deploying cameras and classifying images to developing independent research projects and presenting their work."
+    "text": "The Field Station – Bait Project is an annual camera-trap study conducted during the Wildlife Field Techniques field station.\nThe project was designed to evaluate how different attractants influence the detection and activity of mammals and medium- to large-bodied birds during camera-trap surveys. Because surveys are conducted at different properties each year, the project also produces multi-year datasets that can support additional undergraduate research questions related to wildlife occurrence, activity, sampling effort, community composition, and camera-trap methodology.\nAlthough the general sampling framework is maintained among years, some aspects of the design may vary depending on the property, equipment availability, or specific objectives for that field season. These differences are documented on each survey page."
   },
   {
-    "objectID": "people/index.html#project-leadership",
-    "href": "people/index.html#project-leadership",
-    "title": "People",
-    "section": "Project leadership",
-    "text": "Project leadership\n\n\n\n\nGabriel Andrade-Ponce\nProject lead | Postdoctoral Research Associate\nCamera-trap ecology, wildlife monitoring, data analysis, and student research mentoring.\n\nProject leadership Research Mentoring\n\n\n\n\n\n\nReuber Antoniazzi\nProject lead| Assistant Professor of Forest Wildlife Management\nField coordination, wildlife techniques, camera deployment, and student mentoring.\n\nProject leadership Field work Mentoring"
+    "objectID": "surveys/field-station/index.html#general-sampling-design---triangle",
+    "href": "surveys/field-station/index.html#general-sampling-design---triangle",
+    "title": "Field Station – Bait Project",
+    "section": "General sampling design - “Triangle”",
+    "text": "General sampling design - “Triangle”\nAt each study site, we arrange our cameras in a triangular array. Each vertex of the triangle applies a different attractant strategy to test behavioral responses.\n\n\n\n\n\n\nControl\nPassive monitoring with no attractants or bait applied\n\n\n\n\n\n\n\nLure\nScent-based attraction using Calvin Klein Obsession perfume, known to attract felids and other mammals.\n\n\n\n\n\n\n\nBait\nFood-based attraction using sardines or other fish-based bait.\n\n\n\nCamera-trap triads are generally separated by approximately 1 km from one another. Within each triad, stations are separated by approximately 200 m.\n\n\n\n\n\nThe number of triads varies among years.\n\n\n\n\n\n\nSurvey-specific modifications\n\n\n\nThe general triad design is shared across Field Station surveys, but some years include modifications such as paired cameras, different fish-based attractants, or additional camera components. These differences should be considered when comparing datasets among years."
   },
   {
-    "objectID": "people/index.html#student-researchers",
-    "href": "people/index.html#student-researchers",
-    "title": "People",
-    "section": "Student researchers",
-    "text": "Student researchers\nStudents who have developed research questions, analyzed project data, or presented their work at scientific meetings will be highlighted here.\n\nStudent profiles will be added as projects are completed. Profiles may include a photograph, research topic, poster or presentation, and links to related project materials."
+    "objectID": "surveys/field-station/index.html#camera-deployment-protocol",
+    "href": "surveys/field-station/index.html#camera-deployment-protocol",
+    "title": "Field Station – Bait Project",
+    "section": "Camera deployment protocol",
+    "text": "Camera deployment protocol\nAt each station, cameras are mounted on trees or poles approximately 50 cm above the ground.\nCameras are generally oriented north or south to reduce direct sunlight and glare and are positioned at locations where animal movement is likely, such as wildlife trails or other natural travel routes.\nCameras are programmed to record:\n\nthree photographs per trigger event; and\none video per trigger event.\n\nCameras operate continuously, 24 hours per day, from deployment until retrieval unless interrupted by equipment failure, battery depletion, memory limitations, environmental conditions, or other malfunctions."
   },
   {
-    "objectID": "people/index.html#image-classification-team",
-    "href": "people/index.html#image-classification-team",
-    "title": "People",
-    "section": "Image classification team",
-    "text": "Image classification team\nStudents currently contributing to image sorting, species identification, and database quality control will be listed here as the project grows."
+    "objectID": "surveys/field-station/index.html#sampling-periods",
+    "href": "surveys/field-station/index.html#sampling-periods",
+    "title": "Field Station – Bait Project",
+    "section": "Sampling periods",
+    "text": "Sampling periods\nData from the Field Station project are commonly considered at two temporal scales.\n\n30-day bait experiment\nAnalyses designed to evaluate the effect of attractant treatments use the first 30 days following deployment at each station.\nThis creates a standardized exposure period across stations and treatments, even when stations were deployed on slightly different dates.\nPeriods during which a station was not operational are excluded from sampling effort.\n\n\nFull survey\nOther ecological analyses may use the complete sampling period available for each station, from deployment through retrieval.\nThe full-survey dataset can be useful for questions that are not specifically focused on comparing attractant treatments and that benefit from maximizing the amount of available camera-trap information.\n\n\n\n\n\n\nChoose the sampling period based on the research question\n\n\n\nFor questions focused on the effect of bait or attractant treatments, use the standardized 30-day bait experiment period.\nFor other ecological questions, the full survey may be appropriate. Students should confirm the sampling period used in their analysis and report it clearly in methods and summaries."
   },
   {
-    "objectID": "people/index.html#field-crew",
-    "href": "people/index.html#field-crew",
-    "title": "People",
-    "section": "Field crew",
-    "text": "Field crew\nMany students contribute to camera deployment and retrieval through field courses and project activities. Because this group can be large, field participants will be acknowledged here as a simple list rather than individual profiles.\nNames will be added by survey and year."
+    "objectID": "surveys/field-station/index.html#sampling-effort",
+    "href": "surveys/field-station/index.html#sampling-effort",
+    "title": "Field Station – Bait Project",
+    "section": "Sampling effort",
+    "text": "Sampling effort\nSampling effort is summarized at the camera-trap station level.\nThis distinction is important because the number of physical cameras may not always equal the number of sampling stations. For example, some surveys use one camera per station, while others use paired cameras.\nWhen paired cameras are used, a station is considered operational when at least one camera in the pair is functioning.\nSurvey-specific pages report sampling effort for both the 30-day bait experiment and the complete survey period."
+  },
+  {
+    "objectID": "surveys/field-station/index.html#field-station-surveys",
+    "href": "surveys/field-station/index.html#field-station-surveys",
+    "title": "Field Station – Bait Project",
+    "section": "Field Station surveys",
+    "text": "Field Station surveys\n\n\n\nWinston 8 Tree Farm — 2024\nThe 2024 survey used four complete camera-trap triads with one camera per station.\nView Winston 8 — 2024\n\n\nCherokee Ridge — 2025\nThe 2025 survey used paired ground cameras and included a separate canopy-camera component.\nView Cherokee Ridge — 2025\n\n\n\n\nCaddo Lake — 2026\nThe 2026 survey will be added once camera deployment, retrieval, and data-processing information are finalized."
   }
 ]

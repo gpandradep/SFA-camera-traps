@@ -165,51 +165,995 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<style>
+.people-intro {
+  max-width: 920px;
+  margin-bottom: 2rem;
+}
+
+.leadership-grid,
+.student-grid {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.leadership-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 2.6rem;
+}
+
+.student-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1rem 0 2.5rem;
+}
+
+.leader-card,
+.student-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.leader-card {
+  padding: 1.5rem;
+}
+
+.student-card {
+  position: relative;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.wildlife-icon-wrap {
+  position: absolute;
+  top: 0.95rem;
+  right: 0.95rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fafbf8;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wildlife-icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+.leader-top,
+.student-card-top,
+.past-person-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.people-avatar {
+  width: 104px;
+  height: 104px;
+  min-width: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 2px var(--sage-light);
+}
+
+.student-card .people-avatar {
+  width: 84px;
+  height: 84px;
+  min-width: 84px;
+}
+
+.past-person .people-avatar {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  font-size: 0.92rem;
+}
+
+.people-avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sage-light);
+  color: var(--forest);
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.leader-card h3,
+.student-card h3,
+.past-person h4 {
+  margin: 0;
+  color: var(--forest);
+}
+
+.leader-card h3 {
+  font-size: 1.22rem;
+}
+
+.student-card h3 {
+  font-size: 1.04rem;
+}
+
+.past-person h4 {
+  font-size: 0.95rem;
+}
+
+.leader-title {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.people-email {
+  display: inline-block;
+  margin-top: 0.35rem;
+  color: var(--forest-soft);
+  font-size: 0.78rem;
+  text-decoration: none;
+}
+
+.people-email:hover {
+  text-decoration: underline;
+}
+
+.leader-bio {
+  margin: 1rem 0 0.85rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.student-meta,
+.past-meta {
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.wildlife-level {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: baseline;
+  padding: 0.55rem 0.7rem;
+  background: #fafbf8;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--forest);
+}
+
+.wildlife-label {
+  color: var(--muted);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.people-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.people-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background: var(--sage-light);
+  color: var(--forest);
+  font-size: 0.69rem;
+  font-weight: 600;
+}
+
+.student-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.student-stats > div {
+  padding: 0.6rem 0.7rem;
+  background: #fafbf8;
+  border-radius: 10px;
+}
+
+.stat-number,
+.stat-caption {
+  display: block;
+}
+
+.stat-number {
+  color: var(--forest);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.stat-caption {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
+.student-details {
+  margin-top: auto;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+
+.level-guide {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 1rem 0 2.25rem;
+}
+
+.level-guide > div {
+  padding: 0.8rem;
+  background: #fafbf8;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.level-card strong,
+.level-card span {
+  display: block;
+}
+
+.level-card span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+.pause-panel {
+  margin: 1rem 0 2.4rem;
+}
+
+.past-list {
+  margin: 1rem 0 2rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.past-person {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(130px, 1fr) minmax(90px, auto);
+  gap: 1rem;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.past-person:last-child {
+  border-bottom: none;
+}
+
+.past-person .people-badges {
+  margin-top: 0.4rem;
+}
+
+.past-projects,
+.past-photos {
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.past-photos {
+  text-align: right;
+  color: var(--forest);
+  font-weight: 650;
+}
+
+.past-photos span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  .student-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .level-guide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .past-person {
+    grid-template-columns: 1fr;
+  }
+
+  .past-photos {
+    text-align: left;
+  }
+}
+
+@media (max-width: 650px) {
+  .leadership-grid,
+  .student-grid,
+  .level-guide {
+    grid-template-columns: 1fr;
+  }
+}
+
+.level-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+}
+
+.level-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  margin-bottom: 0.15rem;
+}
+</style>
 <div class="people-intro">
-<p>The SFA Camera Trap Project is a collaborative effort involving faculty, students, and field-course participants. Students contribute at different stages of the project, from deploying cameras and classifying images to developing independent research projects and presenting their work.</p>
+<p>The SFA Camera Trap Project is built by students and collaborators who contribute at different stages of the research process — from camera deployment and image classification to data analysis, scientific posters, and independent research.</p>
 </div>
 <section id="project-leadership" class="level2">
 <h2 class="anchored" data-anchor-id="project-leadership">Project leadership</h2>
-<div class="people-grid">
-<div class="person-card">
-<p><img class="person-photo" src="img/GAP.jpeg" alt="Gabriel Andrade-Ponce"></p>
-<section id="gabriel-andrade-ponce" class="level3">
-<h3 class="anchored" data-anchor-id="gabriel-andrade-ponce">Gabriel Andrade-Ponce</h3>
-<p><strong>Project lead</strong> | <strong>Postdoctoral Research Associate</strong></p>
-<p>Camera-trap ecology, wildlife monitoring, data analysis, and student research mentoring.</p>
-<div class="role-chips">
-<p><span class="role-chip">Project leadership</span> <span class="role-chip">Research</span> <span class="role-chip">Mentoring</span></p>
+<div class="leadership-grid">
+<article class="leader-card">
+<div class="leader-top">
+<img class="people-avatar" src="img/GAP.jpeg" alt="Gabriel Andrade-Ponce">
+<div class="leader-heading">
+<h3 class="anchored">
+Gabriel Andrade-Ponce
+</h3>
+<div class="leader-title">
+<strong>Project lead</strong> <span>·</span> <strong>Postdoctoral Research Associate</strong>
+</div>
+<a class="people-email" href="mailto:Gabriel.Andrade@sfasu.edu">Gabriel.Andrade@sfasu.edu</a>
+</div>
+</div>
+<p class="leader-bio">
+Camera-trap ecology, wildlife monitoring, data analysis, and student research mentoring.
+</p>
+<div class="people-badges">
+<span class="people-badge">Project leadership</span><span class="people-badge">Research</span><span class="people-badge">Mentoring</span><span class="people-badge">Data analysis</span>
+</div>
+</article>
+<article class="leader-card">
+<div class="leader-top">
+<img class="people-avatar" src="img/RA.jpg" alt="Reuber Antoniazzi">
+<div class="leader-heading">
+<h3 class="anchored">
+Reuber Antoniazzi
+</h3>
+<div class="leader-title">
+<strong>Project lead</strong> <span>·</span> <strong>Assistant Professor of Forest Wildlife Management</strong>
+</div>
+<a class="people-email" href="mailto:Reuber.Antoniazzi@sfasu.edu">Reuber.Antoniazzi@sfasu.edu</a>
+</div>
+</div>
+<p class="leader-bio">
+Wildlife, wildlife techniques, wildlife ecology, and student mentoring.
+</p>
+<div class="people-badges">
+<span class="people-badge">Project leadership</span><span class="people-badge">Research</span><span class="people-badge">Mentoring</span>
+</div>
+</article>
 </div>
 </section>
-</div>
-<div class="person-card">
-<p><img class="person-photo" src="img/RA.jpg" alt="Reuber Antoniazzi"></p>
-<section id="reuber-antoniazzi" class="level3">
-<h3 class="anchored" data-anchor-id="reuber-antoniazzi">Reuber Antoniazzi</h3>
-<p><strong>Project lead</strong>| <strong>Assistant Professor of Forest Wildlife Management</strong></p>
-<p>Field coordination, wildlife techniques, camera deployment, and student mentoring.</p>
-<div class="role-chips">
-<p><span class="role-chip">Project leadership</span> <span class="role-chip">Field work</span> <span class="role-chip">Mentoring</span></p>
+<section id="project-wildlife-levels" class="level2">
+<h2 class="anchored" data-anchor-id="project-wildlife-levels">Project Wildlife Levels</h2>
+<p>These levels recognize growing experience with the camera-trap workflow. They are a way to visualize students progression through the project.</p>
+<div class="level-guide">
+
+  <div class="level-card">
+    <img class="level-icon" src="img/wildlife-levels/squirrel.svg" alt="Squirrel">
+    <strong>Squirrel</strong>
+    <span>Getting started and learning the project workflow.</span>
+  </div>
+
+  <div class="level-card">
+    <img class="level-icon" src="img/wildlife-levels/raccoon.svg" alt="Raccoon">
+    <strong>Raccoon</strong>
+    <span>Regular contributor expanding skills and independence.</span>
+  </div>
+
+  <div class="level-card">
+  <img class="level-icon" src="img/wildlife-levels/deer.svg" alt="White-tailed Deer">
+    <strong>White-tailed Deer</strong>
+    
+    <span>Experienced contributor taking on research or training responsibilities.</span>
+  </div>
+
+  <div class="level-card">
+    <img class="level-icon" src="img/wildlife-levels/bobcat.svg" alt="Bobcat">
+    <strong>Bobcat</strong>
+    <span>Core team member with broad experience across multiple project components.</span>
+  </div>
+
 </div>
 </section>
+<section id="current-student-researchers" class="level2">
+<h2 class="anchored" data-anchor-id="current-student-researchers">Current student researchers</h2>
+<p>Students in this group have moved beyond image classification into research questions, data analysis, honors work, posters, or conference presentations.</p>
+<div class="student-grid">
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="Bobcat">
+<img class="wildlife-icon" src="img/wildlife-levels/bobcat.svg" alt="Bobcat">
 </div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+AM
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+Andrew Moore
+</h3>
+<div class="student-meta">
+Research
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Poster presenter</span><span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span><span class="people-badge">R training</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">19,733</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">2</span><span class="stat-caption">projects</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Fall 2025–current
+</div>
+<div>
+<strong>Projects:</strong> FS 2024 · FS 2025
+</div>
+</div>
+</article>
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="Bobcat">
+<img class="wildlife-icon" src="img/wildlife-levels/bobcat.svg" alt="Bobcat">
+</div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+NR
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+Natalie Ransom
+</h3>
+<div class="student-meta">
+Research
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Poster presenter</span><span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span><span class="people-badge">R training</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">14,401</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">2</span><span class="stat-caption">projects</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Fall 2025–current
+</div>
+<div>
+<strong>Projects:</strong> FS 2024 · FS 2025
+</div>
+</div>
+</article>
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="Bobcat">
+<img class="wildlife-icon" src="img/wildlife-levels/bobcat.svg" alt="Bobcat">
+</div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+SG
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+Sophia Grubbs
+</h3>
+<div class="student-meta">
+Research
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Poster presenter</span><span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span><span class="people-badge">R training</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">13,043</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">2</span><span class="stat-caption">projects</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Fall 2025–current
+</div>
+<div>
+<strong>Projects:</strong> FS 2024 · FS 2025
+</div>
+</div>
+</article>
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="White-tailed Deer">
+<img class="wildlife-icon" src="img/wildlife-levels/deer.svg" alt="White-tailed Deer">
+</div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+DR
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+Dagan Ray
+</h3>
+<div class="student-meta">
+Research
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Ongoing research</span><span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span><span class="people-badge">R training</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">6,869</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">1</span><span class="stat-caption">project</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Summer 2026–current
+</div>
+<div>
+<strong>Projects:</strong> FS 2025
+</div>
+</div>
+</article>
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="Raccoon">
+<img class="wildlife-icon" src="img/wildlife-levels/raccoon.svg" alt="Raccoon">
+</div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+IE
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+Isabella Egerman
+</h3>
+<div class="student-meta">
+Research
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Ongoing research</span><span class="people-badge">Photo ID</span><span class="people-badge">Honors contract</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">1,312</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">1</span><span class="stat-caption">project</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Fall 2026–current
+</div>
+<div>
+<strong>Projects:</strong> WT 2026
+</div>
+</div>
+</article>
 </div>
 </section>
-<section id="student-researchers" class="level2">
-<h2 class="anchored" data-anchor-id="student-researchers">Student researchers</h2>
-<p>Students who have developed research questions, analyzed project data, or presented their work at scientific meetings will be highlighted here.</p>
-<div class="soft-panel">
-<p>Student profiles will be added as projects are completed. Profiles may include a photograph, research topic, poster or presentation, and links to related project materials.</p>
+<section id="current-image-classification-team" class="level2">
+<h2 class="anchored" data-anchor-id="current-image-classification-team">Current image classification team</h2>
+<p>These students contribute to one of the most important stages of the project: reviewing camera-trap images, identifying wildlife, and building the databases used in later analyses.</p>
+<div class="student-grid">
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="Squirrel">
+<img class="wildlife-icon" src="img/wildlife-levels/squirrel.svg" alt="Squirrel">
+</div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+RB
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+Rylie Brantley
+</h3>
+<div class="student-meta">
+Image classification
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">2,103</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">1</span><span class="stat-caption">project</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Summer 2026–current
+</div>
+<div>
+<strong>Projects:</strong> FS 2025
+</div>
+</div>
+</article>
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="Squirrel">
+<img class="wildlife-icon" src="img/wildlife-levels/squirrel.svg" alt="Squirrel">
+</div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+NW
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+Nathan Wilmore
+</h3>
+<div class="student-meta">
+Image classification
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">2,818</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">1</span><span class="stat-caption">project</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Summer 2026–current
+</div>
+<div>
+<strong>Projects:</strong> FS 2025
+</div>
+</div>
+</article>
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="Squirrel">
+<img class="wildlife-icon" src="img/wildlife-levels/squirrel.svg" alt="Squirrel">
+</div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+TH
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+TJ Huggins
+</h3>
+<div class="student-meta">
+Image classification
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">1,711</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">1</span><span class="stat-caption">project</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Summer 2026–current
+</div>
+<div>
+<strong>Projects:</strong> FS 2025
+</div>
+</div>
+</article>
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="Squirrel">
+<img class="wildlife-icon" src="img/wildlife-levels/squirrel.svg" alt="Squirrel">
+</div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+DP
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+Drew Pitts
+</h3>
+<div class="student-meta">
+Image classification
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">2,504</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">1</span><span class="stat-caption">project</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Summer 2026–current
+</div>
+<div>
+<strong>Projects:</strong> WT 2026
+</div>
+</div>
+</article>
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="Raccoon">
+<img class="wildlife-icon" src="img/wildlife-levels/raccoon.svg" alt="Raccoon">
+</div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+MM
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+Matthew Minyard
+</h3>
+<div class="student-meta">
+Image classification
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span><span class="people-badge">R training</span><span class="people-badge">Camera deployment</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">5,491</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">2</span><span class="stat-caption">projects</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Summer 2026–current
+</div>
+<div>
+<strong>Projects:</strong> WT 2026 · FS 2026
+</div>
+</div>
+</article>
+<article class="student-card">
+<div class="wildlife-icon-wrap" title="Squirrel">
+<img class="wildlife-icon" src="img/wildlife-levels/squirrel.svg" alt="Squirrel">
+</div>
+<div class="student-card-top">
+<div class="people-avatar people-avatar-placeholder">
+CM
+</div>
+<div class="student-heading">
+<h3 class="anchored">
+Colin McKinney-Garcia
+</h3>
+<div class="student-meta">
+Image classification
+</div>
+</div>
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span>
+</div>
+<div class="student-stats">
+<div>
+<span class="stat-number">1,072</span><span class="stat-caption">photos classified</span>
+</div>
+<div>
+<span class="stat-number">1</span><span class="stat-caption">project</span>
+</div>
+</div>
+<div class="student-details">
+<div>
+<strong>With the project:</strong> Summer 2026–current
+</div>
+<div>
+<strong>Projects:</strong> WT 2026
+</div>
+</div>
+</article>
 </div>
 </section>
-<section id="image-classification-team" class="level2">
-<h2 class="anchored" data-anchor-id="image-classification-team">Image classification team</h2>
-<p>Students currently contributing to image sorting, species identification, and database quality control will be listed here as the project grows.</p>
+<section id="past-contributors" class="level2">
+<h2 class="anchored" data-anchor-id="past-contributors">Past contributors</h2>
+<p>Past contributors helped build the datasets, field collections, and research products that support the project today.</p>
+<div class="past-list">
+<div class="past-person">
+<div class="past-person-main">
+<div class="people-avatar people-avatar-placeholder">
+HP
+</div>
+<div>
+<h4 class="anchored">
+Hadyn Pollard
+</h4>
+<div class="past-meta">
+Image classification · Squirrel
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span>
+</div>
+</div>
+</div>
+<div class="past-projects">
+FS 2025
+</div>
+<div class="past-photos">
+3,618<span> photos</span>
+</div>
+</div>
+<div class="past-person">
+<div class="past-person-main">
+<div class="people-avatar people-avatar-placeholder">
+JF
+</div>
+<div>
+<h4 class="anchored">
+James Ferris
+</h4>
+<div class="past-meta">
+Image classification · Squirrel
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span>
+</div>
+</div>
+</div>
+<div class="past-projects">
+FS 2025
+</div>
+<div class="past-photos">
+2,439<span> photos</span>
+</div>
+</div>
+<div class="past-person">
+<div class="past-person-main">
+<div class="people-avatar people-avatar-placeholder">
+KH
+</div>
+<div>
+<h4 class="anchored">
+Kyle Hughes
+</h4>
+<div class="past-meta">
+Image classification · Squirrel
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span>
+</div>
+</div>
+</div>
+<div class="past-projects">
+FS 2025
+</div>
+<div class="past-photos">
+2,568<span> photos</span>
+</div>
+</div>
+<div class="past-person">
+<div class="past-person-main">
+<div class="people-avatar people-avatar-placeholder">
+MG
+</div>
+<div>
+<h4 class="anchored">
+Madisyn Gravett
+</h4>
+<div class="past-meta">
+Image classification · Squirrel
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span>
+</div>
+</div>
+</div>
+<div class="past-projects">
+WT 2026
+</div>
+<div class="past-photos">
+1,376<span> photos</span>
+</div>
+</div>
+<div class="past-person">
+<div class="past-person-main">
+<div class="people-avatar people-avatar-placeholder">
+MR
+</div>
+<div>
+<h4 class="anchored">
+Meredith Rash
+</h4>
+<div class="past-meta">
+Image classification · Squirrel
+</div>
+<div class="people-badges">
+<span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span>
+</div>
+</div>
+</div>
+<div class="past-projects">
+FS 2024
+</div>
+<div class="past-photos">
+700<span> photos</span>
+</div>
+</div>
+<div class="past-person">
+<div class="past-person-main">
+<div class="people-avatar people-avatar-placeholder">
+CS
+</div>
+<div>
+<h4 class="anchored">
+Clare Shaughnessy
+</h4>
+<div class="past-meta">
+Research · White-tailed Deer
+</div>
+<div class="people-badges">
+<span class="people-badge">Poster presenter</span><span class="people-badge">Photo ID</span><span class="people-badge">Camera deployment</span>
+</div>
+</div>
+</div>
+<div class="past-projects">
+FS 2024
+</div>
+<div class="past-photos">
+6,603<span> photos</span>
+</div>
+</div>
+</div>
 </section>
 <section id="field-crew" class="level2">
 <h2 class="anchored" data-anchor-id="field-crew">Field crew</h2>
-<p>Many students contribute to camera deployment and retrieval through field courses and project activities. Because this group can be large, field participants will be acknowledged here as a simple list rather than individual profiles.</p>
-<p><em>Names will be added by survey and year.</em></p>
+<p>Many additional students contribute to camera deployment and retrieval through Wildlife Techniques, Field Station, and other project activities.</p>
 
 
 </section>

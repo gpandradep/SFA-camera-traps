@@ -1,42 +1,32 @@
 ---
 title: "Research"
-subtitle: "Student projects, conference presentations, posters, and publications"
+subtitle: "Student research, conference presentations, posters, and publications"
 page-layout: full
 toc: false
+
+listing:
+  contents:
+    - "projects/*/index.qmd"
+  type: grid
+  sort: "date desc"
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  fields:
+    - image
+    - title
+    - description
+    - categories
+  grid-columns: 3
 ---
 
 <div class="explore-intro">
 This library brings together research products developed with data from the SFA Camera Trap Project. It includes student posters, conference presentations, manuscripts, and published papers.
 
-The goal is not only to document project outputs, but also to provide examples that future students can use when developing their own research questions, analyses, figures, and scientific posters.
 </div>
 
-::: {.soft-panel}
-### For students
 
-If this is your first research project or scientific poster, browse previous work for examples of how other students organized their questions, figures, results, and conclusions.
-
-These materials are examples rather than templates that must be copied exactly.
-:::
 
 ## Research library
 
-At the moment, research products can be added as individual pages under:
 
-```text
-research/items/
-```
-
-Each project can include:
-
-- a short abstract or project summary;
-- authors and student presenters;
-- conference or journal information;
-- a photograph of the presenter or project;
-- a downloadable poster or manuscript;
-- links to a published article or external resource; and
-- related survey or dataset information.
-
-::: {.callout-note}
-The research library will be populated as existing posters, presentations, and publications are added to the website.
-:::
